@@ -4,5 +4,10 @@
 @import "{{ site.theme }}";
 
 body {
-  background: grey;
+  background: grey !important;
+}
+
+
+p {
+  color: red;
 }
