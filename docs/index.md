@@ -26,7 +26,7 @@ Meu nome é Guilherme Vieira, sou um entusiasta da programação criativa, artis
 
 Este site é altamente inspirado no material produzido pela [Monica Rizzoli](https://cargocollective.com/monicarizzolli) e [Alexandre Villares](https://abav.lugaralgum.com/) para suas oficinas e cursos. Você pode ver o material que eles criaram veja o repositório: [Programação criativa](https://github.com/arteprog/programacao-criativa)
 
-<div class="separador"><video width="300" height="300" autoplay loop><source src="/assets/imgs/separador-compactado.mp4" type="video/mp4"></video></div>
+<div class="separador"><video width="300" height="300" autoplay loop><source src="assets/imgs/separador-compactado.mp4" type="video/mp4"></video></div>
 
 # Aula 01 - Introdução
 
@@ -59,7 +59,7 @@ Destaco **4 conceitos** importantes para se começar a programar:
 Identificar e extrair o mais relevante de um problema ou informação. Exemplos: números, mapas, agenda, etc.
 
 <figure>
-  <img alt="Mapa do Metrô de São Paulo" src="/assets/aula-01/mapa-metro.png">
+  <img alt="Mapa do Metrô de São Paulo" src="assets/aula-01/mapa-metro.png">
   <figcaption>Mapa do Metrô de São Paulo: Fonte <a href="https://commons.wikimedia.org/wiki/File:Mapa_metro_sp.svg">Wikipedia</a></figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ Identificar e extrair o mais relevante de um problema ou informação. Exemplos:
 Criar uma série de instruções para resolver uma tarefa e tarefas similares. Exemplos: operações matemáticas (somar, dividir, multiplicar, etc), receita de bolo, jogadas de futebol, etc.
 
 <figure>
-  <img alt="Operação de adição com números decimais" src="/assets/aula-01/conta-adicao.jpg">
+  <img alt="Operação de adição com números decimais" src="assets/aula-01/conta-adicao.jpg">
   <figcaption>Operação de adição com números decimais. Fonte: <a href="http://seusaber.com.br/matematica/como-fazer-contas-de-somar-com-virgula.html">Seu saber</a></figcaption>
 </figure>
 
