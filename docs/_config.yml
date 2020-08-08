@@ -1,7 +1,4 @@
 theme: jekyll-theme-cayman
-title: [Desenhando com código]
-description: [Repositório da oficina intensiva Desenhando com Código ministrada para o Grafatório em Setembro de 2020.]
----
----
+title: Desenhando com código
+description: Repositório da oficina intensiva Desenhando com Código ministrada para o Grafatório em Setembro de 2020.
 
-@import "{{ site.theme }}";
