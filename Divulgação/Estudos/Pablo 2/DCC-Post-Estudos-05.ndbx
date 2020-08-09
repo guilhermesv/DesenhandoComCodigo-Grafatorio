@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="36e0a0e9-8e31-46ce-a678-6ef6d431050c">
+    <property name="canvasHeight" value="1800"/>
+    <property name="canvasWidth" value="1450"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="combine8">
+        <node name="align1" position="17.00,9.00" prototype="corevector.align">
+            <port name="position" type="point" value="250.00,0.00"/>
+            <port name="valign" type="string" value="bottom"/>
+        </node>
+        <node name="align4" position="32.00,-16.00" prototype="corevector.align">
+            <port name="position" type="point" value="0.00,94.00"/>
+            <port name="valign" type="string" value="bottom"/>
+        </node>
+        <node name="align5" position="18.00,-16.00" prototype="corevector.align">
+            <port name="valign" type="string" value="bottom"/>
+        </node>
+        <node name="align6" position="22.00,-16.00" prototype="corevector.align">
+            <port name="valign" type="string" value="bottom"/>
+        </node>
+        <node name="colorize1" position="5.00,16.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ec2020ff"/>
+        </node>
+        <node name="colorize10" position="39.00,18.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff0000ff"/>
+        </node>
+        <node name="colorize11" position="23.00,18.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#aaff80ff"/>
+        </node>
+        <node name="colorize12" position="24.00,-7.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#aaff80ff"/>
+        </node>
+        <node name="colorize13" position="15.00,-7.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#3939ffff"/>
+        </node>
+        <node name="colorize14" position="19.00,-7.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ec2020ff"/>
+        </node>
+        <node name="colorize15" position="38.00,-6.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#aaff80ff"/>
+        </node>
+        <node name="colorize16" position="29.00,-6.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#3939ffff"/>
+        </node>
+        <node name="colorize17" position="33.00,-6.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ec2020ff"/>
+        </node>
+        <node name="colorize18" position="42.00,21.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#aaff80ff"/>
+        </node>
+        <node name="colorize19" position="37.00,21.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ec2020ff"/>
+        </node>
+        <node name="colorize2" position="-1.00,16.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#3939ffff"/>
+        </node>
+        <node name="colorize3" position="10.00,16.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#aaff80ff"/>
+        </node>
+        <node name="colorize4" position="18.00,18.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ec2020ff"/>
+        </node>
+        <node name="colorize5" position="14.00,18.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#3939ffff"/>
+        </node>
+        <node name="colorize6" position="33.00,21.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#3939ffff"/>
+        </node>
+        <node name="colorize7" position="69.00,16.00" prototype="corevector.colorize"/>
+        <node name="colorize8" position="73.00,16.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff0000ff"/>
+        </node>
+        <node name="colorize9" position="37.00,16.00" prototype="corevector.colorize"/>
+        <node name="combine1" position="3.00,20.00" prototype="list.combine"/>
+        <node name="combine10" position="36.00,23.00" prototype="list.combine"/>
+        <node name="combine11" position="70.00,11.00" prototype="list.combine"/>
+        <node name="combine12" position="70.00,18.00" prototype="list.combine"/>
+        <node name="combine2" position="1.00,9.00" prototype="list.combine"/>
+        <node name="combine7" position="17.00,20.00" prototype="list.combine"/>
+        <node name="combine8" position="32.00,-4.00" prototype="list.combine"/>
+        <node name="combine9" position="18.00,-5.00" prototype="list.combine"/>
+        <node name="compound1" position="5.00,13.00" prototype="corevector.compound">
+            <port name="function" type="string" value="intersected"/>
+        </node>
+        <node name="compound2" position="73.00,15.00" prototype="corevector.compound">
+            <port name="function" type="string" value="intersected"/>
+        </node>
+        <node name="compound3" position="39.00,15.00" prototype="corevector.compound">
+            <port name="function" type="string" value="intersected"/>
+        </node>
+        <node name="compound4" position="36.00,10.00" prototype="corevector.compound"/>
+        <node name="compound5" position="19.00,16.00" prototype="corevector.compound">
+            <port name="function" type="string" value="intersected"/>
+        </node>
+        <node name="copy1" position="17.00,10.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="10"/>
+            <port name="rotate" type="float" value="36.0"/>
+        </node>
+        <node name="copy4" position="32.00,-15.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="4"/>
+            <port name="rotate" type="float" value="90.0"/>
+        </node>
+        <node name="copy5" position="22.00,-15.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="24"/>
+            <port name="rotate" type="float" value="15.0"/>
+        </node>
+        <node name="copy6" position="18.00,-15.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="24"/>
+            <port name="rotate" type="float" value="15.0"/>
+        </node>
+        <node name="divide1" position="25.00,10.00" prototype="math.divide">
+            <port name="value2" type="float" value="10.0"/>
+        </node>
+        <node name="divide3" position="26.00,-15.00" prototype="math.divide">
+            <port name="value2" type="float" value="10.0"/>
+        </node>
+        <node name="divide4" position="35.00,-15.00" prototype="math.divide">
+            <port name="value2" type="float" value="10.0"/>
+        </node>
+        <node name="ellipse1" position="-1.00,5.00" prototype="corevector.ellipse">
+            <port name="position" type="point" value="-361.00,0.00"/>
+            <port name="width" type="float" value="725.0"/>
+            <port name="height" type="float" value="1800.0"/>
+        </node>
+        <node name="ellipse2" position="3.00,5.00" prototype="corevector.ellipse">
+            <port name="position" type="point" value="361.00,0.00"/>
+            <port name="width" type="float" value="725.0"/>
+            <port name="height" type="float" value="695.0"/>
+        </node>
+        <node name="ellipse3" position="7.00,5.00" prototype="corevector.ellipse">
+            <port name="width" type="float" value="725.0"/>
+            <port name="height" type="float" value="695.0"/>
+        </node>
+        <node name="ellipse4" position="21.00,11.00" prototype="corevector.ellipse"/>
+        <node name="frame1" position="3.00,0.00" prototype="core.frame"/>
+        <node name="frame10" position="45.00,-2.00" prototype="core.frame"/>
+        <node name="frame5" position="25.00,8.00" prototype="core.frame"/>
+        <node name="frame7" position="26.00,-16.00" prototype="core.frame"/>
+        <node name="frame8" position="35.00,-17.00" prototype="core.frame"/>
+        <node name="frame9" position="79.00,-2.00" prototype="core.frame"/>
+        <node name="import_svg1" position="10.00,2.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="01.svg"/>
+            <port name="position" type="point" value="0.00,10.00"/>
+        </node>
+        <node name="import_svg10" position="45.00,7.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="01.svg"/>
+            <port name="position" type="point" value="0.00,10.00"/>
+        </node>
+        <node name="import_svg2" position="10.00,1.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="../BG/01 2.svg"/>
+            <port name="position" type="point" value="0.00,10.00"/>
+        </node>
+        <node name="import_svg6" position="24.00,7.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="01.svg"/>
+            <port name="position" type="point" value="0.00,10.00"/>
+        </node>
+        <node name="import_svg7" position="24.00,6.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="DCC-BaseEscrita-Curvas.svg"/>
+        </node>
+        <node name="import_svg8" position="25.00,-18.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="01.svg"/>
+            <port name="position" type="point" value="0.00,10.00"/>
+        </node>
+        <node name="import_svg9" position="41.00,-20.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="01.svg"/>
+        </node>
+        <node name="make_point3" position="70.00,5.00" prototype="corevector.make_point"/>
+        <node name="make_point4" position="74.00,6.00" prototype="corevector.make_point"/>
+        <node name="make_point5" position="79.00,6.00" prototype="corevector.make_point"/>
+        <node name="make_point6" position="40.00,6.00" prototype="corevector.make_point"/>
+        <node name="make_point7" position="36.00,4.00" prototype="corevector.make_point"/>
+        <node name="negate1" position="74.00,5.00" prototype="math.negate"/>
+        <node name="negate2" position="40.00,5.00" prototype="math.negate"/>
+        <node name="negate4" position="22.00,-13.00" prototype="math.negate"/>
+        <node name="rect1" position="-1.00,1.00" prototype="corevector.rect">
+            <port name="width" type="float" value="1498.0"/>
+            <port name="height" type="float" value="1859.0"/>
+        </node>
+        <node name="rect10" position="40.00,3.00" prototype="corevector.rect">
+            <port name="width" type="float" value="643.0"/>
+            <port name="height" type="float" value="900.0"/>
+        </node>
+        <node name="rect11" position="36.00,3.00" prototype="corevector.rect">
+            <port name="width" type="float" value="643.0"/>
+            <port name="height" type="float" value="900.0"/>
+        </node>
+        <node name="rect12" position="15.00,-8.00" prototype="corevector.rect">
+            <port name="width" type="float" value="1450.0"/>
+            <port name="height" type="float" value="1800.0"/>
+        </node>
+        <node name="rect13" position="26.00,-12.00" prototype="corevector.rect"/>
+        <node name="rect14" position="33.00,20.00" prototype="corevector.rect">
+            <port name="width" type="float" value="1450.0"/>
+            <port name="height" type="float" value="1800.0"/>
+        </node>
+        <node name="rect2" position="70.00,3.00" prototype="corevector.rect">
+            <port name="width" type="float" value="643.0"/>
+            <port name="height" type="float" value="900.0"/>
+        </node>
+        <node name="rect3" position="-1.00,15.00" prototype="corevector.rect">
+            <port name="width" type="float" value="1450.0"/>
+            <port name="height" type="float" value="1800.0"/>
+        </node>
+        <node name="rect4" position="14.00,17.00" prototype="corevector.rect">
+            <port name="width" type="float" value="1450.0"/>
+            <port name="height" type="float" value="1800.0"/>
+        </node>
+        <node name="rect5" position="17.00,4.00" prototype="corevector.rect">
+            <port name="width" type="float" value="121.0"/>
+            <port name="height" type="float" value="82.0"/>
+        </node>
+        <node name="rect6" position="29.00,-7.00" prototype="corevector.rect">
+            <port name="width" type="float" value="1450.0"/>
+            <port name="height" type="float" value="1800.0"/>
+        </node>
+        <node name="rect7" position="74.00,3.00" prototype="corevector.rect">
+            <port name="width" type="float" value="643.0"/>
+            <port name="height" type="float" value="900.0"/>
+        </node>
+        <node name="rect8" position="83.00,2.00" prototype="corevector.rect">
+            <port name="width" type="float" value="643.0"/>
+            <port name="height" type="float" value="1811.0"/>
+        </node>
+        <node name="rect9" position="18.00,-21.00" prototype="corevector.rect">
+            <port name="width" type="float" value="69.0"/>
+            <port name="height" type="float" value="82.0"/>
+        </node>
+        <node name="reflect1" position="40.00,13.00" prototype="corevector.reflect">
+            <port name="angle" type="float" value="90.0"/>
+            <port name="keep_original" type="boolean" value="false"/>
+        </node>
+        <node name="resample1" position="-1.00,6.00" prototype="corevector.resample">
+            <port name="length" type="float" value="5.0"/>
+            <port name="points" type="int" value="1"/>
+        </node>
+        <node name="resample11" position="32.00,-18.00" prototype="corevector.resample"/>
+        <node name="resample12" position="79.00,8.00" prototype="corevector.resample"/>
+        <node name="resample13" position="22.00,-17.00" prototype="corevector.resample"/>
+        <node name="resample14" position="36.00,11.00" prototype="corevector.resample"/>
+        <node name="resample15" position="18.00,-17.00" prototype="corevector.resample"/>
+        <node name="resample2" position="3.00,6.00" prototype="corevector.resample">
+            <port name="length" type="float" value="5.0"/>
+            <port name="points" type="int" value="1"/>
+        </node>
+        <node name="resample3" position="7.00,6.00" prototype="corevector.resample">
+            <port name="length" type="float" value="5.0"/>
+            <port name="points" type="int" value="1"/>
+        </node>
+        <node name="resample4" position="21.00,13.00" prototype="corevector.resample">
+            <port name="length" type="float" value="5.0"/>
+        </node>
+        <node name="resample7" position="70.00,12.00" prototype="corevector.resample"/>
+        <node name="resample8" position="17.00,8.00" prototype="corevector.resample"/>
+        <node name="rotate1" position="17.00,13.00" prototype="corevector.rotate">
+            <port name="angle" type="float" value="242.0"/>
+        </node>
+        <node name="rotate4" position="32.00,-13.00" prototype="corevector.rotate">
+            <port name="angle" type="float" value="242.0"/>
+        </node>
+        <node name="rotate5" position="18.00,-12.00" prototype="corevector.rotate">
+            <port name="angle" type="float" value="242.0"/>
+        </node>
+        <node name="rotate6" position="22.00,-12.00" prototype="corevector.rotate"/>
+        <node name="scale1" position="17.00,7.00" prototype="corevector.scale">
+            <port name="scale" type="point" value="81.00,814.00"/>
+        </node>
+        <node name="scale4" position="32.00,-19.00" prototype="corevector.scale">
+            <port name="scale" type="point" value="442.00,814.00"/>
+        </node>
+        <node name="scale5" position="22.00,-18.00" prototype="corevector.scale">
+            <port name="scale" type="point" value="84.00,1417.00"/>
+        </node>
+        <node name="scale6" position="18.00,-18.00" prototype="corevector.scale">
+            <port name="scale" type="point" value="81.00,814.00"/>
+        </node>
+        <node name="skew1" position="70.00,6.00" prototype="corevector.skew">
+            <port name="skew" type="point" value="-44.00,0.00"/>
+        </node>
+        <node name="skew2" position="74.00,7.00" prototype="corevector.skew">
+            <port name="skew" type="point" value="44.00,0.00"/>
+        </node>
+        <node name="skew3" position="79.00,7.00" prototype="corevector.skew">
+            <port name="skew" type="point" value="44.00,0.00"/>
+        </node>
+        <node name="skew4" position="36.00,5.00" prototype="corevector.skew">
+            <port name="skew" type="point" value="-44.00,0.00"/>
+        </node>
+        <node name="skew5" position="40.00,7.00" prototype="corevector.skew">
+            <port name="skew" type="point" value="44.00,0.00"/>
+        </node>
+        <node name="snap1" position="1.00,11.00" prototype="corevector.snap">
+            <port name="distance" type="float" value="50.0"/>
+            <port name="position" type="point" value="-25.00,0.00"/>
+        </node>
+        <node name="snap10" position="80.00,10.00" prototype="corevector.snap">
+            <port name="distance" type="float" value="50.0"/>
+            <port name="position" type="point" value="-25.00,0.00"/>
+        </node>
+        <node name="snap11" position="18.00,-11.00" prototype="corevector.snap">
+            <port name="distance" type="float" value="25.0"/>
+            <port name="position" type="point" value="-25.00,0.00"/>
+        </node>
+        <node name="snap12" position="36.00,12.00" prototype="corevector.snap">
+            <port name="distance" type="float" value="50.0"/>
+            <port name="position" type="point" value="-25.00,0.00"/>
+        </node>
+        <node name="snap13" position="22.00,-11.00" prototype="corevector.snap">
+            <port name="distance" type="float" value="25.0"/>
+            <port name="position" type="point" value="-25.00,0.00"/>
+        </node>
+        <node name="snap2" position="7.00,11.00" prototype="corevector.snap">
+            <port name="distance" type="float" value="50.0"/>
+            <port name="position" type="point" value="-25.00,0.00"/>
+        </node>
+        <node name="snap5" position="17.00,14.00" prototype="corevector.snap">
+            <port name="distance" type="float" value="50.0"/>
+            <port name="position" type="point" value="-25.00,0.00"/>
+        </node>
+        <node name="snap7" position="21.00,14.00" prototype="corevector.snap">
+            <port name="distance" type="float" value="50.0"/>
+            <port name="position" type="point" value="-25.00,0.00"/>
+        </node>
+        <node name="snap8" position="32.00,-12.00" prototype="corevector.snap">
+            <port name="distance" type="float" value="50.0"/>
+            <port name="position" type="point" value="-25.00,0.00"/>
+        </node>
+        <node name="snap9" position="70.00,13.00" prototype="corevector.snap">
+            <port name="distance" type="float" value="50.0"/>
+            <port name="position" type="point" value="-25.00,0.00"/>
+        </node>
+        <node name="star4" position="32.00,-20.00" prototype="corevector.star">
+            <port name="points" type="int" value="4"/>
+        </node>
+        <node name="translate1" position="70.00,7.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="0.00,-450.00"/>
+        </node>
+        <node name="translate2" position="74.00,8.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="0.00,450.00"/>
+        </node>
+        <node name="translate3" position="40.00,8.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="0.00,450.00"/>
+        </node>
+        <node name="translate4" position="36.00,6.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="0.00,-450.00"/>
+        </node>
+        <node name="wave1" position="-1.00,3.00" prototype="math.wave">
+            <port name="max" type="float" value="1800.0"/>
+            <port name="period" type="float" value="200.0"/>
+        </node>
+        <node name="wave2" position="3.00,3.00" prototype="math.wave">
+            <port name="min" type="float" value="1800.0"/>
+            <port name="max" type="float" value="0.0"/>
+            <port name="period" type="float" value="200.0"/>
+        </node>
+        <node name="wave3" position="7.00,3.00" prototype="math.wave">
+            <port name="min" type="float" value="1800.0"/>
+            <port name="max" type="float" value="0.0"/>
+            <port name="period" type="float" value="300.0"/>
+        </node>
+        <node name="wave4" position="75.00,0.00" prototype="math.wave">
+            <port name="min" type="float" value="-50.0"/>
+            <port name="max" type="float" value="50.0"/>
+            <port name="period" type="float" value="200.0"/>
+        </node>
+        <node name="wave5" position="79.00,0.00" prototype="math.wave">
+            <port name="min" type="float" value="-25.0"/>
+            <port name="max" type="float" value="25.0"/>
+            <port name="period" type="float" value="100.0"/>
+        </node>
+        <node name="wave6" position="41.00,0.00" prototype="math.wave">
+            <port name="min" type="float" value="-50.0"/>
+            <port name="max" type="float" value="50.0"/>
+            <port name="period" type="float" value="200.0"/>
+        </node>
+        <node name="wave7" position="21.00,9.00" prototype="math.wave">
+            <port name="min" type="float" value="1000.0"/>
+            <port name="max" type="float" value="-500.0"/>
+            <port name="period" type="float" value="300.0"/>
+        </node>
+        <conn input="resample1.shape" output="ellipse1"/>
+        <conn input="combine2.list1" output="resample1"/>
+        <conn input="snap1.shape" output="combine2"/>
+        <conn input="resample2.shape" output="ellipse2"/>
+        <conn input="combine2.list2" output="resample2"/>
+        <conn input="ellipse1.height" output="wave1"/>
+        <conn input="ellipse2.height" output="wave2"/>
+        <conn input="wave1.offset" output="frame1"/>
+        <conn input="wave2.offset" output="frame1"/>
+        <conn input="resample3.shape" output="ellipse3"/>
+        <conn input="ellipse3.height" output="wave3"/>
+        <conn input="wave3.offset" output="frame1"/>
+        <conn input="ellipse3.width" output="wave3"/>
+        <conn input="compound1.shape1" output="snap1"/>
+        <conn input="snap2.shape" output="resample3"/>
+        <conn input="compound1.shape2" output="snap2"/>
+        <conn input="colorize1.shape" output="compound1"/>
+        <conn input="copy1.shape" output="align1"/>
+        <conn input="rotate1.shape" output="copy1"/>
+        <conn input="snap5.shape" output="rotate1"/>
+        <conn input="resample8.shape" output="scale1"/>
+        <conn input="align1.shape" output="resample8"/>
+        <conn input="divide1.value1" output="frame5"/>
+        <conn input="rotate1.angle" output="divide1"/>
+        <conn input="scale4.shape" output="star4"/>
+        <conn input="copy4.shape" output="align4"/>
+        <conn input="rotate4.shape" output="copy4"/>
+        <conn input="snap8.shape" output="rotate4"/>
+        <conn input="resample11.shape" output="scale4"/>
+        <conn input="align4.shape" output="resample11"/>
+        <conn input="divide4.value1" output="frame8"/>
+        <conn input="rotate4.angle" output="divide4"/>
+        <conn input="skew1.shape" output="rect2"/>
+        <conn input="translate1.shape" output="skew1"/>
+        <conn input="combine11.list1" output="translate1"/>
+        <conn input="translate2.shape" output="skew2"/>
+        <conn input="combine11.list2" output="translate2"/>
+        <conn input="skew2.shape" output="rect7"/>
+        <conn input="make_point3.x" output="wave4"/>
+        <conn input="skew1.skew" output="make_point3"/>
+        <conn input="negate1.value" output="wave4"/>
+        <conn input="make_point4.x" output="negate1"/>
+        <conn input="skew2.skew" output="make_point4"/>
+        <conn input="wave4.offset" output="frame9"/>
+        <conn input="resample7.shape" output="combine11"/>
+        <conn input="snap9.shape" output="resample7"/>
+        <conn input="skew3.shape" output="rect8"/>
+        <conn input="skew3.skew" output="make_point5"/>
+        <conn input="wave5.offset" output="frame9"/>
+        <conn input="make_point5.x" output="wave5"/>
+        <conn input="resample12.shape" output="skew3"/>
+        <conn input="snap10.shape" output="resample12"/>
+        <conn input="compound2.shape2" output="snap10"/>
+        <conn input="compound2.shape1" output="snap9"/>
+        <conn input="colorize7.shape" output="snap9"/>
+        <conn input="combine12.list1" output="colorize7"/>
+        <conn input="colorize8.shape" output="compound2"/>
+        <conn input="combine12.list2" output="colorize8"/>
+        <conn input="skew4.shape" output="rect11"/>
+        <conn input="translate4.shape" output="skew4"/>
+        <conn input="translate3.shape" output="skew5"/>
+        <conn input="skew5.shape" output="rect10"/>
+        <conn input="make_point7.x" output="wave6"/>
+        <conn input="skew4.skew" output="make_point7"/>
+        <conn input="negate2.value" output="wave6"/>
+        <conn input="make_point6.x" output="negate2"/>
+        <conn input="skew5.skew" output="make_point6"/>
+        <conn input="wave6.offset" output="frame10"/>
+        <conn input="snap12.shape" output="resample14"/>
+        <conn input="colorize9.shape" output="snap12"/>
+        <conn input="colorize10.shape" output="compound3"/>
+        <conn input="reflect1.shape" output="snap12"/>
+        <conn input="compound3.shape1" output="snap12"/>
+        <conn input="compound3.shape2" output="reflect1"/>
+        <conn input="compound4.shape1" output="translate4"/>
+        <conn input="compound4.shape2" output="translate3"/>
+        <conn input="resample14.shape" output="compound4"/>
+        <conn input="colorize2.shape" output="rect3"/>
+        <conn input="combine1.list1" output="colorize2"/>
+        <conn input="colorize3.shape" output="import_svg1"/>
+        <conn input="combine1.list7" output="colorize3"/>
+        <conn input="colorize5.shape" output="rect4"/>
+        <conn input="combine7.list1" output="colorize5"/>
+        <conn input="colorize11.shape" output="import_svg6"/>
+        <conn input="combine7.list7" output="colorize11"/>
+        <conn input="combine1.list2" output="snap1"/>
+        <conn input="combine1.list3" output="colorize1"/>
+        <conn input="scale1.shape" output="rect5"/>
+        <conn input="copy6.shape" output="align5"/>
+        <conn input="rotate5.shape" output="copy6"/>
+        <conn input="snap11.shape" output="rotate5"/>
+        <conn input="resample15.shape" output="scale6"/>
+        <conn input="align5.shape" output="resample15"/>
+        <conn input="divide3.value1" output="frame7"/>
+        <conn input="rotate5.angle" output="divide3"/>
+        <conn input="colorize13.shape" output="rect12"/>
+        <conn input="combine9.list1" output="colorize13"/>
+        <conn input="colorize12.shape" output="import_svg8"/>
+        <conn input="combine9.list7" output="colorize12"/>
+        <conn input="scale6.shape" output="rect9"/>
+        <conn input="negate4.value" output="divide3"/>
+        <conn input="snap13.shape" output="rotate6"/>
+        <conn input="rotate6.angle" output="negate4"/>
+        <conn input="colorize14.shape" output="snap13"/>
+        <conn input="combine9.list4" output="snap11"/>
+        <conn input="combine9.list2" output="colorize14"/>
+        <conn input="copy5.shape" output="align6"/>
+        <conn input="resample13.shape" output="scale5"/>
+        <conn input="align6.shape" output="resample13"/>
+        <conn input="scale5.shape" output="rect9"/>
+        <conn input="rotate6.shape" output="copy5"/>
+        <conn input="snap7.shape" output="resample4"/>
+        <conn input="compound5.shape1" output="snap5"/>
+        <conn input="compound5.shape2" output="snap7"/>
+        <conn input="colorize4.shape" output="compound5"/>
+        <conn input="combine7.list2" output="snap5"/>
+        <conn input="combine7.list3" output="colorize4"/>
+        <conn input="resample4.shape" output="ellipse4"/>
+        <conn input="wave7.offset" output="frame5"/>
+        <conn input="ellipse4.width" output="wave7"/>
+        <conn input="ellipse4.height" output="wave7"/>
+        <conn input="colorize16.shape" output="rect6"/>
+        <conn input="combine8.list1" output="colorize16"/>
+        <conn input="combine8.list7" output="colorize15"/>
+        <conn input="combine8.list3" output="colorize17"/>
+        <conn input="colorize15.shape" output="import_svg9"/>
+        <conn input="combine8.list2" output="snap8"/>
+        <conn input="colorize6.shape" output="rect14"/>
+        <conn input="combine10.list1" output="colorize6"/>
+        <conn input="combine10.list7" output="colorize18"/>
+        <conn input="combine10.list3" output="colorize19"/>
+        <conn input="combine10.list2" output="colorize9"/>
+        <conn input="colorize19.shape" output="colorize10"/>
+        <conn input="colorize18.shape" output="import_svg10"/>
+    </node>
+</ndbx>

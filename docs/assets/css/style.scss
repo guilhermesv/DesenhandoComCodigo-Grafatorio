@@ -3,20 +3,10 @@
 
 @import "{{ site.theme }}";
 
-
 @font-face {
 	font-family: 'Space Text';
-	src: url('https://guilhermesv.github.io/assets/fonts/spacetext-bold-webfont.woff2') format('woff2'),
-			 url('https://guilhermesv.github.io/assets/fonts/spacetext-bold-webfont.woff') format('woff');
-	font-weight: 600;
-	font-style: normal;
-
-}
-
-@font-face {
-	font-family: 'Space Text';
-	src: url('https://guilhermesv.github.io/assets/fonts/spacetext-medium-webfont.woff2') format('woff2'),
-			 url('https://guilhermesv.github.io/assets/fonts/spacetext-medium-webfont.woff') format('woff');
+	src: url('../fonts/spacetext-medium-webfont.woff2') format('woff2'),
+			 url('assets/fonts/spacetext-medium-webfont.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 
@@ -24,8 +14,8 @@
 
 @font-face {
 	font-family: 'Space Text';
-	src: url('https://guilhermesv.github.io/assets/fonts/spacetext-regular-webfont.woff2') format('woff2'),
-			 url('https://guilhermesv.github.io/assets/fonts/spacetext-regular-webfont.woff') format('woff');
+	src: url('../fonts/spacetext-regular-webfont.woff2') format('woff2'),
+			 url('../fonts/spacetext-regular-webfont.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -45,7 +35,7 @@ body {
 }
 
 .page-header .btn {
-  background-color: #fff;
+  background-color: #AAFF80;
 }
 
 .btn {
@@ -54,7 +44,7 @@ body {
 }
 
 .btn:hover {
-  color:#fff;
+  color:#AAFF80;
   background-color: var(--cor-destaque);
   border-color: var(--cor-destaque);
 }
@@ -83,6 +73,7 @@ a {
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   color: var(--cor-destaque);
+  font-weight: 400;
   
 }
 
@@ -92,7 +83,7 @@ a {
 
 .main-content h1 {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 3em;
 }
 
@@ -103,7 +94,7 @@ ol li strong {
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 blockquote {
@@ -120,10 +111,14 @@ figcaption {
 ---------------------------------------*/
 
 .page-header {
-  background-image: url('https://guilhermesv.github.io/assets/imgs/Header.png');
+  background-image: url('../imgs/Header.png');
   background-size: cover;
   background-position: center;
-  padding: 30vh 6rem;
+  color: #AAFF80;
+}
+
+.home .page-header {
+
 }
 
 .project-tagline {
@@ -136,4 +131,5 @@ figcaption {
 .project-name {
   font-size: 3em;
   text-transform: uppercase;
+  font-weight: 400;
 }
