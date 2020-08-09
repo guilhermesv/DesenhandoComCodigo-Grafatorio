@@ -27,52 +27,46 @@
 ---------------------------------------*/
 
 :root {
-  --cor-destaque: #3939ff;
+  --cor-azul: #3939ff;
+  --cor-verde: #AAFF80;
 }
 
 body {
   font-family: 'Space Text', sans-serif;
 }
 
-.page-header .btn {
-  background-color: #AAFF80;
-}
-
 .btn {
-  color: var(--cor-destaque);
-  border-color: var(--cor-destaque);
+  color: var(--cor-azul);
+  border-color: var(--cor-azul);
+  max-width: 300px;
 }
 
 .btn:hover {
-  color:#AAFF80;
-  background-color: var(--cor-destaque);
-  border-color: var(--cor-destaque);
+  color:var(--cor-verde);
+  background-color: var(--cor-azul);
+  border-color: var(--cor-azul);
 }
 
-
-.main-content {
-  max-width: 800px;
-  font-size: 1.3rem;
-  padding: 10rem 6rem;
-  margin: auto;
-}
-
-.separador {
+.fim {
   display: flex;
   justify-content: center;
   margin: 8rem 0;
 }
 
-
-/* Tipografia geral
+/* Tipografia
 ---------------------------------------*/
 
+::selection {
+  background-color: var(--cor-azul);
+  color: var(--cor-verde)
+}
+
 a {
-  color: var(--cor-destaque);
+  color: var(--cor-azul);
 }
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
-  color: var(--cor-destaque);
+  color: var(--cor-azul);
   font-weight: 400;
   
 }
@@ -90,7 +84,7 @@ a {
 ul li strong,
 ol li strong { 
   text-transform: uppercase;
-  color: var(--cor-destaque)
+  color: var(--cor-azul)
 }
 
 strong {
@@ -99,6 +93,10 @@ strong {
 
 blockquote {
   margin: 3em 0;
+}
+
+figure {
+  margin: 2rem;
 }
 
 figcaption {
@@ -114,11 +112,34 @@ figcaption {
   background-image: url('../imgs/Header.png');
   background-size: cover;
   background-position: center;
-  color: #AAFF80;
+  color: var(--cor-verde);
+  padding: 2rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-header a {
+  color: var(--cor-verde);
+}
+
+.page-header a.btn {
+  background-color: var(--cor-verde);
+  margin: 0 auto;
+}
+
+.page-header a.btn {
+  color: var(--cor-azul);
+}
+
+.page-header a.btn:hover {
+  color: var(--cor-verde);
+  background-color: var(--cor-azul);
 }
 
 .home .page-header {
-
+  min-height: 70vh;
 }
 
 .project-tagline {
@@ -132,4 +153,71 @@ figcaption {
   font-size: 3em;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+/* Footer
+---------------------------------------*/
+
+.site-footer {
+  background-color: #000;
+  color: var(--cor-verde);
+  padding: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.site-footer a {
+  text-decoration: underline;
+  color: var(--cor-verde);
+}
+
+.site-footer-credits {
+  color: var(--cor-verde);
+}
+
+.site-footer-owner {
+  font-weight: 400;
+}
+
+/* Sumario
+---------------------------------------*/
+
+.sumario  {
+  margin: 6rem 0;
+  padding: 0 2rem;
+}
+
+
+
+/* Conteúdo
+---------------------------------------*/
+
+.wrapper-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content {
+  max-width: 700px;
+  font-size: 1.3rem;
+  padding: 0 2rem;
+  margin: 6rem auto;
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper-conteudo {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper-conteudo {
+    position: relative;
+  }
+
+  .sumario {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }

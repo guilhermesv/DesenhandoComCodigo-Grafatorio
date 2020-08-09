@@ -1,4 +1,8 @@
-# Aula 01 - Introdução
+---
+title: "Desenhando com Código<br>:<br>Aula 01 — Introdução"
+---
+
+# Conceitos
 
 ## Por que é legal programar?
 
@@ -60,14 +64,18 @@ Uma seleção de projetos interessantes que utilizam da programação para criar
 // Pegar lista da apresentação
 
 
-## Aula 01 - Demonstrações
+# Demonstrações
 
 Arquivos criados durante ou para demonstração nas aulas práticas
 
-## Aula 01 - Exercício
+# Exercício
+
+Orientação geral: antes de iniciar o exercío planeje o seu trabalho utilizando os conceitos de pensamento computacional aqui apresentados: abstraia a ideia principal, crie um algoritimo, caso ele esteja complexo decomponha-o em pequenas partes, por fim crie parâmetros para controla-lo.
 
 1. Explorando as primitivas básicas e o nó grid criar um padrão geométrico.
 2. Criar uma composição livre utilizando as transformações e o nó copie.
+
+
 
 ### Desafio:
 
