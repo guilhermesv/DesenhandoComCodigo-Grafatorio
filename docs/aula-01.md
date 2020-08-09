@@ -35,7 +35,7 @@ Identificar e extrair o mais relevante de um problema ou informação.
 Exemplos: números, mapas, agenda, etc.
 
 <figure>
-  <img alt="Mapa do Metrô de São Paulo" src="{{site-url}}/aula-01/mapa-metro.png">
+  <img alt="Mapa do Metrô de São Paulo" src="{{ site.url }}/aula-01/mapa-metro.png">
   <figcaption>Mapa do Metrô de São Paulo: Fonte <a href="https://commons.wikimedia.org/wiki/File:Mapa_metro_sp.svg">Wikipedia</a></figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ Criar uma série de instruções para resolver uma tarefa e tarefas similares.
 Exemplos: operações matemáticas (somar, dividir, multiplicar, etc), receita de bolo, jogadas de futebol, etc.
 
 <figure>
-  <img alt="Operação de adição com números decimais" src="{{site-url}}/aula-01/conta-adicao.jpg">
+  <img alt="Operação de adição com números decimais" src="{{ site.url }}/aula-01/conta-adicao.jpg">
   <figcaption>Operação de adição com números decimais. Fonte: <a href="http://seusaber.com.br/matematica/como-fazer-contas-de-somar-com-virgula.html">Seu saber</a></figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ Decompor o problema/informação em porções menores.
 Exemplos: uma rota para se chegar a um local, estabelecer um cronograma baseado no tempo gasto em cada uma das etapas, entender o como uma bicicleta funciona a partir de suas peças, etc.
 
 <figure>
-  <img alt="Como chegar da Praça da Sé até a Praça da República em São Paulo" src="{{site-url}}/aula-01/Rota.jpg">
+  <img alt="Como chegar da Praça da Sé até a Praça da República em São Paulo" src="{{ site.url }}/aula-01/Rota.jpg">
   <figcaption>Como chegar da Praça da Sé até a Praça da República em São Paulo. Fonte: <a href="https://www.openstreetmap.org/directions?engine=fossgis_osrm_foot&route=-23.5504%2C-46.6331%3B-23.5432%2C-46.6425#map=17/-23.54662/-46.63781">OpenStreet Map</a></figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ Exemplos: controle de volume ou equalizador em um player ou caixa de som, regist
 (Este é um conceito que não encontrei dessa forma nas bibliografias, mas achei importante ressaltar aqui)
 
 <figure>
-  <img alt="Operação de adição com números decimais" src="{{site-url}}/aula-01/receiver.jpg">
+  <img alt="Operação de adição com números decimais" src="{{ site.url }}/aula-01/receiver.jpg">
   <figcaption>Operação de adição com números decimais. Fonte: <a href="https://vintage7080.blogspot.com/2018/01/gradiente-59-receiver-model-1450.html">Vintage 70/90</a></figcaption>
 </figure>
 
@@ -97,32 +97,31 @@ Identidade desenvolvida para o 10º ano do DiaTipo SP, um encontro de Tipografia
 
 
 <figure>
-  <img alt="Identidade visual para o DiaTipo São Paulo" src="{{site-url}}/aula-01/diatipo.gif">
+  <img alt="Identidade visual para o DiaTipo São Paulo" src="{{ site.url }}/aula-01/diatipo.gif">
   <figcaption>Identidade visual para o DiaTipo São Paulo. Fonte: <a href="https://www.behance.net/gallery/83219303/DiaTipo-Sao-Paulo-2018">Daó + Deia Kulpas</a></figcaption>
 </figure>
 
-#### Beyond
+## Beyond
 
 Identidade visual para a empresa de business design Beyond, consultoria que cria e desenvolve ideias e serviços para negócios novos ou já consolidados.
 
 [mais informações aqui](http://www.estudiodao.com/trabalhos/beyond/)
 
 <figure>
-  <img alt="Padrões lineares para identiadde visual da empresa Beyond" src="{{site-url}}/aula-01/beyond.gif">
+  <img alt="Padrões lineares para identiadde visual da empresa Beyond" src="{{ site.url }}/aula-01/beyond.gif">
   <figcaption>Padrões lineares para identiadde visual da empresa Beyond. Fonte: <a href="http://www.estudiodao.com/trabalhos/beyond/">Daó</a></figcaption>
 </figure>
 
-#### Vosso
+## Vosso
 
 Composições que acompanharam o lançamento da nova identidade visual da Vosso. O trabalho é uma reinterpretação da idéia de retícula utilizada nos meios de impressão.
 
 [mais informações aqui](http://www.estudiodao.com/trabalhos/vosso/)
 
 <figure>
-  <img alt="Composições para os produtos promocionais da Vosso" src="{{site-url}}/aula-01/vosso.png">
+  <img alt="Composições para os produtos promocionais da Vosso" src="{{ site.url }}/aula-01/vosso.png">
   <figcaption>Composições para os produtos promocionais da Vosso. Fonte: <a href="http://www.estudiodao.com/trabalhos/vosso/">Daó</a></figcaption>
 </figure>
-
 
 # Prática
 
