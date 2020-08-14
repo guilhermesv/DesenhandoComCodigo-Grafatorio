@@ -123,20 +123,45 @@ Composições que acompanharam o lançamento da nova identidade visual da Vosso.
   <figcaption>Composições para os produtos promocionais da Vosso. Fonte: <a href="http://www.estudiodao.com/trabalhos/vosso/">Daó</a></figcaption>
 </figure>
 
-# Prática
+# Arquivos das demonstrações
 
+Arquivos criados durante ou para demonstração nas aulas práticas.
+(Inserir depois da aula)
 
-Arquivos criados durante ou para demonstração nas aulas práticas
+# Exercícios
 
-# Conceitos
+### Orientação geral 
 
-Orientação geral: antes de iniciar o exercío planeje o seu trabalho utilizando os conceitos de pensamento computacional aqui apresentados: abstraia a ideia principal, crie um algoritimo, caso ele esteja complexo decomponha-o em pequenas partes, por fim crie parâmetros para controla-lo.
+Antes de iniciar o exercío planeje o seu trabalho utilizando os conceitos de pensamento computacional aqui apresentados: abstraia a ideia principal, crie um algoritimo, caso ele esteja complexo decomponha-o em pequenas partes, por fim crie parâmetros para controla-lo.
 
-1. Explorando as primitivas básicas e o nó grid criar um padrão geométrico.
-2. Criar uma composição livre utilizando as transformações e o nó copie.
+### Exercício 01
 
+Explorando as primitivas básicas e o nó grid criar um padrão geométrico.
 
+[Link para a solução]()
+
+### Exercício 02
+
+Criar uma composição livre utilizando as transformações e o nó copie.
+
+[Link para a solução]()
 
 ### Desafio:
 
-Recriar o resultado abaixo com parametrização do número de colunas e linhas, ou seja ao mudar a quantidade de colunas ou linhas, o padrão deve se ajustar automaticamente
+Recriar algo similar ao resultado abaixo com parametrização do número de colunas e linhas, ou seja ao mudar a quantidade de colunas ou linhas, o padrão deve se ajustar automaticamente:
+
+<div class="galeria">
+<figure><img alt="Composições para os produtos promocionais da Vosso" src="{{ site.url }}/aula-01/Aula01-Desafio-01.png"></figure>
+<figure><img alt="Composições para os produtos promocionais da Vosso" src="{{ site.url }}/aula-01/Aula01-Desafio-02.png"></figure>
+<figure><img alt="Composições para os produtos promocionais da Vosso" src="{{ site.url }}/aula-01/Aula01-Desafio-03.png"></figure>
+<figure><img alt="Composições para os produtos promocionais da Vosso" src="{{ site.url }}/aula-01/Aula01-Desafio-04.png"></figure>
+</div>
+
+
+#### Dicas
+
+- Não se preocupe com a aplicação das cores, elas podem variar de acordo com a lógica que você seguir
+- Você vai precisar os nós de matemática para fazer algumas divisões e subtrações
+- O nó Fit pode ajudar a definir o tamanho dos módulos
+
+[Link para a solução]()

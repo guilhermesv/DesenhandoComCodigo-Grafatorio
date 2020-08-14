@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="60fcc91d-4997-4f30-a1b4-b0a69eac99fa">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="colorize1">
+        <node name="Altura_Grid" position="12.00,14.00" prototype="math.subtract">
+            <port name="value1" type="float" value="1000.0"/>
+        </node>
+        <node name="Altura_Modulo" position="12.00,12.00" prototype="math.divide">
+            <port name="value1" type="float" value="1000.0"/>
+        </node>
+        <node name="Larg_Modulo" position="9.00,12.00" prototype="math.divide">
+            <port name="value1" type="float" value="1000.0"/>
+        </node>
+        <node name="Largura_Grid" position="9.00,14.00" prototype="math.subtract">
+            <port name="value1" type="float" value="1000.0"/>
+        </node>
+        <node name="N_Colunas" position="7.00,10.00" prototype="math.integer">
+            <port name="value" type="int" value="8"/>
+        </node>
+        <node name="N_Linhas" position="10.00,10.00" prototype="math.integer">
+            <port name="value" type="int" value="8"/>
+        </node>
+        <node name="align1" position="5.00,2.00" prototype="corevector.align">
+            <port name="valign" type="string" value="bottom"/>
+        </node>
+        <node name="align2" position="1.00,4.00" prototype="corevector.align">
+            <port name="valign" type="string" value="bottom"/>
+        </node>
+        <node name="align3" position="3.00,9.00" prototype="corevector.align"/>
+        <node name="color1" position="8.00,18.00" prototype="color.color">
+            <port name="color" type="color" value="#ff5f58ff"/>
+        </node>
+        <node name="color2" position="8.00,19.00" prototype="color.color">
+            <port name="color" type="color" value="#00bf00ff"/>
+        </node>
+        <node name="color3" position="8.00,20.00" prototype="color.color">
+            <port name="color" type="color" value="#364636ff"/>
+        </node>
+        <node name="color4" position="11.00,18.00" prototype="color.color">
+            <port name="color" type="color" value="#ffb2b2ff"/>
+        </node>
+        <node name="color5" position="11.00,19.00" prototype="color.color">
+            <port name="color" type="color" value="#c19b79ff"/>
+        </node>
+        <node name="color6" position="11.00,20.00" prototype="color.color">
+            <port name="color" type="color" value="#002a7dff"/>
+        </node>
+        <node name="color7" position="14.00,18.00" prototype="color.color">
+            <port name="color" type="color" value="#55bebffe"/>
+        </node>
+        <node name="colorize1" position="4.00,24.00" prototype="corevector.colorize"/>
+        <node name="combine1" position="3.00,6.00" prototype="list.combine"/>
+        <node name="combine2" position="8.00,22.00" prototype="list.combine"/>
+        <node name="fit1" position="3.00,14.00" prototype="corevector.fit">
+            <port name="width" type="float" value="158.0"/>
+            <port name="height" type="float" value="161.0"/>
+            <port name="keep_proportions" type="boolean" value="false"/>
+        </node>
+        <node name="fit_to1" position="1.00,3.00" prototype="corevector.fit_to"/>
+        <node name="grid1" position="7.00,16.00" prototype="corevector.grid">
+            <port name="width" type="float" value="1000.0"/>
+            <port name="height" type="float" value="1000.0"/>
+        </node>
+        <node name="group1" position="3.00,8.00" prototype="corevector.group"/>
+        <node name="polygon1" position="1.00,1.00" prototype="corevector.polygon">
+            <port name="align" type="boolean" value="true"/>
+        </node>
+        <node name="rect1" position="5.00,1.00" prototype="corevector.rect"/>
+        <node name="scale1" position="1.00,2.00" prototype="corevector.scale">
+            <port name="scale" type="point" value="100.00,40.00"/>
+        </node>
+        <node name="translate1" position="4.00,18.00" prototype="corevector.translate"/>
+        <node name="ungroup1" position="4.00,19.00" prototype="corevector.ungroup"/>
+        <conn input="scale1.shape" output="polygon1"/>
+        <conn input="align1.shape" output="rect1"/>
+        <conn input="combine1.list1" output="align1"/>
+        <conn input="fit_to1.shape" output="scale1"/>
+        <conn input="fit_to1.bounding" output="rect1"/>
+        <conn input="align2.shape" output="fit_to1"/>
+        <conn input="combine1.list2" output="align2"/>
+        <conn input="combine2.list1" output="color1"/>
+        <conn input="combine2.list2" output="color2"/>
+        <conn input="group1.shapes" output="combine1"/>
+        <conn input="align3.shape" output="group1"/>
+        <conn input="fit1.shape" output="align3"/>
+        <conn input="translate1.translate" output="grid1"/>
+        <conn input="translate1.shape" output="fit1"/>
+        <conn input="grid1.width" output="Largura_Grid"/>
+        <conn input="grid1.height" output="Altura_Grid"/>
+        <conn input="ungroup1.shape" output="translate1"/>
+        <conn input="colorize1.shape" output="ungroup1"/>
+        <conn input="combine2.list3" output="color3"/>
+        <conn input="combine2.list4" output="color4"/>
+        <conn input="combine2.list5" output="color5"/>
+        <conn input="combine2.list6" output="color6"/>
+        <conn input="combine2.list7" output="color7"/>
+        <conn input="grid1.columns" output="N_Colunas"/>
+        <conn input="grid1.rows" output="N_Linhas"/>
+        <conn input="fit1.width" output="Larg_Modulo"/>
+        <conn input="Largura_Grid.value2" output="Larg_Modulo"/>
+        <conn input="Larg_Modulo.value2" output="N_Colunas"/>
+        <conn input="fit1.height" output="Altura_Modulo"/>
+        <conn input="Altura_Grid.value2" output="Altura_Modulo"/>
+        <conn input="Altura_Modulo.value2" output="N_Linhas"/>
+        <conn input="colorize1.fill" output="combine2"/>
+    </node>
+</ndbx>

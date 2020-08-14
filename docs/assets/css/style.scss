@@ -65,46 +65,6 @@ a {
   color: var(--cor-azul);
 }
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
-  color: var(--cor-azul);
-  font-weight: 400;
-  
-}
-
-.main-content h1, .main-content h2 {
-  margin-top: 6rem;
-}
-
-.main-content h1 {
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-top: 3em;
-}
-
-ul li strong,
-ol li strong { 
-  text-transform: uppercase;
-  color: var(--cor-azul)
-}
-
-strong {
-  font-weight: 400;
-}
-
-blockquote {
-  margin: 3em 0;
-}
-
-figure {
-  margin: 2rem 0;
-}
-
-figcaption {
-  font-size: 0.8rem;
-  text-align: center;
-}
-
-
 /* Header
 ---------------------------------------*/
 
@@ -192,21 +152,94 @@ figcaption {
 /* Conteúdo
 ---------------------------------------*/
 
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+  color: var(--cor-azul);
+  font-weight: 400;
+  
+}
+
+.main-content h1, .main-content h2, .main-content h3 {
+  margin-top: 6rem;
+}
+
+.main-content h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 3em;
+}
+
+ul li strong,
+ol li strong { 
+  text-transform: uppercase;
+  color: var(--cor-azul)
+}
+
+strong {
+  font-weight: 400;
+}
+
+blockquote {
+  margin: 3em 0;
+}
+
+figure {
+  margin: 6rem 0;
+}
+
+figcaption {
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
 .wrapper-conteudo {
   display: flex;
   flex-wrap: wrap;
 }
 
 .main-content {
-  max-width: 700px;
+  max-width: 1200px;
   font-size: 1.3rem;
   padding: 0 2rem;
   margin: 6rem auto;
 }
 
+.main-content > div {
+  margin: 6rem 0;
+}
+
+
+.main-content > *,
+.main-content blockquote {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-content > figure,
+.main-content > div {
+  max-width: 1200px;
+}
+
+.main-content img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 @media screen and (min-width: 600px) {
   .wrapper-conteudo {
     flex-wrap: nowrap;
+  }
+
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .galeria figure {
+    max-width: 50%;
+    padding: 1em;
+    margin: 0;
   }
 }
 
