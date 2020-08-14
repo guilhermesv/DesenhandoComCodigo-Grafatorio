@@ -21,7 +21,7 @@
             <port name="value" type="int" value="8"/>
         </node>
         <node name="N_Linhas" position="10.00,10.00" prototype="math.integer">
-            <port name="value" type="int" value="8"/>
+            <port name="value" type="int" value="7"/>
         </node>
         <node name="align1" position="5.00,2.00" prototype="corevector.align">
             <port name="valign" type="string" value="bottom"/>
