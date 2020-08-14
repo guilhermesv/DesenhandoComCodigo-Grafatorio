@@ -138,13 +138,9 @@ Antes de iniciar o exercío planeje o seu trabalho utilizando os conceitos de pe
 
 Explorando as primitivas básicas e o nó grid criar um padrão geométrico.
 
-[Link para a solução]()
-
 ### Exercício 02
 
 Criar uma composição livre utilizando as transformações e o nó copie.
-
-[Link para a solução]()
 
 ### Desafio:
 
@@ -164,4 +160,10 @@ Recriar algo similar ao resultado abaixo com parametrização do número de colu
 - Você vai precisar os nós de matemática para fazer algumas divisões e subtrações
 - O nó Fit pode ajudar a definir o tamanho dos módulos
 
-[Link para a solução]()
+# Resolução exercícios
+
+Todas resoluções dos exercícios e desafios podem ser baixas no link abaixo:
+
+[Link para a solução](https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/blob/master/Aula-01-Exerc%C3%ADcios)
+
+Dúvidas, de como baixar o arquivo do GitHub? [Clique aqui]({{ site.url }}/faq)
