@@ -21,9 +21,7 @@ Para saber mais sobre esse conceito: [Programar nunca foi sobre Código](https:/
 
 ## Pensamento computacional
 
-> “a utilização de  conceitos  fundamentais  da  computação
-para resolver  problemas,  projetar  sistemas, e  compreender
-comportamentos humanos”  — [Jeannette  Wing citada por Eduardo Omine](http://www.teses.usp.br/teses/disponiveis/16/16134/tde-12092014-122450/pt-br.php)
+> “a utilização de  conceitos  fundamentais  da  computação para resolver  problemas,  projetar  sistemas, e  compreender comportamentos humanos”  — [Jeannette  Wing citada por Eduardo Omine](http://www.teses.usp.br/teses/disponiveis/16/16134/tde-12092014-122450/pt-br.php)
 
 De uma forma bem simples e genérica o pensamento computacional é aplicar alguns conceitos que são muito comuns e diários do universo das ciências computacionais a outros campos e situações.
 
