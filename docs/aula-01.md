@@ -11,6 +11,7 @@ title: "Desenhando com Código<br>:<br>Aula 01 — Introdução"
 3. Racionalização do processo criativo
 4. Geração de possibilidades
 5. Expandir o espaço das ideias
+6. Diversão :)
 
 ## Programar é sobre se comunicar
 
@@ -26,7 +27,7 @@ comportamentos humanos”  — [Jeannette  Wing citada por Eduardo Omine](http:/
 
 De uma forma bem simples e genérica o pensamento computacional é aplicar alguns conceitos que são muito comuns e diários do universo das ciências computacionais a outros campos e situações.
 
-Destaco **4 conceitos** importantes para se começar a programar:
+Destaco **4 conceitos** importantes ao começar a programar:
 
 ### Abstração
 
@@ -123,7 +124,16 @@ Composições que acompanharam o lançamento da nova identidade visual da Vosso.
   <figcaption>Composições para os produtos promocionais da Vosso. Fonte: <a href="http://www.estudiodao.com/trabalhos/vosso/">Daó</a></figcaption>
 </figure>
 
-# Arquivos das demonstrações
+# Nodebox 3
+
+Nodebox é um aplicativo que permite por meio da programação visual com um sistema de nós criar peças de design generativo, animação e visualização de dados em uma interface simples e amigável.
+
+<figure>
+  <img alt="Tela do aplicativo Nodebox rodando uma arte generativa" src="{{ site.url }}/aula-01/Nodebox.png">
+  <figcaption>Tela do aplicativo Nodebox rodando uma arte generativa. Fonte: <a href="http://nodebox.net">Nodebox</a></figcaption>
+</figure>
+
+# Demonstrações
 
 Arquivos criados durante ou para demonstração nas aulas práticas.
 (Inserir depois da aula)
@@ -132,7 +142,7 @@ Arquivos criados durante ou para demonstração nas aulas práticas.
 
 ### Orientação geral 
 
-Antes de iniciar o exercío planeje o seu trabalho utilizando os conceitos de pensamento computacional aqui apresentados: abstraia a ideia principal, crie um algoritimo, caso ele esteja complexo decomponha-o em pequenas partes, por fim crie parâmetros para controla-lo.
+Antes de iniciar o exercío planeje o seu trabalho utilizando os conceitos de pensamento computacional aqui apresentados: abstraia a ideia principal, crie um algoritimo e caso ele esteja complexo decomponha-o em pequenas partes.
 
 ### Exercício 01
 
@@ -154,7 +164,7 @@ Recriar algo similar ao resultado abaixo com parametrização do número de colu
 </div>
 
 
-#### Dicas
+**Dicas**
 
 - Não se preocupe com a aplicação das cores, elas podem variar de acordo com a lógica que você seguir
 - Você vai precisar os nós de matemática para fazer algumas divisões e subtrações
