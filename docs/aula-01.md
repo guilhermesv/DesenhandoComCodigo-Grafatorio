@@ -1,4 +1,4 @@
----
+﻿---
 title: "Desenhando com Código<br>:<br>Aula 01 — Introdução"
 ---
 
@@ -11,7 +11,7 @@ title: "Desenhando com Código<br>:<br>Aula 01 — Introdução"
 3. Racionalização do processo criativo
 4. Geração de possibilidades
 5. Expandir o espaço das ideias
-6. Diversão :)
+6. Diversão
 
 ## Programar é sobre se comunicar
 
@@ -170,8 +170,8 @@ Recriar algo similar ao resultado abaixo com parametrização do número de colu
 
 # Resolução exercícios
 
-Todas resoluções dos exercícios e desafios podem ser baixas no link abaixo:
+Todas resoluções dos exercícios e desafios podem ser baixadas no link abaixo:
 
 [Link para a solução](https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/blob/master/Aula-01-Exerc%C3%ADcios)
 
-Dúvidas, de como baixar o arquivo do GitHub? [Clique aqui]({{ site.url }}/faq)
+Dúvidas, de como baixar o arquivo do GitHub? [Clique aqui](https://guilhermesv.github.io/DesenhandoComCodigo-Grafatorio/faq)

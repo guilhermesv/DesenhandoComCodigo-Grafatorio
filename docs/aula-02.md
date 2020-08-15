@@ -1,12 +1,12 @@
 ---
-title: "Desenhando com Código<br>:<br>Aula 01 — Design Generativo"
+title: "Desenhando com Código<br>:<br>Aula 02 — Design Generativo"
 ---
 
 # Conceitos
 
 ## Definição
 
-> “Arte generativa se refere a qualquer prática artística na qual o artista usa um sistema*, \[...\] que é colocado em movimento com algum grau de autonomia, contribuindo para ou resultando em um trabalho completo de arte.”  — [Philip Galanter](https://www.teses.usp.br/teses/disponiveis/16/16134/tde-12092014-122450/pt-br.php)
+> “Arte generativa se refere a qualquer prática artística na qual o artista usa um sistema*, [...] que é colocado em movimento com algum grau de autonomia, contribuindo para ou resultando em um trabalho completo de arte.”  — [Philip Galanter](https://www.teses.usp.br/teses/disponiveis/16/16134/tde-12092014-122450/pt-br.php)
 
 O sistema utilizado em uma peça generativa pode ser entendido de diversas formas:  conjunto de regras em linguagem natural (instruçõe), um programa de computador, uma máquina, ou outra invenção procedimental.
 
@@ -100,4 +100,4 @@ Todas resoluções dos exercícios e desafios podem ser baixas no link abaixo:
 
 [Link para a solução](https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/blob/master/Aula-01-Exerc%C3%ADcios)
 
-Dúvidas, de como baixar o arquivo do GitHub? [Clique aqui]({{ site.url }}/faq)
+Dúvidas, de como baixar o arquivo do GitHub? [Clique aqui]()
