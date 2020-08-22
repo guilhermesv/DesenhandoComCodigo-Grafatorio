@@ -11,7 +11,6 @@ title: "Desenhando com Código<br>:<br>Aula 01 — Introdução"
 3. Racionalização do processo criativo
 4. Geração de possibilidades
 5. Expandir o espaço das ideias
-6. Diversão
 
 ## Programar é sobre se comunicar
 
@@ -90,7 +89,7 @@ Eexperimento explorando composições usando três formas primitivas:  circulo, 
 
 ## DiaTipo São Paulo 2018
 
-Identidade desenvolvida para o 10º ano do DiaTipo SP, um encontro de Tipografia sem fins lucrativos. A identidade baseou-se em um padrão gerado a partir de fontes criadas por designers brasileiros, a fim de apresentar o conceito do DiaTipo: um evento construído ao longo de 10 anos por tipógrafos que cresceram junto com o evento.
+Identidade desenvolvida pelo Daó junto com a [Deia Kulpas](http://www.andreakulpas.com)para o 10º ano do DiaTipo SP, um encontro de Tipografia sem fins lucrativos. A identidade baseou-se em um padrão gerado a partir de fontes criadas por designers brasileiros, a fim de apresentar o conceito do DiaTipo: um evento construído ao longo de 10 anos por tipógrafos que cresceram junto com o evento.
 
 [mais informações aqui](https://www.behance.net/gallery/83219303/DiaTipo-Sao-Paulo-2018)
 
@@ -140,7 +139,11 @@ Arquivos criados durante ou para demonstração nas aulas práticas.
 
 ### Orientação geral 
 
-Antes de iniciar o exercío planeje o seu trabalho utilizando os conceitos de pensamento computacional aqui apresentados: abstraia a ideia principal, crie um algoritimo e caso ele esteja complexo decomponha-o em pequenas partes.
+Esses são os primeiros exercícios, a ideia é que você experimente criar algo livremente no Nodebox. Caso tenha dúvida das possibilidades ou do que fazer, de uma passeada pelos exemplos do Nodebox (eles ficam no menu "File > Open Examples") ou veja os códigos que produzi para esses exercícios.
+
+Tente também criar variações da mesma ideia, as vezes um código inicial pode se transformar em uma outra coisa apenas mudando a ordem dos nós ou acrescentando um item diferente. 
+
+Experimente, e principalmente se diverta :)
 
 ### Exercício 01
 
@@ -168,7 +171,7 @@ Recriar algo similar ao resultado abaixo com parametrização do número de colu
 - Você vai precisar os nós de matemática para fazer algumas divisões e subtrações
 - O nó Fit pode ajudar a definir o tamanho dos módulos
 
-# Resolução exercícios
+# Resolução dos exercícios
 
 Todas resoluções dos exercícios e desafios podem ser baixadas no link abaixo:
 

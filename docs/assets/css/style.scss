@@ -53,6 +53,10 @@ body {
   margin: 8rem 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Tipografia
 ---------------------------------------*/
 
@@ -168,6 +172,10 @@ a {
   margin-top: 3em;
 }
 
+.main-content h3 {
+  text-transform: uppercase;
+}
+
 ul li strong,
 ol li strong { 
   text-transform: uppercase;
@@ -178,8 +186,11 @@ strong {
   font-weight: 400;
 }
 
-blockquote {
+.main-content blockquote {
   margin: 3em 0;
+  border: 1px solid var(--cor-verde);
+  padding: 3em;
+  box-shadow: 5px 5px var(--cor-verde);
 }
 
 figure {
@@ -190,6 +201,9 @@ figcaption {
   padding: 0.8rem;
   font-size: 0.8rem;
   text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wrapper-conteudo {
@@ -234,11 +248,13 @@ figcaption {
   .galeria {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
   }
 
   .galeria figure {
     max-width: 50%;
-    padding: 1em;
+    padding: 1em 0.5em;
     margin: 0;
   }
 }

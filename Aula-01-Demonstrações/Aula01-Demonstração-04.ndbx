@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="3294be6e-42ba-4b2d-b84d-4c5375504eba">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="colorize2">
+        <node name="colorize1" position="3.00,2.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#00000000"/>
+            <port name="stroke" type="color" value="#67e700ff"/>
+            <port name="strokeWidth" type="float" value="10.0"/>
+        </node>
+        <node name="colorize2" position="8.00,2.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#00000000"/>
+            <port name="stroke" type="color" value="#0000ffff"/>
+            <port name="strokeWidth" type="float" value="10.0"/>
+        </node>
+        <node name="combine1" position="6.00,8.00" prototype="list.combine"/>
+        <node name="rect1" position="3.00,1.00" prototype="corevector.rect"/>
+        <node name="rect2" position="8.00,1.00" prototype="corevector.rect"/>
+        <node name="rotate1" position="3.00,4.00" prototype="corevector.rotate">
+            <port name="angle" type="float" value="45.0"/>
+        </node>
+        <node name="rotate2" position="8.00,5.00" prototype="corevector.rotate">
+            <port name="angle" type="float" value="45.0"/>
+        </node>
+        <node name="translate1" position="8.00,4.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="200.00,0.00"/>
+        </node>
+        <node name="translate2" position="3.00,5.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="200.00,0.00"/>
+        </node>
+        <conn input="translate2.shape" output="rotate1"/>
+        <conn input="rotate2.shape" output="translate1"/>
+        <conn input="colorize1.shape" output="rect1"/>
+        <conn input="rotate1.shape" output="colorize1"/>
+        <conn input="colorize2.shape" output="rect2"/>
+        <conn input="translate1.shape" output="colorize2"/>
+        <conn input="combine1.list1" output="translate2"/>
+        <conn input="combine1.list2" output="rotate2"/>
+    </node>
+</ndbx>

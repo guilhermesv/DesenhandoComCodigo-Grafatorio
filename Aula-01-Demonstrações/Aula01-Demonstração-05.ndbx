@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="a43191eb-869f-4ab0-9675-d6bd01b68ec8">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="rect2">
+        <node name="colorize1" position="35.00,5.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff0000ff"/>
+        </node>
+        <node name="colorize2" position="9.00,4.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff0000ff"/>
+        </node>
+        <node name="colorize3" position="22.00,5.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff0000ff"/>
+        </node>
+        <node name="combine1" position="9.00,3.00" prototype="list.combine"/>
+        <node name="combine2" position="22.00,3.00" prototype="list.combine"/>
+        <node name="copy1" position="35.00,1.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="2"/>
+            <port name="rotate" type="float" value="90.0"/>
+        </node>
+        <node name="grid1" position="37.00,6.00" prototype="corevector.grid">
+            <port name="columns" type="int" value="3"/>
+            <port name="rows" type="int" value="3"/>
+        </node>
+        <node name="grid2" position="11.00,6.00" prototype="corevector.grid">
+            <port name="columns" type="int" value="3"/>
+            <port name="rows" type="int" value="3"/>
+        </node>
+        <node name="grid3" position="24.00,6.00" prototype="corevector.grid">
+            <port name="columns" type="int" value="3"/>
+            <port name="rows" type="int" value="3"/>
+        </node>
+        <node name="group1" position="22.00,4.00" prototype="corevector.group"/>
+        <node name="group2" position="35.00,2.00" prototype="corevector.group"/>
+        <node name="rect1" position="35.00,-1.00" prototype="corevector.rect">
+            <port name="width" type="float" value="20.0"/>
+        </node>
+        <node name="rect2" position="9.00,-1.00" prototype="corevector.rect">
+            <port name="width" type="float" value="20.0"/>
+        </node>
+        <node name="rect3" position="22.00,-1.00" prototype="corevector.rect">
+            <port name="width" type="float" value="20.0"/>
+        </node>
+        <node name="rotate1" position="35.00,0.00" prototype="corevector.rotate">
+            <port name="angle" type="float" value="-45.0"/>
+        </node>
+        <node name="rotate2" position="9.00,1.00" prototype="corevector.rotate">
+            <port name="angle" type="float" value="-45.0"/>
+        </node>
+        <node name="rotate3" position="12.00,1.00" prototype="corevector.rotate">
+            <port name="angle" type="float" value="45.0"/>
+        </node>
+        <node name="rotate4" position="22.00,1.00" prototype="corevector.rotate">
+            <port name="angle" type="float" value="-45.0"/>
+        </node>
+        <node name="rotate5" position="25.00,1.00" prototype="corevector.rotate">
+            <port name="angle" type="float" value="45.0"/>
+        </node>
+        <node name="translate1" position="35.00,8.00" prototype="corevector.translate"/>
+        <node name="translate2" position="9.00,8.00" prototype="corevector.translate"/>
+        <node name="translate3" position="22.00,8.00" prototype="corevector.translate"/>
+        <conn input="rotate1.shape" output="rect1"/>
+        <conn input="copy1.shape" output="rotate1"/>
+        <conn input="translate1.translate" output="grid1"/>
+        <conn input="rotate2.shape" output="rect2"/>
+        <conn input="translate2.translate" output="grid2"/>
+        <conn input="translate2.shape" output="colorize2"/>
+        <conn input="rotate3.shape" output="rect2"/>
+        <conn input="combine1.list1" output="rotate2"/>
+        <conn input="combine1.list2" output="rotate3"/>
+        <conn input="colorize2.shape" output="combine1"/>
+        <conn input="rotate4.shape" output="rect3"/>
+        <conn input="translate3.translate" output="grid3"/>
+        <conn input="translate3.shape" output="colorize3"/>
+        <conn input="rotate5.shape" output="rect3"/>
+        <conn input="combine2.list1" output="rotate4"/>
+        <conn input="combine2.list2" output="rotate5"/>
+        <conn input="group1.shapes" output="combine2"/>
+        <conn input="colorize3.shape" output="group1"/>
+        <conn input="group2.shapes" output="copy1"/>
+        <conn input="colorize1.shape" output="group2"/>
+        <conn input="translate1.shape" output="colorize1"/>
+    </node>
+</ndbx>
