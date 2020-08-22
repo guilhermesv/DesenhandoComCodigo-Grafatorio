@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="7094d85c-895d-4484-bce3-3eef19b7c63a">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="rotate1">
+        <node name="add1" position="11.00,0.00" prototype="math.add">
+            <port name="value2" type="float" value="79.0"/>
+        </node>
+        <node name="align1" position="0.00,13.00" prototype="corevector.align">
+            <port name="halign" type="string" value="right"/>
+            <port name="valign" type="string" value="bottom"/>
+        </node>
+        <node name="arc1" position="3.00,6.00" prototype="corevector.arc">
+            <port name="start_angle" type="float" value="758.0"/>
+            <port name="degrees" type="float" value="90.0"/>
+        </node>
+        <node name="colorize1" position="0.00,8.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ea0000ff"/>
+        </node>
+        <node name="colorize2" position="3.00,8.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#3300eaff"/>
+        </node>
+        <node name="combine1" position="0.00,10.00" prototype="list.combine"/>
+        <node name="count1" position="5.00,2.00" prototype="list.count"/>
+        <node name="count2" position="8.00,2.00" prototype="list.count"/>
+        <node name="ellipse1" position="0.00,6.00" prototype="corevector.ellipse"/>
+        <node name="group1" position="0.00,11.00" prototype="corevector.group"/>
+        <node name="group2" position="0.00,15.00" prototype="corevector.group"/>
+        <node name="integer1" position="11.00,-1.00" prototype="math.integer">
+            <port name="value" type="int" value="67"/>
+        </node>
+        <node name="point1" position="3.00,0.00" prototype="corevector.point"/>
+        <node name="random_numbers1" position="5.00,3.00" prototype="math.random_numbers">
+            <port name="start" type="float" value="10.0"/>
+            <port name="end" type="float" value="360.0"/>
+            <port name="seed" type="int" value="131"/>
+        </node>
+        <node name="random_numbers2" position="8.00,3.00" prototype="math.random_numbers">
+            <port name="start" type="float" value="10.0"/>
+            <port name="end" type="float" value="360.0"/>
+            <port name="seed" type="int" value="112"/>
+        </node>
+        <node name="rect1" position="3.00,-1.00" prototype="corevector.rect"/>
+        <node name="reflect1" position="0.00,14.00" prototype="corevector.reflect">
+            <port name="angle" type="float" value="90.0"/>
+        </node>
+        <node name="reflect2" position="0.00,16.00" prototype="corevector.reflect">
+            <port name="angle" type="float" value="180.0"/>
+        </node>
+        <node name="rotate1" position="0.00,17.00" prototype="corevector.rotate">
+            <port name="angle" type="float" value="-45.0"/>
+        </node>
+        <conn input="point1.value" output="rect1"/>
+        <conn input="count1.list" output="point1"/>
+        <conn input="random_numbers1.amount" output="count1"/>
+        <conn input="arc1.position" output="point1"/>
+        <conn input="ellipse1.position" output="point1"/>
+        <conn input="reflect1.shape" output="align1"/>
+        <conn input="group2.shapes" output="reflect1"/>
+        <conn input="reflect2.shape" output="group2"/>
+        <conn input="rotate1.shape" output="reflect2"/>
+        <conn input="colorize1.shape" output="ellipse1"/>
+        <conn input="colorize2.shape" output="arc1"/>
+        <conn input="combine1.list1" output="colorize1"/>
+        <conn input="combine1.list2" output="colorize2"/>
+        <conn input="group1.shapes" output="combine1"/>
+        <conn input="align1.shape" output="group1"/>
+        <conn input="arc1.start_angle" output="random_numbers1"/>
+        <conn input="count2.list" output="point1"/>
+        <conn input="random_numbers2.amount" output="count2"/>
+        <conn input="arc1.degrees" output="random_numbers2"/>
+        <conn input="add1.value1" output="integer1"/>
+        <conn input="random_numbers2.seed" output="add1"/>
+        <conn input="random_numbers1.seed" output="integer1"/>
+    </node>
+</ndbx>

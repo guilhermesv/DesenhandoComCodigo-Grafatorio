@@ -142,9 +142,7 @@ Criar uma arte generativa utilizando:
 
 ### Desafio:
 
-Desafio
-AmeDesign?
-Pensar melhor
+Recriar o logo que eu fiz
 
 
 <div class="galeria">

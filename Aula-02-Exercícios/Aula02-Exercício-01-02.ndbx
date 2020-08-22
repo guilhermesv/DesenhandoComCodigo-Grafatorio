@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="883d4efe-815f-4c79-aaae-10a85e5e913a">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="combine1">
+        <node name="Brilho" position="36.00,9.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="9"/>
+            <port name="start" type="float" value="20.0"/>
+            <port name="end" type="float" value="255.0"/>
+            <port name="seed" type="int" value="61"/>
+        </node>
+        <node name="CopiaEixo" position="1.00,4.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="20"/>
+            <port name="rotate" type="float" value="18.0"/>
+        </node>
+        <node name="Cores" position="4.00,8.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="9"/>
+            <port name="end" type="float" value="255.0"/>
+            <port name="seed" type="int" value="35"/>
+        </node>
+        <node name="Eixo" position="1.00,3.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="9"/>
+            <port name="translate" type="point" value="0.00,98.00"/>
+            <port name="scale" type="point" value="95.00,95.00"/>
+        </node>
+        <node name="QtdEixos" position="6.00,0.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="1"/>
+            <port name="start" type="float" value="4.0"/>
+            <port name="end" type="float" value="30.0"/>
+            <port name="seed" type="int" value="1"/>
+        </node>
+        <node name="Sat" position="33.00,9.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="9"/>
+            <port name="end" type="float" value="255.0"/>
+            <port name="seed" type="int" value="50"/>
+        </node>
+        <node name="Seed" position="10.00,-1.00" prototype="math.integer">
+            <port name="value" type="int" value="3"/>
+        </node>
+        <node name="Tom" position="30.00,9.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="9"/>
+            <port name="end" type="float" value="255.0"/>
+            <port name="seed" type="int" value="96"/>
+        </node>
+        <node name="align2" position="29.00,16.00" prototype="corevector.align"/>
+        <node name="color7" position="32.00,2.00" prototype="color.color"/>
+        <node name="color8" position="32.00,3.00" prototype="color.color">
+            <port name="color" type="color" value="#ffd700ff"/>
+        </node>
+        <node name="colorize1" position="1.00,11.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#7d1cffff"/>
+        </node>
+        <node name="colorize2" position="29.00,12.00" prototype="corevector.colorize"/>
+        <node comment="Isso pode ser retirado, deixei apenas para ficar mais fácil a comporação com o anterior" name="colorize4" position="29.00,5.00" prototype="corevector.colorize"/>
+        <node name="combine1" position="28.00,17.00" prototype="list.combine"/>
+        <node name="combine2" position="-1.00,13.00" prototype="list.combine"/>
+        <node name="combine6" position="32.00,4.00" prototype="list.combine"/>
+        <node name="copy10" position="29.00,4.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="10"/>
+            <port name="order" type="string" value="rst"/>
+            <port name="rotate" type="float" value="4.0"/>
+            <port name="scale" type="point" value="90.00,90.00"/>
+        </node>
+        <node name="copy8" position="29.00,7.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="5"/>
+            <port name="translate" type="point" value="200.00,0.00"/>
+        </node>
+        <node name="copy9" position="29.00,6.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="5"/>
+            <port name="translate" type="point" value="0.00,200.00"/>
+        </node>
+        <node name="count1" position="4.00,7.00" prototype="list.count"/>
+        <node name="count2" position="32.00,8.00" prototype="list.count"/>
+        <node name="divide1" position="6.00,2.00" prototype="math.divide">
+            <port name="value1" type="float" value="360.0"/>
+        </node>
+        <node name="ellipse3" position="29.00,3.00" prototype="corevector.ellipse">
+            <port name="width" type="float" value="200.0"/>
+            <port name="height" type="float" value="200.0"/>
+        </node>
+        <node name="group1" position="1.00,5.00" prototype="corevector.group"/>
+        <node name="group4" position="29.00,15.00" prototype="corevector.group"/>
+        <node name="hsb_color1" position="4.00,9.00" prototype="color.hsb_color">
+            <port name="saturation" type="float" value="255.0"/>
+            <port name="brightness" type="float" value="255.0"/>
+        </node>
+        <node name="hsb_color2" position="32.00,11.00" prototype="color.hsb_color">
+            <port name="hue" type="float" value="13.0"/>
+            <port name="saturation" type="float" value="30.0"/>
+            <port name="brightness" type="float" value="280.0"/>
+        </node>
+        <node name="integer1" position="6.00,1.00" prototype="math.integer">
+            <port name="value" type="int" value="14"/>
+        </node>
+        <node name="polygon1" position="1.00,0.00" prototype="corevector.polygon">
+            <port name="radius" type="float" value="103.0"/>
+            <port name="sides" type="int" value="6"/>
+        </node>
+        <node name="rect1" position="-3.00,10.00" prototype="corevector.rect">
+            <port name="width" type="float" value="1000.0"/>
+            <port name="height" type="float" value="1000.0"/>
+        </node>
+        <node name="rect2" position="26.00,14.00" prototype="corevector.rect">
+            <port name="width" type="float" value="1000.0"/>
+            <port name="height" type="float" value="1000.0"/>
+        </node>
+        <node name="sample1" position="4.00,4.00" prototype="math.sample">
+            <port name="amount" type="int" value="6"/>
+            <port name="start" type="float" value="100.0"/>
+            <port name="end" type="float" value="28.0"/>
+        </node>
+        <node name="scale1" position="1.00,6.00" prototype="corevector.scale">
+            <port name="scale" type="point" value="80.00,80.00"/>
+        </node>
+        <node name="shuffle1" position="29.00,13.00" prototype="list.shuffle">
+            <port name="seed" type="int" value="64"/>
+        </node>
+        <conn input="scale1.shape" output="group1"/>
+        <conn input="scale1.scale" output="sample1"/>
+        <conn input="colorize1.shape" output="scale1"/>
+        <conn input="combine2.list1" output="rect1"/>
+        <conn input="combine2.list2" output="colorize1"/>
+        <conn input="copy10.shape" output="ellipse3"/>
+        <conn input="colorize4.shape" output="copy10"/>
+        <conn input="combine6.list1" output="color7"/>
+        <conn input="combine6.list2" output="color8"/>
+        <conn input="colorize4.fill" output="combine6"/>
+        <conn input="copy8.shape" output="copy9"/>
+        <conn input="colorize1.fill" output="hsb_color1"/>
+        <conn input="count1.list" output="scale1"/>
+        <conn input="divide1.value2" output="integer1"/>
+        <conn input="Eixo.shape" output="polygon1"/>
+        <conn input="group1.shapes" output="CopiaEixo"/>
+        <conn input="CopiaEixo.copies" output="integer1"/>
+        <conn input="CopiaEixo.rotate" output="divide1"/>
+        <conn input="CopiaEixo.shape" output="Eixo"/>
+        <conn input="integer1.value" output="QtdEixos"/>
+        <conn input="hsb_color1.hue" output="Cores"/>
+        <conn input="Cores.amount" output="count1"/>
+        <conn input="QtdEixos.seed" output="Seed"/>
+        <conn input="Cores.seed" output="Seed"/>
+        <conn input="count2.list" output="copy8"/>
+        <conn input="copy9.shape" output="colorize4"/>
+        <conn input="colorize2.shape" output="copy8"/>
+        <conn input="align2.shape" output="group4"/>
+        <conn input="shuffle1.list" output="colorize2"/>
+        <conn input="group4.shapes" output="shuffle1"/>
+        <conn input="combine1.list2" output="align2"/>
+        <conn input="combine1.list1" output="rect2"/>
+        <conn input="colorize2.fill" output="hsb_color2"/>
+        <conn input="Brilho.amount" output="count2"/>
+        <conn input="hsb_color2.brightness" output="Brilho"/>
+        <conn input="Sat.amount" output="count2"/>
+        <conn input="hsb_color2.saturation" output="Sat"/>
+        <conn input="Tom.amount" output="count2"/>
+        <conn input="hsb_color2.hue" output="Tom"/>
+    </node>
+</ndbx>
