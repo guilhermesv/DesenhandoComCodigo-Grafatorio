@@ -4,8 +4,9 @@
     <property name="canvasWidth" value="1000"/>
     <property name="canvasX" value="0"/>
     <property name="canvasY" value="0"/>
-    <node name="root" prototype="core.network" renderedChild="align1">
+    <node name="root" prototype="core.network" renderedChild="align2">
         <node name="align1" position="21.00,13.00" prototype="corevector.align"/>
+        <node name="align2" position="30.00,13.00" prototype="corevector.align"/>
         <node name="color1" position="4.00,6.00" prototype="color.color"/>
         <node name="color2" position="4.00,7.00" prototype="color.color">
             <port name="color" type="color" value="#00ff8cff"/>
@@ -18,6 +19,10 @@
         <node name="color6" position="24.00,5.00" prototype="color.color">
             <port name="color" type="color" value="#008cffff"/>
         </node>
+        <node name="color7" position="33.00,4.00" prototype="color.color"/>
+        <node name="color8" position="33.00,5.00" prototype="color.color">
+            <port name="color" type="color" value="#ffd700ff"/>
+        </node>
         <node name="colorize1" position="1.00,10.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#7d1cffff"/>
         </node>
@@ -25,15 +30,23 @@
             <port name="fill" type="color" value="#7d1cffff"/>
         </node>
         <node name="colorize3" position="21.00,7.00" prototype="corevector.colorize"/>
+        <node name="colorize4" position="30.00,7.00" prototype="corevector.colorize"/>
         <node name="combine1" position="4.00,8.00" prototype="list.combine"/>
         <node name="combine2" position="-1.00,13.00" prototype="list.combine"/>
         <node name="combine3" position="15.00,8.00" prototype="list.combine"/>
         <node name="combine4" position="10.00,13.00" prototype="list.combine"/>
         <node name="combine5" position="24.00,6.00" prototype="list.combine"/>
+        <node name="combine6" position="33.00,6.00" prototype="list.combine"/>
         <node name="copy1" position="1.00,3.00" prototype="corevector.copy">
             <port name="copies" type="int" value="9"/>
             <port name="translate" type="point" value="0.00,84.00"/>
             <port name="scale" type="point" value="95.00,95.00"/>
+        </node>
+        <node name="copy10" position="30.00,6.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="10"/>
+            <port name="order" type="string" value="rst"/>
+            <port name="rotate" type="float" value="4.0"/>
+            <port name="scale" type="point" value="96.00,90.00"/>
         </node>
         <node name="copy2" position="1.00,4.00" prototype="corevector.copy">
             <port name="copies" type="int" value="20"/>
@@ -60,6 +73,14 @@
             <port name="copies" type="int" value="7"/>
             <port name="translate" type="point" value="148.00,0.00"/>
         </node>
+        <node name="copy8" position="30.00,9.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="5"/>
+            <port name="translate" type="point" value="207.00,0.00"/>
+        </node>
+        <node name="copy9" position="30.00,8.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="5"/>
+            <port name="translate" type="point" value="0.00,199.00"/>
+        </node>
         <node name="ellipse1" position="12.00,2.00" prototype="corevector.ellipse">
             <port name="width" type="float" value="70.0"/>
         </node>
@@ -67,9 +88,14 @@
             <port name="width" type="float" value="200.0"/>
             <port name="height" type="float" value="200.0"/>
         </node>
+        <node name="ellipse3" position="30.00,5.00" prototype="corevector.ellipse">
+            <port name="width" type="float" value="300.0"/>
+            <port name="height" type="float" value="300.0"/>
+        </node>
         <node name="group1" position="1.00,5.00" prototype="corevector.group"/>
         <node name="group2" position="12.00,5.00" prototype="corevector.group"/>
         <node name="group3" position="21.00,12.00" prototype="corevector.group"/>
+        <node name="group4" position="30.00,12.00" prototype="corevector.group"/>
         <node name="polygon1" position="1.00,1.00" prototype="corevector.polygon">
             <port name="radius" type="float" value="103.0"/>
             <port name="sides" type="int" value="8"/>
@@ -129,5 +155,14 @@
         <conn input="align1.shape" output="group3"/>
         <conn input="copy7.shape" output="copy6"/>
         <conn input="group3.shapes" output="copy7"/>
+        <conn input="copy10.shape" output="ellipse3"/>
+        <conn input="colorize4.shape" output="copy10"/>
+        <conn input="combine6.list1" output="color7"/>
+        <conn input="combine6.list2" output="color8"/>
+        <conn input="colorize4.fill" output="combine6"/>
+        <conn input="copy9.shape" output="colorize4"/>
+        <conn input="align2.shape" output="group4"/>
+        <conn input="copy8.shape" output="copy9"/>
+        <conn input="group4.shapes" output="copy8"/>
     </node>
 </ndbx>

@@ -133,7 +133,8 @@ Nodebox é um aplicativo que permite por meio da programação visual com um sis
 # Demonstrações
 
 Arquivos criados durante ou para demonstração nas aulas práticas.
-(Inserir depois da aula)
+
+<a target="_blank" rel="noopener noreferrer" class="btn" href="https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/Aula-01-Demonstra%C3%A7%C3%B5es">Acessar demonstrações no GitHub</a>
 
 # Exercícios
 
@@ -147,11 +148,11 @@ Experimente, e principalmente se diverta :)
 
 ### Exercício 01
 
-Explorando as primitivas básicas e o nó grid criar um padrão geométrico.
+Criar padrão geométrico explorando as primitivas básicas e o nó grid. 
 
 ### Exercício 02
 
-Criar uma composição livre utilizando as transformações e o nó copie.
+Criar uma composição livre utilizando as transformações e o nó copy.
 
 ### Desafio:
 
@@ -168,13 +169,14 @@ Recriar algo similar ao resultado abaixo com parametrização do número de colu
 **Dicas**
 
 - Não se preocupe com a aplicação das cores, elas podem variar de acordo com a lógica que você seguir
-- Você vai precisar os nós de matemática para fazer algumas divisões e subtrações
+- Você vai precisar dos nós de matemática para fazer algumas divisões e subtrações
 - O nó Fit pode ajudar a definir o tamanho dos módulos
 
 # Resolução dos exercícios
 
-Todas resoluções dos exercícios e desafios podem ser baixadas no link abaixo:
+Todas as sugestões de resoluções dos exercícios e desafio podem ser baixadas no link abaixo:
 
-[Link para a solução](https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/blob/master/Aula-01-Exerc%C3%ADcios)
+<a target="_blank" rel="noopener noreferrer" class="btn" href="https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/blob/master/Aula-01-Exerc%C3%ADcios">Acessar resoluções no GitHub</a>
+
 
 Dúvidas, de como baixar o arquivo do GitHub? [Clique aqui](https://guilhermesv.github.io/DesenhandoComCodigo-Grafatorio/faq)

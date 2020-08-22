@@ -125,32 +125,42 @@ Publicação impressa criada com colagens generativas. O código produz duas var
 # Demonstrações
 
 Arquivos criados durante ou para demonstração nas aulas práticas.
-(Inserir depois da aula)
 
+<a target="_blank" rel="noopener noreferrer" class="btn" href="###">Acessar demonstrações no GitHub</a>
 
 # Exercícios
 
-### Orientação geral 
+### Exercício 01
 
-Antes de iniciar o exercío planeje o seu trabalho utilizando os conceitos de pensamento computacional aqui apresentados: abstraia a ideia principal, crie um algoritimo e caso ele esteja complexo decomponha-o em pequenas partes.
+Adicionar alguma aleatoriedade para os exercícios desenvolvidos na aula anterior. 
 
+### Exercício 02
 
-// Revisar as demonstrações das aulas passadas
-// Exercícios:
+Criar uma arte generativa utilizando:
+- Pelo menos 2 nós apresentados durante esta aula
+- Acrescentar um novo nó que não foi citado nas aulas
 
-Adicionar aleatoriade a um dos padrões anteriores
-Recriar a arte do athos Bulcão
-
+### Desafio:
 
 Desafio
 AmeDesign?
 Pensar melhor
 
 
+<div class="galeria">
+
+</div>
+
+
+**Dicas**
+
+- XXXXXX
+
 # Resolução dos exercícios
 
-Todas resoluções dos exercícios e desafios podem ser baixas no link abaixo:
+Todas as sugestões de resoluções dos exercícios e desafio podem ser baixadas no link abaixo:
 
-[Link para a solução](https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/blob/master/Aula-01-Exerc%C3%ADcios)
+<a target="_blank" rel="noopener noreferrer" class="btn" href="https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/blob/master/Aula-01-Exerc%C3%ADcios">Acessar resoluções no GitHub</a>
 
-Dúvidas, de como baixar o arquivo do GitHub? [Clique aqui]()
+
+Dúvidas, de como baixar o arquivo do GitHub? [Clique aqui](https://guilhermesv.github.io/DesenhandoComCodigo-Grafatorio/faq)
