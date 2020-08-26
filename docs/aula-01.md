@@ -4,7 +4,7 @@ title: "Desenhando com Código<br>:<br>Aula 01 — Introdução"
 
 # Conceitos
 
-## Por que é legal programar?
+## 1. Por que é legal programar?
 
 1. Autonomia: criar ferramentas, automatização e parametrização
 2. Você trabalha mais no processo e menos no resultado
@@ -12,19 +12,21 @@ title: "Desenhando com Código<br>:<br>Aula 01 — Introdução"
 4. Geração de possibilidades
 5. Expandir o espaço das ideias
 
-## Programar é sobre se comunicar
+## 2. Programar é sobre se comunicar
 
 Aprender a programar, é aprender uma forma nova de se comunicar e nesse caso inicialmente se comunicar com a máquina. Uma vez que você aprende alguns princípios dessa comunicação, fica um pouco mais fácil de se expressar em diversas linguagens de programação.
 
 Para saber mais sobre esse conceito: [Programar nunca foi sobre Código](https://www.youtube.com/watch?v=eLnLevR5mjg)
 
-## Pensamento computacional
+## 3. Pensamento computacional
+
+Para programar exercitamos muito a idéia de pensamento computacional que é:
 
 > “a utilização de  conceitos  fundamentais  da  computação para resolver  problemas,  projetar  sistemas, e  compreender comportamentos humanos”  — [Jeannette  Wing citada por Eduardo Omine](http://www.teses.usp.br/teses/disponiveis/16/16134/tde-12092014-122450/pt-br.php)
 
-De uma forma bem simples e genérica o pensamento computacional é aplicar alguns conceitos que são muito comuns e diários do universo das ciências computacionais a outros campos e situações.
+De uma forma bem simples e genérica o pensamento computacional é aplicar alguns conceitos que são muito comuns e diários do universo das ciências computacionais a outros campos e situações. Ter conhecimento de alguns desses princípios pode ajudar a resolver tanto problemas computacionais, quanto qualquer outro tipo de problema ou necessidade projetual.
 
-Destaco **4 conceitos** importantes ao começar a programar:
+Destaco aqui **4 conceitos** de pensamento computacional:
 
 ### Abstração
 
@@ -83,7 +85,7 @@ Todos os projetos aqui apresentados utilizaram outros programas em conjunto com 
 
 Eexperimento explorando composições usando três formas primitivas:  circulo, quadrado e triângulo. Para cada forma foram feitas 4 animações diferentes, sendo que cada uma delas possui 4 variações de cor e proporção do módulo.
 
-[mais informações aqui](https://www.behance.net/gallery/58421461/FORMAS)
+<a target="_blank" rel="noopener noreferrer" class="btn small" href="https://www.behance.net/gallery/58421461/FORMAS">mais informações aqui</a>
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/241052817?byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
@@ -91,8 +93,7 @@ Eexperimento explorando composições usando três formas primitivas:  circulo, 
 
 Identidade desenvolvida pelo Daó junto com a [Deia Kulpas](http://www.andreakulpas.com)para o 10º ano do DiaTipo SP, um encontro de Tipografia sem fins lucrativos. A identidade baseou-se em um padrão gerado a partir de fontes criadas por designers brasileiros, a fim de apresentar o conceito do DiaTipo: um evento construído ao longo de 10 anos por tipógrafos que cresceram junto com o evento.
 
-[mais informações aqui](https://www.behance.net/gallery/83219303/DiaTipo-Sao-Paulo-2018)
-
+<a target="_blank" rel="noopener noreferrer" class="btn small" href="https://www.behance.net/gallery/83219303/DiaTipo-Sao-Paulo-2018">mais informações aqui</a>
 
 <figure>
   <img alt="Identidade visual para o DiaTipo São Paulo" src="{{ site.url }}/aula-01/diatipo.gif">
@@ -103,18 +104,21 @@ Identidade desenvolvida pelo Daó junto com a [Deia Kulpas](http://www.andreakul
 
 Identidade visual para a empresa de business design Beyond, consultoria que cria e desenvolve ideias e serviços para negócios novos ou já consolidados.
 
-[mais informações aqui](http://www.estudiodao.com/trabalhos/beyond/)
+<a target="_blank" rel="noopener noreferrer" class="btn small" href="http://www.estudiodao.com/trabalhos/beyond/">mais informações aqui</a>
 
-<figure>
-  <img alt="Padrões lineares para identiadde visual da empresa Beyond" src="{{ site.url }}/aula-01/beyond.gif">
+<div class="galeria">
+  <figure><img alt="Padrões lineares para identiadde visual da empresa Beyond" src="{{ site.url }}/aula-01/Beyond-01.png"></figure>
+  <figure><img alt="Padrões lineares para identiadde visual da empresa Beyond" src="{{ site.url }}/aula-01/Beyond-02.png"></figure>
+  <figure><img alt="Padrões lineares para identiadde visual da empresa Beyond" src="{{ site.url }}/aula-01/Beyond-03.png"></figure>
+  <figure><img alt="Padrões lineares para identiadde visual da empresa Beyond" src="{{ site.url }}/aula-01/Beyond-04.png"></figure>
   <figcaption>Padrões lineares para identiadde visual da empresa Beyond. Fonte: <a href="http://www.estudiodao.com/trabalhos/beyond/">Daó</a></figcaption>
-</figure>
+</div>
 
 ## Vosso
 
 Composições que acompanharam o lançamento da nova identidade visual da Vosso. O trabalho é uma reinterpretação da idéia de retícula utilizada nos meios de impressão.
 
-[mais informações aqui](http://www.estudiodao.com/trabalhos/vosso/)
+<a target="_blank" rel="noopener noreferrer" class="btn small" href="http://www.estudiodao.com/trabalhos/vosso/">mais informações aqui</a>
 
 <figure>
   <img alt="Composições para os produtos promocionais da Vosso" src="{{ site.url }}/aula-01/vosso.png">
@@ -166,7 +170,7 @@ Recriar algo similar ao resultado abaixo com parametrização do número de colu
 </div>
 
 
-**Dicas**
+### Dicas
 
 - Não se preocupe com a aplicação das cores, elas podem variar de acordo com a lógica que você seguir
 - Você vai precisar dos nós de matemática para fazer algumas divisões e subtrações

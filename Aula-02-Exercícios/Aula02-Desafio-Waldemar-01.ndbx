@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="06e7e14a-6c77-47af-ac48-e44d95b4f99c">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="combine5">
+        <node name="Triangulo" position="-16.00,-4.00" prototype="core.network" renderedChild="colorize2">
+            <node name="colorize2" position="-23.00,-2.00" prototype="corevector.colorize">
+                <port name="fill" type="color" value="#ffffffff"/>
+                <port name="strokeWidth" type="float" value="8.0"/>
+            </node>
+            <node name="combine3" position="-23.00,-4.00" prototype="list.combine"/>
+            <node name="connect2" position="-23.00,-3.00" prototype="corevector.connect"/>
+            <node name="p4" position="-23.00,-6.00" prototype="corevector.make_point">
+                <port name="x" type="float" value="500.0"/>
+            </node>
+            <node name="p5" position="-20.00,-6.00" prototype="corevector.make_point">
+                <port name="x" type="float" value="-170.0"/>
+            </node>
+            <node name="p6" position="-17.00,-6.00" prototype="corevector.make_point">
+                <port name="x" type="float" value="500.0"/>
+                <port name="y" type="float" value="-208.0"/>
+            </node>
+            <port childReference="p5.x" description="The X position of the point." label="" name="x-largura" range="value" type="float" value="-170.0" widget="float"/>
+            <port childReference="p6.y" description="The Y position of the point." label="" name="y-altura" range="value" type="float" value="-208.0" widget="float"/>
+            <port childReference="colorize2.fill" description="The new fill color. Set alpha to 0 for no fill." label="" name="fill" range="value" type="color" value="#ffffffff" widget="color"/>
+            <conn input="combine3.list1" output="p4"/>
+            <conn input="combine3.list2" output="p5"/>
+            <conn input="combine3.list3" output="p6"/>
+            <conn input="connect2.points" output="combine3"/>
+            <conn input="colorize2.shape" output="connect2"/>
+        </node>
+        <node name="Triangulo1" position="-4.00,-4.00" prototype="core.network" renderedChild="colorize2">
+            <node name="colorize2" position="-23.00,-2.00" prototype="corevector.colorize">
+                <port name="fill" type="color" value="#ffffffff"/>
+                <port name="strokeWidth" type="float" value="8.0"/>
+            </node>
+            <node name="combine3" position="-23.00,-4.00" prototype="list.combine"/>
+            <node name="connect2" position="-23.00,-3.00" prototype="corevector.connect"/>
+            <node name="p4" position="-23.00,-6.00" prototype="corevector.make_point">
+                <port name="x" type="float" value="500.0"/>
+            </node>
+            <node name="p5" position="-20.00,-6.00" prototype="corevector.make_point">
+                <port name="x" type="float" value="-170.0"/>
+            </node>
+            <node name="p6" position="-17.00,-6.00" prototype="corevector.make_point">
+                <port name="x" type="float" value="500.0"/>
+                <port name="y" type="float" value="-208.0"/>
+            </node>
+            <port childReference="p5.x" description="The X position of the point." label="" name="x-largura" range="value" type="float" value="-170.0" widget="float"/>
+            <port childReference="p6.y" description="The Y position of the point." label="" name="y-altura" range="value" type="float" value="-208.0" widget="float"/>
+            <port childReference="colorize2.fill" description="The new fill color. Set alpha to 0 for no fill." label="" name="fill" range="value" type="color" value="#ffffffff" widget="color"/>
+            <conn input="combine3.list1" output="p4"/>
+            <conn input="combine3.list2" output="p5"/>
+            <conn input="combine3.list3" output="p6"/>
+            <conn input="connect2.points" output="combine3"/>
+            <conn input="colorize2.shape" output="connect2"/>
+        </node>
+        <node name="VariarLargura" position="-6.00,-8.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="1"/>
+            <port name="start" type="float" value="-1000.0"/>
+            <port name="end" type="float" value="450.0"/>
+            <port name="seed" type="int" value="20"/>
+        </node>
+        <node name="VariarLargura1" position="-3.00,-8.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="1"/>
+            <port name="start" type="float" value="-250.0"/>
+            <port name="end" type="float" value="-500.0"/>
+            <port name="seed" type="int" value="39"/>
+        </node>
+        <node name="altura" position="-15.00,-6.00" prototype="math.sample">
+            <port name="start" type="float" value="-289.0"/>
+            <port name="end" type="float" value="-172.0"/>
+        </node>
+        <node name="altura1" position="-3.00,-6.00" prototype="math.sample">
+            <port name="start" type="float" value="-250.0"/>
+            <port name="end" type="float" value="-148.0"/>
+        </node>
+        <node name="colorize1" position="-34.00,0.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ffffffff"/>
+            <port name="strokeWidth" type="float" value="8.0"/>
+        </node>
+        <node name="combine1" position="-34.00,-2.00" prototype="list.combine"/>
+        <node name="combine2" position="-34.00,8.00" prototype="list.combine"/>
+        <node name="combine4" position="-16.00,4.00" prototype="list.combine"/>
+        <node name="combine5" position="-4.00,4.00" prototype="list.combine"/>
+        <node name="connect1" position="-34.00,-1.00" prototype="corevector.connect"/>
+        <node name="integer1" position="-12.00,-8.00" prototype="math.integer">
+            <port name="value" type="int" value="5"/>
+        </node>
+        <node name="integer2" position="0.00,-8.00" prototype="math.integer">
+            <port name="value" type="int" value="5"/>
+        </node>
+        <node name="largura" position="-18.00,-6.00" prototype="math.sample">
+            <port name="start" type="float" value="-118.0"/>
+            <port name="end" type="float" value="-467.0"/>
+        </node>
+        <node name="largura1" position="-6.00,-6.00" prototype="math.sample">
+            <port name="start" type="float" value="179.0"/>
+            <port name="end" type="float" value="-500.0"/>
+        </node>
+        <node name="line1" position="-25.00,-4.00" prototype="corevector.line">
+            <port name="point1" type="point" value="0.00,-162.00"/>
+            <port name="point2" type="point" value="0.00,0.00"/>
+            <port name="points" type="int" value="5"/>
+        </node>
+        <node name="line2" position="-13.00,-4.00" prototype="corevector.line">
+            <port name="point1" type="point" value="0.00,-242.00"/>
+            <port name="point2" type="point" value="0.00,0.00"/>
+            <port name="points" type="int" value="5"/>
+        </node>
+        <node name="line3" position="-1.00,-4.00" prototype="corevector.line">
+            <port name="point1" type="point" value="0.00,-242.00"/>
+            <port name="point2" type="point" value="0.00,0.00"/>
+            <port name="points" type="int" value="5"/>
+        </node>
+        <node name="p1" position="-34.00,-4.00" prototype="corevector.make_point">
+            <port name="x" type="float" value="500.0"/>
+        </node>
+        <node name="p2" position="-31.00,-4.00" prototype="corevector.make_point">
+            <port name="x" type="float" value="-170.0"/>
+        </node>
+        <node name="p3" position="-28.00,-4.00" prototype="corevector.make_point">
+            <port name="x" type="float" value="500.0"/>
+            <port name="y" type="float" value="-315.0"/>
+        </node>
+        <node name="reflect1" position="-34.00,3.00" prototype="corevector.reflect">
+            <port name="angle" type="float" value="90.0"/>
+        </node>
+        <node name="reflect2" position="-33.00,5.00" prototype="corevector.reflect">
+            <port name="angle" type="float" value="180.0"/>
+            <port name="keep_original" type="boolean" value="false"/>
+        </node>
+        <node name="reflect3" position="-33.00,6.00" prototype="corevector.reflect">
+            <port name="angle" type="float" value="90.0"/>
+            <port name="keep_original" type="boolean" value="false"/>
+        </node>
+        <node name="reflect4" position="-15.00,2.00" prototype="corevector.reflect">
+            <port name="angle" type="float" value="90.0"/>
+            <port name="keep_original" type="boolean" value="false"/>
+        </node>
+        <node name="reflect5" position="-15.00,1.00" prototype="corevector.reflect">
+            <port name="angle" type="float" value="180.0"/>
+            <port name="keep_original" type="boolean" value="false"/>
+        </node>
+        <node name="reflect6" position="-16.00,-1.00" prototype="corevector.reflect">
+            <port name="angle" type="float" value="90.0"/>
+        </node>
+        <node name="reflect7" position="-4.00,-1.00" prototype="corevector.reflect">
+            <port name="angle" type="float" value="90.0"/>
+        </node>
+        <node name="reflect8" position="-3.00,1.00" prototype="corevector.reflect">
+            <port name="angle" type="float" value="180.0"/>
+            <port name="keep_original" type="boolean" value="false"/>
+        </node>
+        <node name="reflect9" position="-3.00,2.00" prototype="corevector.reflect">
+            <port name="angle" type="float" value="90.0"/>
+            <port name="keep_original" type="boolean" value="false"/>
+        </node>
+        <node name="translate1" position="-34.00,1.00" prototype="corevector.translate"/>
+        <node name="translate2" position="-16.00,-2.00" prototype="corevector.translate"/>
+        <node name="translate3" position="-4.00,-2.00" prototype="corevector.translate"/>
+        <conn input="combine1.list1" output="p1"/>
+        <conn input="combine1.list2" output="p2"/>
+        <conn input="combine1.list3" output="p3"/>
+        <conn input="connect1.points" output="combine1"/>
+        <conn input="colorize1.shape" output="connect1"/>
+        <conn input="translate1.shape" output="colorize1"/>
+        <conn input="translate1.translate" output="line1"/>
+        <conn input="reflect1.shape" output="translate1"/>
+        <conn input="reflect3.shape" output="reflect2"/>
+        <conn input="combine2.list2" output="reflect3"/>
+        <conn input="reflect6.shape" output="translate2"/>
+        <conn input="reflect4.shape" output="reflect5"/>
+        <conn input="combine4.list2" output="reflect4"/>
+        <conn input="translate2.translate" output="line2"/>
+        <conn input="line2.points" output="integer1"/>
+        <conn input="translate2.shape" output="Triangulo"/>
+        <conn input="largura.amount" output="integer1"/>
+        <conn input="Triangulo.x-largura" output="largura"/>
+        <conn input="altura.amount" output="integer1"/>
+        <conn input="Triangulo.y-altura" output="altura"/>
+        <conn input="reflect5.shape" output="reflect6"/>
+        <conn input="combine4.list1" output="reflect6"/>
+        <conn input="reflect2.shape" output="reflect1"/>
+        <conn input="combine2.list1" output="reflect1"/>
+        <conn input="reflect7.shape" output="translate3"/>
+        <conn input="reflect9.shape" output="reflect8"/>
+        <conn input="combine5.list2" output="reflect9"/>
+        <conn input="translate3.translate" output="line3"/>
+        <conn input="line3.points" output="integer2"/>
+        <conn input="translate3.shape" output="Triangulo1"/>
+        <conn input="largura1.amount" output="integer2"/>
+        <conn input="Triangulo1.x-largura" output="largura1"/>
+        <conn input="altura1.amount" output="integer2"/>
+        <conn input="Triangulo1.y-altura" output="altura1"/>
+        <conn input="reflect8.shape" output="reflect7"/>
+        <conn input="combine5.list1" output="reflect7"/>
+        <conn input="largura1.start" output="VariarLargura"/>
+        <conn input="altura1.start" output="VariarLargura1"/>
+    </node>
+</ndbx>

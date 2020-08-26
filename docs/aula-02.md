@@ -142,17 +142,34 @@ Criar uma arte generativa utilizando:
 
 ### Desafio:
 
-Recriar o logo que eu fiz
+O projeto [Recode](http://recodeproject.com/) propõe para comunidade de artista computacionais e interessados na área recriar artes computacionais em uma linguagem de programação mais moderna ([Processing](https://www.processing.org)). 
+
+Inspirado por esse projeto a proposta deste desafio é recriar algumas das artes abaixo:
 
 
-<div class="galeria">
+#### Waldemar Cordeiro, Idéia Visível de 1956
 
-</div>
+A obra de Waldemar Cordeiro é uma pintura única, então a forma como elas vão variar fica a seu critério.
+
+<figure>
+  <img alt="Idéia Visível, Waldemar Cordeiro, 1956" src="{{ site.url }}/aula-02/Waldemar.png">
+  <figcaption>Idéia Visível, Waldemar Cordeiro, 1956. Fonte: <a href="https://enciclopedia.itaucultural.org.br/obra2389/ideia-visivel">Itaú Cultural</a></figcaption>
+</figure>
+
+#### Steven Cullinane, Diamond Theory de 1977
+
+<figure>
+  <img alt="Steven Cullinane, Diamond Theory de 1977" src="{{ site.url }}/aula-02/StevenCullinane.png">
+  <figcaption>Steven Cullinane, Diamond Theory de 1977. Fonte: <a href="http://recodeproject.com/artwork/v2n1diamond-theory">Computer Graphics and Art</a></figcaption>
+</figure>
 
 
-**Dicas**
+### Dicas
 
-- XXXXXX
+- Olhe para a arte e tente abstrair quais os elementos essenciais e suas relações
+- Decomponha a arte em etapas para serem desenhadas
+- Quando tiver os elementos principais construídos, acrescente aleatoriedade
+- Nas minhas soluções, ambos os projetos precisaram utilizar subnetworks. Caso tenha dúvidas nesse tema tem um execelente tutorial na documentação do Nodebox, acesse neste [link](https://www.nodebox.net/node/documentation/concepts/subnetworks).
 
 # Resolução dos exercícios
 
