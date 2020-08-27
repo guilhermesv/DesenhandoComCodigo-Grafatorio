@@ -126,7 +126,7 @@ Publicação impressa criada com colagens generativas. O código produz duas var
 
 Arquivos criados durante ou para demonstração nas aulas práticas.
 
-<a target="_blank" rel="noopener noreferrer" class="btn" href="###">Acessar demonstrações no GitHub</a>
+<a target="_blank" rel="noopener noreferrer" class="btn" href="https://guilhermesv.github.io/DownGit/#/home?url=https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/Aula-02-Demonstracoes">Acessar download dos arquivos</a>
 
 # Exercícios
 
@@ -175,7 +175,7 @@ A obra de Waldemar Cordeiro é uma pintura única, então a forma como elas vão
 
 Todas as sugestões de resoluções dos exercícios e desafio podem ser baixadas no link abaixo:
 
-<a target="_blank" rel="noopener noreferrer" class="btn" href="https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/blob/master/Aula-01-Exerc%C3%ADcios">Acessar resoluções no GitHub</a>
+<a target="_blank" rel="noopener noreferrer" class="btn" href="https://guilhermesv.github.io/DownGit/#/home?url=https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/Aula-02-Exercicios">Acessar download dos arquivos</a>
 
 
 Dúvidas, de como baixar o arquivo do GitHub? [Clique aqui](https://guilhermesv.github.io/DesenhandoComCodigo-Grafatorio/faq)

@@ -138,7 +138,7 @@ Nodebox é um aplicativo que permite por meio da programação visual com um sis
 
 Arquivos criados durante ou para demonstração nas aulas práticas.
 
-<a target="_blank" rel="noopener noreferrer" class="btn" href="https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/Aula-01-Demonstra%C3%A7%C3%B5es">Acessar demonstrações no GitHub</a>
+<a target="_blank" rel="noopener noreferrer" class="btn" href="https://guilhermesv.github.io/DownGit/#/home?url=https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/Aula-01-Demonstracoes">Acessar download dos arquivos</a>
 
 # Exercícios
 
@@ -180,7 +180,7 @@ Recriar algo similar ao resultado abaixo com parametrização do número de colu
 
 Todas as sugestões de resoluções dos exercícios e desafio podem ser baixadas no link abaixo:
 
-<a target="_blank" rel="noopener noreferrer" class="btn" href="https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/blob/master/Aula-01-Exerc%C3%ADcios">Acessar resoluções no GitHub</a>
+<a target="_blank" rel="noopener noreferrer" class="btn" href="https://guilhermesv.github.io/DownGit/#/home?url=https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/Aula-01-Exercicios">Acessar download dos arquivos</a>
 
 
 Dúvidas, de como baixar o arquivo do GitHub? [Clique aqui](https://guilhermesv.github.io/DesenhandoComCodigo-Grafatorio/faq)
