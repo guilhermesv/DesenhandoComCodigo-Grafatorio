@@ -18,3 +18,8 @@ Ao fim da oficina também é solicitado a criação de um projeto final envolven
 ## Sobre mim
 
 Meu nome é Guilherme Vieira, sou um entusiasta da programação criativa, artista gráfico na [Norte](https://www.norte.in) e designer no estúdio [Daó](https://www.estudiodao.com) – o contrário também é válido. 
+
+
+## Ambiente da documentação
+
+Todo esse site é hospedado e compilado pelo [GitHub Pages](https://pages.github.com/) utilizando [Jekyll](https://jekyllrb.com/) com algumas customizações do tema [Cayman](https://github.com/pages-themes/cayman).

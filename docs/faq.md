@@ -31,18 +31,9 @@ Para baixar todo o conteúdo do repositório:
 
 # Posso utilizar os conteúdos e códigos desse repositório livremente em meus projetos?
 
-Todo o conteúdo textual e de imagens criados por mim para este site está sobre uma licença [Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR).
+Todo o conteúdo textual e de imagens criados por mim para este site está sobre uma licença [Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR) e os códigos [MIT](https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/blob/master/LICENSE.md).
 
-Trabalhos de outros autores estão indicados nas fontes, possuem seus próprios direitos originais.
+Simplificando bastante, você pode usar o conteúdo textual, de imagens e códigos criados aqui comercialmente ou não desde que compartilhe os resultados ou parte destes com essa mesma licença.
 
-Os códigos que criados de exemplos, demonstrações, exercícios e outros encontrados nesse repositório estão sobre uma licença [MIT](https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/blob/master/LICENSE.md).
+Se ficar alguma dúvida, entre contato :)
 
-O que eu 
-
-
-
-
-
-
-
-https://downgit.github.io/#/home
