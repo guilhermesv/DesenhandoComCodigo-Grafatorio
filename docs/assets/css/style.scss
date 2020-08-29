@@ -29,10 +29,14 @@
 :root {
   --cor-azul: #3939ff;
   --cor-verde: #AAFF80;
+  --cor-texto: #444;
 }
 
 body {
   font-family: 'Space Text', sans-serif;
+  color: var(--cor-texto);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 .btn {
@@ -77,6 +81,12 @@ a {
   color: var(--cor-azul);
 }
 
+a:hover,
+a:focus {
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+
 /* Header
 ---------------------------------------*/
 
@@ -85,7 +95,7 @@ a {
   background-size: cover;
   background-position: center;
   color: var(--cor-verde);
-  padding: 2rem;
+  padding: 4rem 2rem;
   min-height: 30vh;
   display: flex;
   flex-direction: column;
@@ -119,18 +129,21 @@ a {
   opacity: 1;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1em;
 }
 
-.project-name {
-  font-size: 6em;
+.home .project-name {
+  font-size: 4em;
   text-transform: uppercase;
   font-weight: 400;
+  line-height: 1.4em;
 }
 
 .page-header h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   text-transform: uppercase;
   font-weight: 400;
+  line-height: 1.4em;
 }
 
 /* Footer
@@ -161,10 +174,28 @@ a {
 ---------------------------------------*/
 
 .sumario  {
-  margin: 6rem 0;
-  padding: 0 2rem;
+  margin: 0 0 6rem 0;
+  padding: 0;
 }
 
+.sumario ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.sumario ul li a {
+  text-transform: uppercase;
+  
+}
+
+@media screen and (min-width: 1200px) {
+
+  .sumario {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
 
 
 /* Conteúdo
@@ -173,22 +204,25 @@ a {
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   color: var(--cor-azul);
   font-weight: 400;
-  
+  line-height: 1.2em;
 }
 
 .main-content h1, .main-content h2, .main-content h3 {
-  margin-top: 6rem;
+  margin-top: 9rem;
+  margin-bottom: 1em;
+  text-transform: uppercase;
 }
 
 .main-content h1 {
-  text-transform: uppercase;
+  
   font-weight: 400;
   margin-top: 3em;
 }
 
 .main-content h3 {
-  text-transform: uppercase;
+  margin-top: 3rem;
 }
+
 
 ul li strong,
 ol li strong { 
@@ -197,7 +231,11 @@ ol li strong {
 }
 
 strong {
-  font-weight: 400;
+  font-weight: 500;
+  background-color: var(--cor-verde);
+  display: inline-block;
+  padding: 0 0.3em;
+  line-height: 1.4em;
 }
 
 .main-content blockquote {
@@ -220,16 +258,23 @@ figcaption {
   margin-right: auto;
 }
 
+video {
+  display: block;
+  margin: 6rem 0;
+}
+
 .wrapper-conteudo {
   display: flex;
   flex-wrap: wrap;
+  margin: 8rem;
+  position: relative;
 }
 
 .main-content {
   max-width: 1200px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 0 2rem;
-  margin: 6rem auto;
+  margin: 0 auto;
 }
 
 .main-content > div {
@@ -254,6 +299,12 @@ figcaption {
   display: block;
 }
 
+.main-content hr {
+  background-color: var(--cor-verde);
+  width: 100%;
+  margin: 6rem auto
+}
+
 @media screen and (min-width: 600px) {
   .wrapper-conteudo {
     flex-wrap: nowrap;
@@ -262,11 +313,13 @@ figcaption {
   .galeria {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-left: -0.5em;
     margin-right: -0.5em;
   }
 
-  .galeria figure {
+  .galeria figure,
+  .galeria video {
     max-width: 50%;
     padding: 0.5em;
     margin: 0;
@@ -276,11 +329,5 @@ figcaption {
 @media screen and (min-width: 1000px) {
   .wrapper-conteudo {
     position: relative;
-  }
-
-  .sumario {
-    position: absolute;
-    left: 0;
-    top: 0;
   }
 }

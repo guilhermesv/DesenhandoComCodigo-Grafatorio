@@ -6,7 +6,7 @@ title: "Desenhando com Código<br>:<br>Aula 02 — Design Generativo"
 
 ## Definição
 
-O que faz um trabalho ser generativo e o que é arte/música/design generativo?
+O que faz um trabalho ser generativo e o que é arte/música/design/etc generativo?
 
 > “Arte generativa se refere a qualquer prática artística na qual o artista usa um sistema, [...] que é colocado em movimento com algum grau de autonomia, contribuindo para ou resultando em um trabalho completo de arte.”  — [Philip Galanter](https://www.teses.usp.br/teses/disponiveis/16/16134/tde-12092014-122450/pt-br.php)
 
@@ -60,7 +60,7 @@ Nessse trabalho o artista visual Alexandre Villares cria uma publicação impres
 
 ### Plotagens Contrast (Monica Rizzolli & Tony de Marco)
 
-Contrast é o nome da parceria entre Monica Rizzolli e Tony de Marco, onde a eles criam diversas artes que misturam conceitos computacionais, ilustração e tipografia para produzir em série peças únicas. Destaco aqui a série de desenhos feitos com [plotter de caneta](https://www.instagram.com/p/CEFX4d4nk5H/).
+Contrast é o nome da parceria entre Monica Rizzolli e Tony de Marco, onde a eles criam diversas artes que misturam conceitos computacionais, ilustração e tipografia para produzir em série peças únicas. Destaco aqui a série de desenhos feitos com [plotter de caneta](https://www.instagram.com/p/CERtAvXnUmb/).
 
 <div class="galeria">
 
@@ -85,7 +85,7 @@ Contrast é o nome da parceria entre Monica Rizzolli e Tony de Marco, onde a ele
 </div>
 
 
-## Estudos de caso - Projetos pessoais e acadêmicos
+## Estudos de caso: Projetos pessoais e acadêmicos
 
 ### Projeto U+2194
 
@@ -169,7 +169,7 @@ A obra de Waldemar Cordeiro é uma pintura única, então a forma como elas vão
 - Olhe para a arte e tente abstrair quais os elementos essenciais e suas relações
 - Decomponha a arte em etapas para serem desenhadas
 - Quando tiver os elementos principais construídos, acrescente aleatoriedade
-- Nas minhas soluções, ambos os projetos precisaram utilizar subnetworks. Caso tenha dúvidas nesse tema tem um execelente tutorial na documentação do Nodebox, acesse neste [link](https://www.nodebox.net/node/documentation/concepts/subnetworks).
+- Nas minhas soluções, ambos os projetos precisaram utilizar subnetworks. Na documentação do Nodebox tem um execelente tutorial, acesse neste [link](https://www.nodebox.net/node/documentation/concepts/subnetworks).
 
 # Resolução dos exercícios
 

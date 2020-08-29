@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="883d4efe-815f-4c79-aaae-10a85e5e913a">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="align2">
+        <node name="align2" position="8.00,10.00" prototype="corevector.align"/>
+        <node name="color7" position="11.00,0.00" prototype="color.color"/>
+        <node name="color8" position="11.00,1.00" prototype="color.color">
+            <port name="color" type="color" value="#ffd700ff"/>
+        </node>
+        <node name="colorize4" position="8.00,4.00" prototype="corevector.colorize"/>
+        <node name="combine6" position="11.00,3.00" prototype="list.combine"/>
+        <node name="copy10" position="8.00,3.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="10"/>
+            <port name="order" type="string" value="rst"/>
+            <port name="rotate" type="float" value="4.0"/>
+            <port name="scale" type="point" value="96.00,90.00"/>
+        </node>
+        <node name="copy8" position="8.00,6.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="3"/>
+            <port name="translate" type="point" value="330.00,0.00"/>
+        </node>
+        <node name="copy9" position="8.00,5.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="3"/>
+            <port name="translate" type="point" value="0.00,330.00"/>
+        </node>
+        <node name="ellipse3" position="8.00,1.00" prototype="corevector.ellipse">
+            <port name="width" type="float" value="500.0"/>
+            <port name="height" type="float" value="500.0"/>
+        </node>
+        <node name="frame1" position="16.00,-1.00" prototype="core.frame"/>
+        <node name="group4" position="8.00,9.00" prototype="corevector.group"/>
+        <node name="make_point1" position="16.00,2.00" prototype="corevector.make_point">
+            <port name="y" type="float" value="90.0"/>
+        </node>
+        <node name="wave1" position="16.00,0.00" prototype="math.wave">
+            <port name="min" type="float" value="90.0"/>
+            <port name="max" type="float" value="98.0"/>
+            <port name="period" type="float" value="200.0"/>
+            <port name="offset" type="float" value="75.0"/>
+        </node>
+        <node name="wave2" position="19.00,0.00" prototype="math.wave">
+            <port name="min" type="float" value="95.0"/>
+            <port name="max" type="float" value="90.0"/>
+            <port name="period" type="float" value="100.0"/>
+            <port name="offset" type="float" value="75.0"/>
+        </node>
+        <conn input="copy10.shape" output="ellipse3"/>
+        <conn input="colorize4.shape" output="copy10"/>
+        <conn input="combine6.list1" output="color7"/>
+        <conn input="combine6.list2" output="color8"/>
+        <conn input="colorize4.fill" output="combine6"/>
+        <conn input="copy9.shape" output="colorize4"/>
+        <conn input="align2.shape" output="group4"/>
+        <conn input="copy8.shape" output="copy9"/>
+        <conn input="group4.shapes" output="copy8"/>
+        <conn input="make_point1.x" output="wave1"/>
+        <conn input="copy10.scale" output="make_point1"/>
+        <conn input="wave1.offset" output="frame1"/>
+        <conn input="wave2.offset" output="frame1"/>
+        <conn input="make_point1.y" output="wave2"/>
+    </node>
+</ndbx>

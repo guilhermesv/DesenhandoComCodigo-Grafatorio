@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="e1e564f6-e8b4-4614-817e-022d4a776229">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="colorize1">
+        <node name="Altura" position="30.00,4.00" prototype="math.wave">
+            <port name="period" type="float" value="100.0"/>
+        </node>
+        <node name="Cor" position="30.00,8.00" prototype="math.wave">
+            <port name="max" type="float" value="255.0"/>
+            <port name="period" type="float" value="400.0"/>
+            <port name="type" type="string" value="sawtooth"/>
+        </node>
+        <node name="Largura" position="27.00,4.00" prototype="math.wave">
+            <port name="period" type="float" value="50.0"/>
+        </node>
+        <node name="colorize1" position="27.00,11.00" prototype="corevector.colorize"/>
+        <node name="ellipse1" position="3.00,6.00" prototype="corevector.ellipse"/>
+        <node name="ellipse2" position="9.00,6.00" prototype="corevector.ellipse"/>
+        <node name="ellipse3" position="18.00,6.00" prototype="corevector.ellipse"/>
+        <node name="ellipse4" position="27.00,6.00" prototype="corevector.ellipse"/>
+        <node name="frame1" position="3.00,2.00" prototype="core.frame"/>
+        <node name="frame2" position="9.00,2.00" prototype="core.frame"/>
+        <node name="frame3" position="18.00,2.00" prototype="core.frame"/>
+        <node name="frame4" position="27.00,2.00" prototype="core.frame"/>
+        <node name="hsb_color1" position="30.00,9.00" prototype="color.hsb_color">
+            <port name="saturation" type="float" value="255.0"/>
+            <port name="brightness" type="float" value="255.0"/>
+        </node>
+        <node name="rotate1" position="18.00,8.00" prototype="corevector.rotate"/>
+        <node name="rotate2" position="27.00,8.00" prototype="corevector.rotate"/>
+        <node name="wave1" position="3.00,4.00" prototype="math.wave"/>
+        <node name="wave2" position="9.00,4.00" prototype="math.wave"/>
+        <node name="wave3" position="12.00,4.00" prototype="math.wave">
+            <port name="period" type="float" value="100.0"/>
+        </node>
+        <node name="wave4" position="21.00,4.00" prototype="math.wave">
+            <port name="period" type="float" value="100.0"/>
+        </node>
+        <node name="wave5" position="18.00,4.00" prototype="math.wave"/>
+        <conn input="ellipse1.height" output="wave1"/>
+        <conn input="ellipse1.width" output="wave1"/>
+        <conn input="wave1.offset" output="frame1"/>
+        <conn input="ellipse2.width" output="wave2"/>
+        <conn input="wave2.offset" output="frame2"/>
+        <conn input="wave3.offset" output="frame2"/>
+        <conn input="ellipse2.height" output="wave3"/>
+        <conn input="ellipse3.width" output="wave5"/>
+        <conn input="wave5.offset" output="frame3"/>
+        <conn input="wave4.offset" output="frame3"/>
+        <conn input="ellipse3.height" output="wave4"/>
+        <conn input="rotate1.shape" output="ellipse3"/>
+        <conn input="rotate1.angle" output="frame3"/>
+        <conn input="rotate2.shape" output="ellipse4"/>
+        <conn input="rotate2.angle" output="frame4"/>
+        <conn input="colorize1.shape" output="rotate2"/>
+        <conn input="colorize1.fill" output="hsb_color1"/>
+        <conn input="ellipse4.width" output="Largura"/>
+        <conn input="Largura.offset" output="frame4"/>
+        <conn input="Altura.offset" output="frame4"/>
+        <conn input="ellipse4.height" output="Altura"/>
+        <conn input="Cor.offset" output="frame4"/>
+        <conn input="hsb_color1.hue" output="Cor"/>
+    </node>
+</ndbx>

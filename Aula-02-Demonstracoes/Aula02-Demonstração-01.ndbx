@@ -4,7 +4,7 @@
     <property name="canvasWidth" value="1000"/>
     <property name="canvasX" value="0"/>
     <property name="canvasY" value="0"/>
-    <node name="root" prototype="core.network" renderedChild="shuffle1">
+    <node name="root" prototype="core.network" renderedChild="random_character1">
         <node name="ellipse1" position="-8.00,-9.00" prototype="corevector.ellipse"/>
         <node name="make_strings1" position="0.00,-9.00" prototype="string.make_strings">
             <port name="string" type="string" value="goiaba branca,melão amarelo,pinha,laranja pera,carambola,chuchu,beterraba,batata doce rosada,abobrinha italiana,pepino comum,mandioca,abóbora moranga,vagem macarrão,beterraba com folha,salsa,alface lisa,alface crespa,cebolinha,espinafre,repolho verde,repolho roxo,couve manteiga,salsão,escarola,acelga,nabo,manjericão,batata asterix,batata lavada,alho chinês"/>
@@ -12,24 +12,28 @@
         </node>
         <node name="pick1" position="0.00,-7.00" prototype="list.pick">
             <port name="amount" type="int" value="7"/>
-            <port name="seed" type="int" value="58"/>
+            <port name="seed" type="int" value="144"/>
         </node>
         <node name="random_character1" position="-12.00,-7.00" prototype="string.random_character">
-            <port name="characters" type="string" value=""/>
+            <port name="characters" type="string" value="ABCDEFGHIJKLMNOPQRSTUVXYZ"/>
+            <port name="seed" type="int" value="43"/>
         </node>
-        <node name="random_numbers1" position="-12.00,-9.00" prototype="math.random_numbers"/>
+        <node name="random_numbers1" position="-12.00,-9.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="5"/>
+            <port name="seed" type="int" value="133"/>
+        </node>
         <node name="range1" position="4.00,-9.00" prototype="math.range"/>
         <node name="rect1" position="-4.00,-9.00" prototype="corevector.rect"/>
         <node name="scatter1" position="-8.00,-7.00" prototype="corevector.scatter">
             <port name="amount" type="int" value="267"/>
-            <port name="seed" type="int" value="273"/>
+            <port name="seed" type="int" value="312"/>
         </node>
         <node name="shuffle1" position="4.00,-7.00" prototype="list.shuffle">
-            <port name="seed" type="int" value="11"/>
+            <port name="seed" type="int" value="68"/>
         </node>
         <node name="wiggle2" position="-4.00,-7.00" prototype="corevector.wiggle">
-            <port name="offset" type="point" value="-61.00,-3.00"/>
-            <port name="seed" type="int" value="549"/>
+            <port name="offset" type="point" value="60.00,5.00"/>
+            <port name="seed" type="int" value="804"/>
         </node>
         <conn input="scatter1.shape" output="ellipse1"/>
         <conn input="wiggle2.shape" output="rect1"/>

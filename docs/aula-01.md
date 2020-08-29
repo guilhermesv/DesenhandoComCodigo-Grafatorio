@@ -6,11 +6,11 @@ title: "Desenhando com Código<br>:<br>Aula 01 — Introdução"
 
 ## 1. Por que é legal programar?
 
-1. Autonomia: criar ferramentas, automatização e parametrização
-2. Você trabalha mais no processo e menos no resultado
-3. Racionalização do processo criativo
-4. Geração de possibilidades
-5. Expandir o espaço das ideias
+- Autonomia: criar ferramentas, automatização e parametrização
+- Você trabalha mais no processo e menos no resultado
+- Racionalização do processo criativo
+- Geração de possibilidades
+- Expandir o espaço das ideias
 
 ## 2. Programar é sobre se comunicar
 
@@ -75,13 +75,13 @@ Exemplos: controle de volume ou equalizador em um player ou caixa de som, regist
   <figcaption>Operação de adição com números decimais. Fonte: <a href="https://vintage7080.blogspot.com/2018/01/gradiente-59-receiver-model-1450.html">Vintage 70/90</a></figcaption>
 </figure>
 
-# Projetos utilizando Nodebox
+## Projetos utilizando Nodebox
 
 Uma seleção de projetos pessoais ou desenvolvidos para o [Daó](https://estudiodao.com) que em algum momento utilizaram programação para criar elemeentos visuais.
 
 Todos os projetos aqui apresentados utilizaram outros programas em conjunto com o Nodebox.
 
-## Formas
+### Formas
 
 Eexperimento explorando composições usando três formas primitivas:  circulo, quadrado e triângulo. Para cada forma foram feitas 4 animações diferentes, sendo que cada uma delas possui 4 variações de cor e proporção do módulo.
 
@@ -89,7 +89,7 @@ Eexperimento explorando composições usando três formas primitivas:  circulo, 
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/241052817?byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-## DiaTipo São Paulo 2018
+### DiaTipo São Paulo 2018
 
 Identidade desenvolvida pelo Daó junto com a [Deia Kulpas](http://www.andreakulpas.com)para o 10º ano do DiaTipo SP, um encontro de Tipografia sem fins lucrativos. A identidade baseou-se em um padrão gerado a partir de fontes criadas por designers brasileiros, a fim de apresentar o conceito do DiaTipo: um evento construído ao longo de 10 anos por tipógrafos que cresceram junto com o evento.
 
@@ -100,7 +100,7 @@ Identidade desenvolvida pelo Daó junto com a [Deia Kulpas](http://www.andreakul
   <figcaption>Identidade visual para o DiaTipo São Paulo. Fonte: <a href="https://www.behance.net/gallery/83219303/DiaTipo-Sao-Paulo-2018">Daó + Deia Kulpas</a></figcaption>
 </figure>
 
-## Beyond
+### Beyond
 
 Identidade visual para a empresa de business design Beyond, consultoria que cria e desenvolve ideias e serviços para negócios novos ou já consolidados.
 
@@ -114,7 +114,7 @@ Identidade visual para a empresa de business design Beyond, consultoria que cria
   <figcaption>Padrões lineares para identiadde visual da empresa Beyond. Fonte: <a href="http://www.estudiodao.com/trabalhos/beyond/">Daó</a></figcaption>
 </div>
 
-## Vosso
+### Vosso
 
 Composições que acompanharam o lançamento da nova identidade visual da Vosso. O trabalho é uma reinterpretação da idéia de retícula utilizada nos meios de impressão.
 
@@ -124,6 +124,12 @@ Composições que acompanharam o lançamento da nova identidade visual da Vosso.
   <img alt="Composições para os produtos promocionais da Vosso" src="{{ site.url }}/aula-01/vosso.png">
   <figcaption>Composições para os produtos promocionais da Vosso. Fonte: <a href="http://www.estudiodao.com/trabalhos/vosso/">Daó</a></figcaption>
 </figure>
+
+## Lista de links
+
+- [https://beesandbombs.tumblr.com/](https://beesandbombs.tumblr.com/)
+
+---
 
 # Nodebox 3
 
@@ -142,23 +148,21 @@ Arquivos criados durante ou para demonstração nas aulas práticas.
 
 # Exercícios
 
-### Orientação geral 
-
 Esses são os primeiros exercícios, a ideia é que você experimente criar algo livremente no Nodebox. Caso tenha dúvida das possibilidades ou do que fazer, de uma passeada pelos exemplos do Nodebox (eles ficam no menu "File > Open Examples") ou veja os códigos que produzi para esses exercícios.
 
 Tente também criar variações da mesma ideia, as vezes um código inicial pode se transformar em uma outra coisa apenas mudando a ordem dos nós ou acrescentando um item diferente. 
 
 Experimente, e principalmente se diverta :)
 
-### Exercício 01
+## Exercício 01
 
 Criar padrão geométrico explorando as primitivas básicas e o nó grid. 
 
-### Exercício 02
+## Exercício 02
 
 Criar uma composição livre utilizando as transformações e o nó copy.
 
-### Desafio:
+## Desafio:
 
 Recriar algo similar ao resultado abaixo com parametrização do número de colunas e linhas, ou seja ao mudar a quantidade de colunas ou linhas, o padrão deve se ajustar automaticamente:
 
@@ -170,7 +174,7 @@ Recriar algo similar ao resultado abaixo com parametrização do número de colu
 </div>
 
 
-### Dicas
+## Dicas
 
 - Não se preocupe com a aplicação das cores, elas podem variar de acordo com a lógica que você seguir
 - Você vai precisar dos nós de matemática para fazer algumas divisões e subtrações
@@ -184,3 +188,4 @@ Todas as sugestões de resoluções dos exercícios e desafio podem ser baixadas
 
 
 Dúvidas, de como baixar o arquivo do GitHub? [Clique aqui](https://guilhermesv.github.io/DesenhandoComCodigo-Grafatorio/faq)
+

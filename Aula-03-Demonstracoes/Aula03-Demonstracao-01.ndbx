@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="90487aa3-3161-4e84-bba8-30c99b01ae2c">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="rotate3">
+        <node name="colorize3" position="62.00,9.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#00000000"/>
+            <port name="strokeWidth" type="float" value="4.0"/>
+        </node>
+        <node name="colorize4" position="50.00,9.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#00000000"/>
+            <port name="strokeWidth" type="float" value="12.0"/>
+        </node>
+        <node name="coordinates1" position="65.00,1.00" prototype="math.coordinates">
+            <port name="distance" type="float" value="-21.0"/>
+        </node>
+        <node name="copy2" position="62.00,11.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="44"/>
+            <port name="scale" type="point" value="150.00,150.00"/>
+        </node>
+        <node name="copy3" position="50.00,11.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="44"/>
+            <port name="scale" type="point" value="150.00,150.00"/>
+        </node>
+        <node name="divide1" position="25.00,4.00" prototype="math.divide">
+            <port name="value2" type="float" value="5.0"/>
+        </node>
+        <node name="frame1" position="9.00,3.00" prototype="core.frame"/>
+        <node name="frame2" position="17.00,3.00" prototype="core.frame"/>
+        <node name="frame3" position="25.00,3.00" prototype="core.frame"/>
+        <node name="frame4" position="66.00,3.00" prototype="core.frame"/>
+        <node name="frame5" position="54.00,3.00" prototype="core.frame"/>
+        <node name="frame6" position="-1.00,3.00" prototype="core.frame"/>
+        <node name="hsb_color3" position="66.00,6.00" prototype="color.hsb_color">
+            <port name="saturation" type="float" value="255.0"/>
+            <port name="brightness" type="float" value="255.0"/>
+        </node>
+        <node name="hsb_color4" position="54.00,6.00" prototype="color.hsb_color">
+            <port name="saturation" type="float" value="255.0"/>
+            <port name="brightness" type="float" value="255.0"/>
+        </node>
+        <node name="mod3" position="66.00,4.00" prototype="math.mod">
+            <port name="value2" type="float" value="255.0"/>
+        </node>
+        <node name="mod4" position="54.00,4.00" prototype="math.mod">
+            <port name="value2" type="float" value="255.0"/>
+        </node>
+        <node name="multiply1" position="17.00,4.00" prototype="math.multiply">
+            <port name="value2" type="float" value="5.0"/>
+        </node>
+        <node name="polygon1" position="6.00,3.00" prototype="corevector.polygon">
+            <port name="sides" type="int" value="6"/>
+        </node>
+        <node name="polygon2" position="14.00,3.00" prototype="corevector.polygon">
+            <port name="sides" type="int" value="6"/>
+        </node>
+        <node name="polygon3" position="22.00,3.00" prototype="corevector.polygon">
+            <port name="sides" type="int" value="6"/>
+        </node>
+        <node name="polygon4" position="62.00,3.00" prototype="corevector.polygon">
+            <port name="radius" type="float" value="30.0"/>
+            <port name="sides" type="int" value="6"/>
+        </node>
+        <node name="polygon5" position="50.00,3.00" prototype="corevector.polygon">
+            <port name="sides" type="int" value="6"/>
+        </node>
+        <node name="rotate1" position="6.00,6.00" prototype="corevector.rotate"/>
+        <node name="rotate2" position="14.00,6.00" prototype="corevector.rotate"/>
+        <node name="rotate3" position="22.00,6.00" prototype="corevector.rotate"/>
+        <node name="rotate4" position="62.00,6.00" prototype="corevector.rotate"/>
+        <node name="rotate5" position="50.00,6.00" prototype="corevector.rotate"/>
+        <node name="textpath1" position="-1.00,4.00" prototype="corevector.textpath">
+            <port name="font_size" type="float" value="131.0"/>
+        </node>
+        <conn input="rotate1.shape" output="polygon1"/>
+        <conn input="rotate1.angle" output="frame1"/>
+        <conn input="rotate4.shape" output="polygon4"/>
+        <conn input="rotate4.angle" output="frame4"/>
+        <conn input="mod3.value1" output="frame4"/>
+        <conn input="hsb_color3.hue" output="mod3"/>
+        <conn input="colorize3.shape" output="rotate4"/>
+        <conn input="colorize3.stroke" output="hsb_color3"/>
+        <conn input="copy2.shape" output="colorize3"/>
+        <conn input="coordinates1.angle" output="frame4"/>
+        <conn input="polygon4.position" output="coordinates1"/>
+        <conn input="rotate5.shape" output="polygon5"/>
+        <conn input="rotate5.angle" output="frame5"/>
+        <conn input="mod4.value1" output="frame5"/>
+        <conn input="hsb_color4.hue" output="mod4"/>
+        <conn input="colorize4.shape" output="rotate5"/>
+        <conn input="colorize4.stroke" output="hsb_color4"/>
+        <conn input="copy3.shape" output="colorize4"/>
+        <conn input="rotate2.shape" output="polygon2"/>
+        <conn input="multiply1.value1" output="frame2"/>
+        <conn input="rotate2.angle" output="multiply1"/>
+        <conn input="rotate3.shape" output="polygon3"/>
+        <conn input="divide1.value1" output="frame3"/>
+        <conn input="rotate3.angle" output="divide1"/>
+        <conn input="textpath1.text" output="frame6"/>
+    </node>
+</ndbx>

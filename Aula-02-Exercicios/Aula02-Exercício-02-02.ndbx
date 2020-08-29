@@ -38,7 +38,7 @@
             <node name="align3" position="13.00,9.00" prototype="corevector.align"/>
             <node name="align4" position="13.00,1.00" prototype="corevector.align"/>
             <node name="characters2" position="13.00,-9.00" prototype="string.characters">
-                <port name="string" type="string" value="MACACO"/>
+                <port name="string" type="string" value="Saci"/>
             </node>
             <node name="count2" position="15.00,-7.00" prototype="list.count"/>
             <node name="group2" position="13.00,8.00" prototype="corevector.group"/>
@@ -67,7 +67,7 @@
             </node>
             <node name="translate2" position="13.00,6.00" prototype="corevector.translate"/>
             <port childReference="integer1.value" description="" label="" name="Seed" range="value" type="int" value="149" widget="int"/>
-            <port childReference="characters2.string" description="" label="" name="Palavra" range="value" type="string" value="MACACO" widget="string"/>
+            <port childReference="characters2.string" description="" label="" name="Palavra" range="value" type="string" value="Saci" widget="string"/>
             <conn input="textpath2.text" output="characters2"/>
             <conn input="count2.list" output="characters2"/>
             <conn input="pick2.list" output="make_strings2"/>
@@ -202,7 +202,6 @@
         <conn input="translate2.shape" output="fit1"/>
         <conn input="translate2.translate" output="grid1"/>
         <conn input="change_case1.string" output="make_strings2"/>
-        <conn input="Elemento.Palavra" output="change_case1"/>
         <conn input="combine1.list7" output="colorize1"/>
         <conn input="colorize2.shape" output="rect1"/>
         <conn input="combine1.list1" output="colorize2"/>
@@ -210,5 +209,6 @@
         <conn input="combine2.list2" output="color2"/>
         <conn input="colorize1.fill" output="combine2"/>
         <conn input="colorize1.shape" output="translate2"/>
+        <conn input="Elemento.Palavra" output="change_case1"/>
     </node>
 </ndbx>

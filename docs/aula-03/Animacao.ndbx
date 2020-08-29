@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="0ffb4e21-92ab-45ef-9b6f-0f86c3f1e330">
+    <property name="canvasHeight" value="600"/>
+    <property name="canvasWidth" value="600"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="combine2">
+        <node name="add1" position="-3.00,0.00" prototype="math.add">
+            <port name="value1" type="float" value="100.0"/>
+        </node>
+        <node name="colorize1" position="-3.00,3.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff0000ff"/>
+        </node>
+        <node name="colorize2" position="8.00,4.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff0000ff"/>
+        </node>
+        <node name="combine1" position="-6.00,5.00" prototype="list.combine"/>
+        <node name="combine2" position="5.00,5.00" prototype="list.combine"/>
+        <node name="convert_range1" position="9.00,-1.00" prototype="math.convert_range">
+            <port name="source_start" type="float" value="-1.0"/>
+            <port name="source_end" type="float" value="1.0"/>
+            <port name="target_start" type="float" value="100.0"/>
+            <port name="target_end" type="float" value="500.0"/>
+        </node>
+        <node name="divide1" position="9.00,-3.00" prototype="math.divide">
+            <port name="value2" type="float" value="30.0"/>
+        </node>
+        <node name="ellipse1" position="-3.00,2.00" prototype="corevector.ellipse"/>
+        <node name="ellipse2" position="8.00,3.00" prototype="corevector.ellipse"/>
+        <node name="frame1" position="-3.00,-3.00" prototype="core.frame"/>
+        <node name="frame2" position="9.00,-5.00" prototype="core.frame"/>
+        <node name="multiply1" position="-3.00,-1.00" prototype="math.multiply">
+            <port name="value2" type="float" value="10.0"/>
+        </node>
+        <node name="rect1" position="-7.00,1.00" prototype="corevector.rect">
+            <port name="width" type="float" value="600.0"/>
+            <port name="height" type="float" value="600.0"/>
+        </node>
+        <node name="rect2" prototype="corevector.rect">
+            <port name="width" type="float" value="600.0"/>
+            <port name="height" type="float" value="600.0"/>
+        </node>
+        <node name="sin1" position="9.00,-2.00" prototype="math.sin"/>
+        <conn input="ellipse1.width" output="add1"/>
+        <conn input="ellipse1.height" output="add1"/>
+        <conn input="multiply1.value1" output="frame1"/>
+        <conn input="add1.value2" output="multiply1"/>
+        <conn input="combine1.list1" output="rect1"/>
+        <conn input="colorize1.shape" output="ellipse1"/>
+        <conn input="combine1.list7" output="colorize1"/>
+        <conn input="combine2.list1" output="rect2"/>
+        <conn input="colorize2.shape" output="ellipse2"/>
+        <conn input="combine2.list7" output="colorize2"/>
+        <conn input="convert_range1.value" output="sin1"/>
+        <conn input="ellipse2.width" output="convert_range1"/>
+        <conn input="ellipse2.height" output="convert_range1"/>
+        <conn input="divide1.value1" output="frame2"/>
+        <conn input="sin1.value" output="divide1"/>
+    </node>
+</ndbx>
