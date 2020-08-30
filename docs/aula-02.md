@@ -122,6 +122,8 @@ Publicação impressa criada com colagens generativas. O código produz duas var
   <figcaption>Exemplo de conjunto de impressos da publicação Recortes. <a href="https://www.behance.net/gallery/96345665/Recortes?tracking_source=project_owner_other_projects">Mais informações</a></figcaption>
 </figure>
 
+---
+
 # Demonstrações
 
 Arquivos criados durante ou para demonstração nas aulas práticas.

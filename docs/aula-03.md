@@ -62,18 +62,6 @@ Abaixo alguns trabalhos desenvolvidos em conjunto com seus alunos:
 <video autoplay loop controls><source src="{{ site.url }}/aula-03/HyojungSeo-05.mp4" type="video/mp4"></video>
 </div>
 
-# Lista de links
-
-- [https://beesandbombs.tumblr.com/](https://beesandbombs.tumblr.com/)
-- [https://www.instagram.com/tim_rodenbroeker/](https://www.instagram.com/tim_rodenbroeker/)
-- [http://dailydrawbot.tumblr.com/](http://dailydrawbot.tumblr.com/)
-- [https://vimeo.com/178612704](https://vimeo.com/178612704)
-- [http://echophon.tumblr.com/](http://echophon.tumblr.com/)
-- [https://necessary-disorder.tumblr.com](https://necessary-disorder.tumblr.com)
-- [http://motiontypeproject.com/](http://motiontypeproject.com/)
-- [https://www.instagram.com/motion_type_project/](https://www.instagram.com/motion_type_project/)
-- [http://code-type.com/](http://code-type.com/)
-
 ---
 
 # Demonstrações

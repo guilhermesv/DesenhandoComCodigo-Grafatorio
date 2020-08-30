@@ -5,27 +5,27 @@
     <property name="canvasX" value="0"/>
     <property name="canvasY" value="0"/>
     <node name="root" prototype="core.network" renderedChild="combine10">
-        <node name="align1" position="19.00,9.00" prototype="corevector.align">
+        <node name="align1" position="23.00,9.00" prototype="corevector.align">
             <port name="position" type="point" value="250.00,0.00"/>
             <port name="valign" type="string" value="bottom"/>
         </node>
         <node name="colorize1" position="5.00,16.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#ec2020ff"/>
         </node>
-        <node name="colorize10" position="36.00,15.00" prototype="corevector.colorize">
+        <node name="colorize10" position="46.00,15.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#ff0000ff"/>
         </node>
-        <node name="colorize11" position="25.00,18.00" prototype="corevector.colorize">
+        <node name="colorize11" position="29.00,18.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#aaff80ff"/>
         </node>
         <node name="colorize12" position="-7.00,17.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#ff000000"/>
             <port name="strokeWidth" type="float" value="0.2"/>
         </node>
-        <node name="colorize18" position="39.00,18.00" prototype="corevector.colorize">
+        <node name="colorize18" position="49.00,18.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#aaff80ff"/>
         </node>
-        <node name="colorize19" position="34.00,18.00" prototype="corevector.colorize">
+        <node name="colorize19" position="44.00,18.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#ec2020ff"/>
         </node>
         <node name="colorize2" position="-1.00,16.00" prototype="corevector.colorize">
@@ -34,35 +34,35 @@
         <node name="colorize3" position="10.00,16.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#aaff80ff"/>
         </node>
-        <node name="colorize4" position="20.00,18.00" prototype="corevector.colorize">
+        <node name="colorize4" position="24.00,18.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#ec2020ff"/>
         </node>
-        <node name="colorize5" position="16.00,18.00" prototype="corevector.colorize">
+        <node name="colorize5" position="20.00,18.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#3939ffff"/>
         </node>
-        <node name="colorize6" position="30.00,18.00" prototype="corevector.colorize">
+        <node name="colorize6" position="40.00,18.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#3939ffff"/>
         </node>
-        <node name="colorize9" position="34.00,13.00" prototype="corevector.colorize"/>
+        <node name="colorize9" position="44.00,13.00" prototype="corevector.colorize"/>
         <node name="combine1" position="3.00,20.00" prototype="list.combine"/>
-        <node name="combine10" position="33.00,20.00" prototype="list.combine"/>
+        <node name="combine10" position="43.00,20.00" prototype="list.combine"/>
         <node name="combine2" position="1.00,9.00" prototype="list.combine"/>
-        <node name="combine7" position="19.00,20.00" prototype="list.combine"/>
+        <node name="combine7" position="23.00,20.00" prototype="list.combine"/>
         <node name="compound1" position="5.00,13.00" prototype="corevector.compound">
             <port name="function" type="string" value="intersected"/>
         </node>
-        <node name="compound3" position="36.00,12.00" prototype="corevector.compound">
+        <node name="compound3" position="46.00,12.00" prototype="corevector.compound">
             <port name="function" type="string" value="intersected"/>
         </node>
-        <node name="compound4" position="33.00,7.00" prototype="corevector.compound"/>
-        <node name="compound5" position="21.00,16.00" prototype="corevector.compound">
+        <node name="compound4" position="43.00,7.00" prototype="corevector.compound"/>
+        <node name="compound5" position="25.00,16.00" prototype="corevector.compound">
             <port name="function" type="string" value="intersected"/>
         </node>
-        <node name="copy1" position="19.00,10.00" prototype="corevector.copy">
+        <node name="copy1" position="23.00,10.00" prototype="corevector.copy">
             <port name="copies" type="int" value="10"/>
             <port name="rotate" type="float" value="36.0"/>
         </node>
-        <node name="divide1" position="27.00,10.00" prototype="math.divide">
+        <node name="divide1" position="31.00,10.00" prototype="math.divide">
             <port name="value2" type="float" value="10.0"/>
         </node>
         <node name="ellipse1" position="-1.00,5.00" prototype="corevector.ellipse">
@@ -79,10 +79,10 @@
             <port name="width" type="float" value="725.0"/>
             <port name="height" type="float" value="695.0"/>
         </node>
-        <node name="ellipse4" position="23.00,11.00" prototype="corevector.ellipse"/>
+        <node name="ellipse4" position="27.00,11.00" prototype="corevector.ellipse"/>
         <node name="frame1" position="3.00,0.00" prototype="core.frame"/>
-        <node name="frame10" position="42.00,-5.00" prototype="core.frame"/>
-        <node name="frame5" position="27.00,8.00" prototype="core.frame"/>
+        <node name="frame10" position="52.00,-5.00" prototype="core.frame"/>
+        <node name="frame5" position="31.00,8.00" prototype="core.frame"/>
         <node name="grid1" position="-7.00,14.00" prototype="corevector.grid">
             <port name="columns" type="int" value="29"/>
             <port name="rows" type="int" value="36"/>
@@ -93,30 +93,30 @@
             <port name="file" type="string" value="DCC-Base-Vetor.svg"/>
             <port name="position" type="point" value="0.00,10.00"/>
         </node>
-        <node name="import_svg10" position="39.00,17.00" prototype="corevector.import_svg">
+        <node name="import_svg10" position="49.00,17.00" prototype="corevector.import_svg">
             <port name="file" type="string" value="DCC-Base-Vetor.svg"/>
             <port name="position" type="point" value="0.00,10.00"/>
         </node>
-        <node name="import_svg6" position="25.00,17.00" prototype="corevector.import_svg">
+        <node name="import_svg6" position="29.00,17.00" prototype="corevector.import_svg">
             <port name="file" type="string" value="DCC-Base-Vetor.svg"/>
             <port name="position" type="point" value="0.00,10.00"/>
         </node>
-        <node name="make_point6" position="37.00,3.00" prototype="corevector.make_point"/>
-        <node name="make_point7" position="33.00,1.00" prototype="corevector.make_point"/>
-        <node name="negate2" position="37.00,2.00" prototype="math.negate"/>
+        <node name="make_point6" position="47.00,3.00" prototype="corevector.make_point"/>
+        <node name="make_point7" position="43.00,1.00" prototype="corevector.make_point"/>
+        <node name="negate2" position="47.00,2.00" prototype="math.negate"/>
         <node name="rect1" position="-1.00,1.00" prototype="corevector.rect">
             <port name="width" type="float" value="1498.0"/>
             <port name="height" type="float" value="1859.0"/>
         </node>
-        <node name="rect10" position="37.00,0.00" prototype="corevector.rect">
+        <node name="rect10" position="47.00,0.00" prototype="corevector.rect">
             <port name="width" type="float" value="643.0"/>
             <port name="height" type="float" value="900.0"/>
         </node>
-        <node name="rect11" position="33.00,0.00" prototype="corevector.rect">
+        <node name="rect11" position="43.00,0.00" prototype="corevector.rect">
             <port name="width" type="float" value="643.0"/>
             <port name="height" type="float" value="900.0"/>
         </node>
-        <node name="rect14" position="30.00,17.00" prototype="corevector.rect">
+        <node name="rect14" position="40.00,17.00" prototype="corevector.rect">
             <port name="width" type="float" value="1450.0"/>
             <port name="height" type="float" value="1800.0"/>
         </node>
@@ -124,11 +124,11 @@
             <port name="width" type="float" value="1450.0"/>
             <port name="height" type="float" value="1800.0"/>
         </node>
-        <node name="rect4" position="16.00,17.00" prototype="corevector.rect">
+        <node name="rect4" position="20.00,17.00" prototype="corevector.rect">
             <port name="width" type="float" value="1450.0"/>
             <port name="height" type="float" value="1800.0"/>
         </node>
-        <node name="rect5" position="19.00,4.00" prototype="corevector.rect">
+        <node name="rect5" position="23.00,4.00" prototype="corevector.rect">
             <port name="width" type="float" value="121.0"/>
             <port name="height" type="float" value="82.0"/>
         </node>
@@ -136,7 +136,7 @@
             <port name="width" type="float" value="50.0"/>
             <port name="height" type="float" value="50.0"/>
         </node>
-        <node name="reflect1" position="37.00,10.00" prototype="corevector.reflect">
+        <node name="reflect1" position="47.00,10.00" prototype="corevector.reflect">
             <port name="angle" type="float" value="90.0"/>
             <port name="keep_original" type="boolean" value="false"/>
         </node>
@@ -144,7 +144,7 @@
             <port name="length" type="float" value="5.0"/>
             <port name="points" type="int" value="1"/>
         </node>
-        <node name="resample14" position="33.00,8.00" prototype="corevector.resample"/>
+        <node name="resample14" position="43.00,8.00" prototype="corevector.resample"/>
         <node name="resample2" position="3.00,6.00" prototype="corevector.resample">
             <port name="length" type="float" value="5.0"/>
             <port name="points" type="int" value="1"/>
@@ -153,27 +153,27 @@
             <port name="length" type="float" value="5.0"/>
             <port name="points" type="int" value="1"/>
         </node>
-        <node name="resample4" position="23.00,13.00" prototype="corevector.resample">
+        <node name="resample4" position="27.00,13.00" prototype="corevector.resample">
             <port name="length" type="float" value="5.0"/>
         </node>
-        <node name="resample8" position="19.00,8.00" prototype="corevector.resample"/>
-        <node name="rotate1" position="19.00,13.00" prototype="corevector.rotate">
+        <node name="resample8" position="23.00,8.00" prototype="corevector.resample"/>
+        <node name="rotate1" position="23.00,13.00" prototype="corevector.rotate">
             <port name="angle" type="float" value="242.0"/>
         </node>
-        <node name="scale1" position="19.00,7.00" prototype="corevector.scale">
+        <node name="scale1" position="23.00,7.00" prototype="corevector.scale">
             <port name="scale" type="point" value="81.00,814.00"/>
         </node>
-        <node name="skew4" position="33.00,2.00" prototype="corevector.skew">
+        <node name="skew4" position="43.00,2.00" prototype="corevector.skew">
             <port name="skew" type="point" value="-44.00,0.00"/>
         </node>
-        <node name="skew5" position="37.00,4.00" prototype="corevector.skew">
+        <node name="skew5" position="47.00,4.00" prototype="corevector.skew">
             <port name="skew" type="point" value="44.00,0.00"/>
         </node>
         <node name="snap1" position="1.00,11.00" prototype="corevector.snap">
             <port name="distance" type="float" value="50.0"/>
             <port name="position" type="point" value="-25.00,0.00"/>
         </node>
-        <node name="snap12" position="33.00,9.00" prototype="corevector.snap">
+        <node name="snap12" position="43.00,9.00" prototype="corevector.snap">
             <port name="distance" type="float" value="50.0"/>
             <port name="position" type="point" value="-25.00,0.00"/>
         </node>
@@ -181,18 +181,18 @@
             <port name="distance" type="float" value="50.0"/>
             <port name="position" type="point" value="-25.00,0.00"/>
         </node>
-        <node name="snap5" position="19.00,14.00" prototype="corevector.snap">
+        <node name="snap5" position="23.00,14.00" prototype="corevector.snap">
             <port name="distance" type="float" value="50.0"/>
             <port name="position" type="point" value="-25.00,0.00"/>
         </node>
-        <node name="snap7" position="23.00,14.00" prototype="corevector.snap">
+        <node name="snap7" position="27.00,14.00" prototype="corevector.snap">
             <port name="distance" type="float" value="50.0"/>
             <port name="position" type="point" value="-25.00,0.00"/>
         </node>
-        <node name="translate3" position="37.00,5.00" prototype="corevector.translate">
+        <node name="translate3" position="47.00,5.00" prototype="corevector.translate">
             <port name="translate" type="point" value="0.00,450.00"/>
         </node>
-        <node name="translate4" position="33.00,3.00" prototype="corevector.translate">
+        <node name="translate4" position="43.00,3.00" prototype="corevector.translate">
             <port name="translate" type="point" value="0.00,-450.00"/>
         </node>
         <node name="wave1" position="-1.00,3.00" prototype="math.wave">
@@ -209,12 +209,12 @@
             <port name="max" type="float" value="0.0"/>
             <port name="period" type="float" value="300.0"/>
         </node>
-        <node name="wave6" position="38.00,-3.00" prototype="math.wave">
+        <node name="wave6" position="48.00,-3.00" prototype="math.wave">
             <port name="min" type="float" value="-50.0"/>
             <port name="max" type="float" value="50.0"/>
             <port name="period" type="float" value="200.0"/>
         </node>
-        <node name="wave7" position="23.00,9.00" prototype="math.wave">
+        <node name="wave7" position="27.00,9.00" prototype="math.wave">
             <port name="min" type="float" value="1000.0"/>
             <port name="max" type="float" value="-500.0"/>
             <port name="period" type="float" value="300.0"/>

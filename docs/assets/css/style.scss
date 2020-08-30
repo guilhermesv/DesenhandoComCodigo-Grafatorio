@@ -57,6 +57,7 @@ body {
   color:var(--cor-verde);
   background-color: var(--cor-azul);
   border-color: var(--cor-azul);
+  border-width: 1px;
 }
 
 .fim {
@@ -266,7 +267,7 @@ video {
 .wrapper-conteudo {
   display: flex;
   flex-wrap: wrap;
-  margin: 8rem;
+  margin: 8rem auto;
   position: relative;
 }
 
@@ -278,7 +279,7 @@ video {
 }
 
 .main-content > div {
-  margin: 6rem 0;
+  margin: 6rem auto;
 }
 
 
