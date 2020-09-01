@@ -4,7 +4,7 @@ title: "Cartaz - Desenhando com código"
 
 # Proposta
 
-Criar um cartaz inspiracional generativo e/ou animado de divulgação do término do curso.
+Criar um cartaz inspiracional generativo e/ou animado de divulgação do término do curso. O cartaz produzido será apresentado por você na última aula para toda a turma.
 
 ## Especificações:
 
