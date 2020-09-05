@@ -35,10 +35,8 @@ A classificação é bem genérica e muitos links poderiam caber em mais de uma 
 - [Schultzschultz](https://www.instagram.com/schultzschultzgrafik/)
 - [Freny Antony](https://www.instagram.com/procedural.disarray/)
 - [Ambos](http://ambos.art.br/)
-- Acrescentar CozyCoding
-- Acrescentar Rodjun
-
-
+- [CoziCoding](https://www.twitch.tv/cozycoding)
+- [Rodjun](https://www.twitch.tv/rodjunjun)
 
 # Artistas ou projetos com foco em animação
 - [Motion Type Project](https://motiontypeproject.com/)
@@ -54,7 +52,15 @@ A classificação é bem genérica e muitos links poderiam caber em mais de uma 
 - [What I learned from the $2,000 elusive design book “Designing Programmes”](https://medium.com/svilenk/what-i-learned-from-the-2-000-elusive-design-book-designing-programmes-f518faefcf4b)
 - [Design  Gráfico  Computacional — DrawBot  como  ferramenta  de  produção visual, Marck Al](https://files.cercomp.ufg.br/weby/up/777/o/18_drawbot.pdf)
 - [Projeto, programa, produção. Gustavo Ferreira](http://hipertipo.com/presentations/projeto-programa-producao.html)
+- [Taxonomia de temas para o ensino de programação em contexto visual](https://abav.lugaralgum.com/mestrado/)
 
+# Outras ferramentas para programação criativa
+
+- [Processing](processing.org/)
+- [p5.js](https://p5js.org/)
+- [Cables](https://cables.gl/)
+- [OpenFrameworks](https://openframeworks.cc)
+- [Shoebot](https://shoebot.github.io/shoebot/)
 
 
 

@@ -10,7 +10,7 @@ Nessa página é só você escolher a opção do NodeBox 3 referente ao seu sist
 
 # Como baixar as demonstrações, exemplos e resoluções dos exercícios no GitHub?
 
-Nas páginas de cada aula você encontrar botões na seção de demonstrações e exercícios com um link que te redireciona para uma página que automaticamente baixa os arquivos do GitHub.
+Nas páginas de cada aula você irá encontrar botões na seção de demonstrações e exercícios com um link que te redireciona para uma página que automaticamente baixa os arquivos do GitHub.
 
 Caso você queira algum outro código do repositório o caminho mais simples é:
 

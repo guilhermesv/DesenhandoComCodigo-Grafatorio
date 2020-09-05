@@ -83,7 +83,7 @@ Todos os projetos aqui apresentados utilizaram outros programas em conjunto com 
 
 ### Formas
 
-Eexperimento explorando composições usando três formas primitivas:  circulo, quadrado e triângulo. Para cada forma foram feitas 4 animações diferentes, sendo que cada uma delas possui 4 variações de cor e proporção do módulo.
+Experimento explorando composições usando três formas primitivas:  circulo, quadrado e triângulo. Para cada forma foram feitas 4 animações diferentes, sendo que cada uma delas possui 4 variações de cor e proporção do módulo.
 
 <a target="_blank" rel="noopener noreferrer" class="btn small" href="https://www.behance.net/gallery/58421461/FORMAS">mais informações aqui</a>
 
@@ -148,7 +148,7 @@ Esses são os primeiros exercícios, a ideia é que você experimente criar algo
 
 Tente também criar variações da mesma ideia, as vezes um código inicial pode se transformar em uma outra coisa apenas mudando a ordem dos nós ou acrescentando um item diferente. 
 
-Experimente, e principalmente se diverta :)
+Experimente, e principalmente se divirta :)
 
 ## Exercício 01
 

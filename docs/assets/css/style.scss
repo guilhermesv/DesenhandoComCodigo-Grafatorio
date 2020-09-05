@@ -182,6 +182,12 @@ a:focus {
 .sumario ul {
   margin: 0;
   list-style-type: none;
+  
+}
+
+.sumario ul li {
+  line-height: 1.3em;
+  margin-bottom: 0.5em;
 }
 
 .sumario ul li a {
@@ -189,7 +195,7 @@ a:focus {
   
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
 
   .sumario {
     position: absolute;
