@@ -4,7 +4,7 @@
     <property name="canvasWidth" value="1000"/>
     <property name="canvasX" value="0"/>
     <property name="canvasY" value="0"/>
-    <node name="root" prototype="core.network" renderedChild="group1">
+    <node name="root" prototype="core.network" renderedChild="ellipse1">
         <node name="colorize1" position="11.00,7.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#f100ffff"/>
         </node>
@@ -56,13 +56,13 @@
             <port name="end" type="float" value="500.0"/>
         </node>
         <node name="shift1" position="7.00,-2.00" prototype="list.shift">
-            <port name="amount" type="int" value="6"/>
+            <port name="amount" type="int" value="3"/>
         </node>
         <node name="wave1" position="-8.00,7.00" prototype="math.wave"/>
         <node name="wave2" position="-1.00,5.00" prototype="math.wave">
-            <port name="max" type="float" value="162.0"/>
-            <port name="period" type="float" value="190.0"/>
-            <port name="offset" type="float" value="244.0"/>
+            <port name="max" type="float" value="200.0"/>
+            <port name="period" type="float" value="500.0"/>
+            <port name="offset" type="float" value="867.0"/>
         </node>
         <node name="wave3" position="12.00,3.00" prototype="math.wave">
             <port name="min" type="float" value="-100.0"/>
@@ -91,7 +91,6 @@
         <conn input="make_point1.y" output="wave2"/>
         <conn input="ellipse1.position" output="make_point1"/>
         <conn input="make_point1.x" output="sample1"/>
-        <conn input="wave2.offset" output="sample1"/>
         <conn input="multiply1.value1" output="frame2"/>
         <conn input="mod1.value1" output="multiply1"/>
         <conn input="colorize2.shape" output="ellipse5"/>
@@ -99,5 +98,6 @@
         <conn input="group1.shapes" output="combine1"/>
         <conn input="make_point4.y" output="wave3"/>
         <conn input="ellipse5.position" output="make_point4"/>
+        <conn input="wave2.offset" output="sample1"/>
     </node>
 </ndbx>

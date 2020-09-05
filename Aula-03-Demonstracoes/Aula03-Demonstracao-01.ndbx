@@ -4,7 +4,7 @@
     <property name="canvasWidth" value="1000"/>
     <property name="canvasX" value="0"/>
     <property name="canvasY" value="0"/>
-    <node name="root" prototype="core.network" renderedChild="rotate3">
+    <node name="root" prototype="core.network" renderedChild="frame6">
         <node name="colorize3" position="62.00,9.00" prototype="corevector.colorize">
             <port name="fill" type="color" value="#00000000"/>
             <port name="strokeWidth" type="float" value="4.0"/>
