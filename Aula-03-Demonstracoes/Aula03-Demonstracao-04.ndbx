@@ -4,7 +4,7 @@
     <property name="canvasWidth" value="1000"/>
     <property name="canvasX" value="0"/>
     <property name="canvasY" value="0"/>
-    <node name="root" prototype="core.network" renderedChild="combine2">
+    <node name="root" prototype="core.network" renderedChild="combine1">
         <node name="add1" position="18.00,3.00" prototype="math.add">
             <port name="value2" type="float" value="50.0"/>
         </node>
