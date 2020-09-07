@@ -91,7 +91,7 @@ Experimento explorando composições usando três formas primitivas:  circulo, q
 
 ### DiaTipo São Paulo 2018
 
-Identidade desenvolvida pelo Daó junto com a [Deia Kulpas](http://www.andreakulpas.com)para o 10º ano do DiaTipo SP, um encontro de Tipografia sem fins lucrativos. A identidade baseou-se em um padrão gerado a partir de fontes criadas por designers brasileiros, a fim de apresentar o conceito do DiaTipo: um evento construído ao longo de 10 anos por tipógrafos que cresceram junto com o evento.
+Identidade desenvolvida pelo Daó junto com a [Deia Kulpas](http://www.andreakulpas.com) para o 10º ano do DiaTipo SP, um encontro de Tipografia sem fins lucrativos. A identidade baseou-se em um padrão gerado a partir de fontes criadas por designers brasileiros, a fim de apresentar o conceito do DiaTipo: um evento construído ao longo de 10 anos por tipógrafos que cresceram junto com o evento.
 
 <a target="_blank" rel="noopener noreferrer" class="btn small" href="https://www.behance.net/gallery/83219303/DiaTipo-Sao-Paulo-2018">mais informações aqui</a>
 
