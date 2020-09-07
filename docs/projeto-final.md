@@ -34,7 +34,7 @@ Além do material apresentado no curso, dentro do repositório é possível aces
 
 Como tipografia não é uma temática abordada especificamente durante o curso no link abaixo você encontra algumas explorações envolvendo letras:
 
-<a target="_blank" rel="noopener noreferrer" class="btn" href="https://guilhermesv.github.io/DownGit/#/home?url=https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/Divulga%C3%A7%C3%A3o/Produ%C3%A7%C3%A3o">Arquivos extras sobre tipografia</a>
+<a target="_blank" rel="noopener noreferrer" class="btn" href="https://guilhermesv.github.io/DownGit/#/home?url=https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/Extras-Tipografia">Arquivos extras sobre tipografia</a>
 
 ## Sugestões de estratégias
 
