@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="6e4b5a5f-fb78-4a8f-94aa-aaeacd6d8458">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="translate3">
+        <node name="add1" position="13.00,11.00" prototype="math.add"/>
+        <node name="add2" position="24.00,11.00" prototype="math.add"/>
+        <node name="compound1" position="-3.00,7.00" prototype="corevector.compound">
+            <port name="function" type="string" value="intersected"/>
+        </node>
+        <node name="compound2" position="8.00,7.00" prototype="corevector.compound">
+            <port name="function" type="string" value="intersected"/>
+        </node>
+        <node name="compound3" position="19.00,7.00" prototype="corevector.compound">
+            <port name="function" type="string" value="intersected"/>
+        </node>
+        <node name="copy1" position="2.00,4.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="5"/>
+        </node>
+        <node name="copy2" position="13.00,4.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="5"/>
+        </node>
+        <node name="copy3" position="24.00,4.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="5"/>
+        </node>
+        <node name="count1" position="2.00,8.00" prototype="list.count"/>
+        <node name="count2" position="13.00,8.00" prototype="list.count"/>
+        <node name="count3" position="24.00,8.00" prototype="list.count"/>
+        <node name="frame1" position="14.00,10.00" prototype="core.frame"/>
+        <node name="frame2" position="25.00,10.00" prototype="core.frame"/>
+        <node name="make_point1" position="2.00,10.00" prototype="corevector.make_point"/>
+        <node name="make_point2" position="12.00,13.00" prototype="corevector.make_point"/>
+        <node name="make_point3" position="23.00,13.00" prototype="corevector.make_point"/>
+        <node name="random_numbers1" position="24.00,9.00" prototype="math.random_numbers">
+            <port name="seed" type="int" value="88"/>
+        </node>
+        <node name="rect1" position="2.00,3.00" prototype="corevector.rect">
+            <port name="width" type="float" value="667.0"/>
+            <port name="height" type="float" value="16.0"/>
+        </node>
+        <node name="rect2" position="13.00,3.00" prototype="corevector.rect">
+            <port name="width" type="float" value="667.0"/>
+            <port name="height" type="float" value="16.0"/>
+        </node>
+        <node name="rect3" position="24.00,3.00" prototype="corevector.rect">
+            <port name="width" type="float" value="667.0"/>
+            <port name="height" type="float" value="16.0"/>
+        </node>
+        <node comment="Experimente valores diferentes" name="sample1" position="2.00,9.00" prototype="math.sample">
+            <port name="end" type="float" value="21.0"/>
+        </node>
+        <node name="sample2" position="13.00,9.00" prototype="math.sample">
+            <port name="end" type="float" value="30.0"/>
+        </node>
+        <node name="stack1" position="2.00,5.00" prototype="corevector.stack">
+            <port name="direction" type="string" value="n"/>
+            <port name="margin" type="float" value="0.0"/>
+        </node>
+        <node name="stack2" position="13.00,5.00" prototype="corevector.stack">
+            <port name="direction" type="string" value="n"/>
+            <port name="margin" type="float" value="0.0"/>
+        </node>
+        <node name="stack3" position="24.00,5.00" prototype="corevector.stack">
+            <port name="direction" type="string" value="n"/>
+            <port name="margin" type="float" value="0.0"/>
+        </node>
+        <node name="textpath1" position="-3.00,3.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="DESENHANDO"/>
+            <port name="font_name" type="string" value="Arial"/>
+            <port name="font_size" type="float" value="93.0"/>
+        </node>
+        <node name="textpath2" position="8.00,3.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="DESENHANDO"/>
+            <port name="font_name" type="string" value="Arial"/>
+            <port name="font_size" type="float" value="93.0"/>
+        </node>
+        <node name="textpath3" position="19.00,3.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="DESENHANDO"/>
+            <port name="font_name" type="string" value="Arial"/>
+            <port name="font_size" type="float" value="93.0"/>
+        </node>
+        <node name="translate1" position="-3.00,12.00" prototype="corevector.translate"/>
+        <node name="translate2" position="8.00,16.00" prototype="corevector.translate"/>
+        <node name="translate3" position="19.00,16.00" prototype="corevector.translate"/>
+        <node name="wave1" position="12.00,12.00" prototype="math.wave">
+            <port name="min" type="float" value="-10.0"/>
+            <port name="max" type="float" value="10.0"/>
+            <port name="period" type="float" value="100.0"/>
+        </node>
+        <node name="wave2" position="23.00,12.00" prototype="math.wave">
+            <port name="min" type="float" value="-10.0"/>
+            <port name="max" type="float" value="10.0"/>
+            <port name="period" type="float" value="100.0"/>
+        </node>
+        <conn input="copy1.shape" output="rect1"/>
+        <conn input="stack1.shapes" output="copy1"/>
+        <conn input="compound1.shape1" output="textpath1"/>
+        <conn input="compound1.shape2" output="stack1"/>
+        <conn input="translate1.shape" output="compound1"/>
+        <conn input="count1.list" output="stack1"/>
+        <conn input="sample1.amount" output="count1"/>
+        <conn input="make_point1.x" output="sample1"/>
+        <conn input="translate1.translate" output="make_point1"/>
+        <conn input="copy2.shape" output="rect2"/>
+        <conn input="stack2.shapes" output="copy2"/>
+        <conn input="compound2.shape1" output="textpath2"/>
+        <conn input="compound2.shape2" output="stack2"/>
+        <conn input="translate2.shape" output="compound2"/>
+        <conn input="count2.list" output="stack2"/>
+        <conn input="sample2.amount" output="count2"/>
+        <conn input="translate2.translate" output="make_point2"/>
+        <conn input="add1.value1" output="sample2"/>
+        <conn input="add1.value2" output="frame1"/>
+        <conn input="make_point2.x" output="wave1"/>
+        <conn input="wave1.offset" output="add1"/>
+        <conn input="copy3.shape" output="rect3"/>
+        <conn input="stack3.shapes" output="copy3"/>
+        <conn input="compound3.shape1" output="textpath3"/>
+        <conn input="compound3.shape2" output="stack3"/>
+        <conn input="translate3.shape" output="compound3"/>
+        <conn input="count3.list" output="stack3"/>
+        <conn input="translate3.translate" output="make_point3"/>
+        <conn input="add2.value2" output="frame2"/>
+        <conn input="make_point3.x" output="wave2"/>
+        <conn input="wave2.offset" output="add2"/>
+        <conn input="random_numbers1.amount" output="count3"/>
+        <conn input="add2.value1" output="random_numbers1"/>
+    </node>
+</ndbx>

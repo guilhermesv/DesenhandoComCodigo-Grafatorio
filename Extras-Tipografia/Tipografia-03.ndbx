@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="6e4b5a5f-fb78-4a8f-94aa-aaeacd6d8458">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="stack1">
+        <node name="CaixaTexto" position="10.00,4.00" prototype="core.network" renderedChild="group1">
+            <node name="colorize1" position="6.00,5.00" prototype="corevector.colorize"/>
+            <node name="colorize2" position="9.00,5.00" prototype="corevector.colorize">
+                <port name="fill" type="color" value="#00ff00ff"/>
+            </node>
+            <node name="combine1" position="6.00,6.00" prototype="list.combine"/>
+            <node name="fit_to2" position="6.00,4.00" prototype="corevector.fit_to">
+                <port name="keep_proportions" type="boolean" value="false"/>
+            </node>
+            <node name="group1" position="6.00,7.00" prototype="corevector.group"/>
+            <node name="rect2" position="9.00,3.00" prototype="corevector.rect"/>
+            <node name="textpath2" position="6.00,2.00" prototype="corevector.textpath">
+                <port name="text" type="string" value="DESENHANDO"/>
+                <port name="font_name" type="string" value="Arial"/>
+                <port name="font_size" type="float" value="114.0"/>
+            </node>
+            <port childReference="rect2.width" description="The width of the rectangle." label="" name="width" range="value" type="float" value="100.0" widget="float"/>
+            <port childReference="rect2.height" description="The height of the rectangle." label="" name="height" range="value" type="float" value="100.0" widget="float"/>
+            <port childReference="textpath2.text" description="The input text." label="" name="text" range="value" type="string" value="DESENHANDO" widget="string"/>
+            <port childReference="colorize1.fill" description="The new fill color. Set alpha to 0 for no fill." label="" name="corTexto" range="value" type="color" value="#000000ff" widget="color"/>
+            <port childReference="colorize2.fill" description="The new fill color. Set alpha to 0 for no fill." label="" name="corRetangulo" range="value" type="color" value="#00ff00ff" widget="color"/>
+            <conn input="fit_to2.shape" output="textpath2"/>
+            <conn input="fit_to2.bounding" output="rect2"/>
+            <conn input="colorize1.shape" output="fit_to2"/>
+            <conn input="colorize2.shape" output="rect2"/>
+            <conn input="combine1.list1" output="colorize2"/>
+            <conn input="combine1.list2" output="colorize1"/>
+            <conn input="group1.shapes" output="combine1"/>
+        </node>
+        <node name="CaixaTexto1" position="21.00,4.00" prototype="core.network" renderedChild="group1">
+            <node name="colorize1" position="6.00,5.00" prototype="corevector.colorize"/>
+            <node name="colorize2" position="9.00,5.00" prototype="corevector.colorize">
+                <port name="fill" type="color" value="#00ff00ff"/>
+            </node>
+            <node name="combine1" position="6.00,6.00" prototype="list.combine"/>
+            <node name="fit_to2" position="6.00,4.00" prototype="corevector.fit_to">
+                <port name="keep_proportions" type="boolean" value="false"/>
+            </node>
+            <node name="group1" position="6.00,7.00" prototype="corevector.group"/>
+            <node name="rect2" position="9.00,3.00" prototype="corevector.rect"/>
+            <node name="textpath2" position="6.00,2.00" prototype="corevector.textpath">
+                <port name="text" type="string" value="DESENHANDO"/>
+                <port name="font_name" type="string" value="Arial"/>
+                <port name="font_size" type="float" value="114.0"/>
+            </node>
+            <port childReference="rect2.width" description="The width of the rectangle." label="" name="width" range="value" type="float" value="100.0" widget="float"/>
+            <port childReference="rect2.height" description="The height of the rectangle." label="" name="height" range="value" type="float" value="100.0" widget="float"/>
+            <port childReference="textpath2.text" description="The input text." label="" name="text" range="value" type="string" value="DESENHANDO" widget="string"/>
+            <port childReference="colorize1.fill" description="The new fill color. Set alpha to 0 for no fill." label="" name="corTexto" range="value" type="color" value="#000000ff" widget="color"/>
+            <port childReference="colorize2.fill" description="The new fill color. Set alpha to 0 for no fill." label="" name="corRetangulo" range="value" type="color" value="#00ff00ff" widget="color"/>
+            <conn input="fit_to2.shape" output="textpath2"/>
+            <conn input="fit_to2.bounding" output="rect2"/>
+            <conn input="colorize1.shape" output="fit_to2"/>
+            <conn input="colorize2.shape" output="rect2"/>
+            <conn input="combine1.list1" output="colorize2"/>
+            <conn input="combine1.list2" output="colorize1"/>
+            <conn input="group1.shapes" output="combine1"/>
+        </node>
+        <node name="count1" position="16.00,6.00" prototype="list.count"/>
+        <node name="count2" position="27.00,6.00" prototype="list.count"/>
+        <node name="fit_to1" position="0.00,6.00" prototype="corevector.fit_to">
+            <port name="keep_proportions" type="boolean" value="false"/>
+        </node>
+        <node name="frame1" position="25.00,10.00" prototype="core.frame"/>
+        <node name="grid1" position="13.00,7.00" prototype="corevector.grid">
+            <port name="columns" type="int" value="15"/>
+            <port name="rows" type="int" value="15"/>
+            <port name="width" type="float" value="715.0"/>
+            <port name="height" type="float" value="832.0"/>
+        </node>
+        <node name="grid2" position="24.00,6.00" prototype="corevector.grid">
+            <port name="columns" type="int" value="15"/>
+            <port name="rows" type="int" value="15"/>
+            <port name="width" type="float" value="715.0"/>
+            <port name="height" type="float" value="832.0"/>
+        </node>
+        <node comment="Altera todos os seeds" name="integer1" position="5.00,0.00" prototype="math.integer">
+            <port name="value" type="int" value="37"/>
+        </node>
+        <node name="integer2" position="15.00,0.00" prototype="math.integer">
+            <port name="value" type="int" value="73"/>
+        </node>
+        <node name="integer3" position="26.00,0.00" prototype="math.integer">
+            <port name="value" type="int" value="6"/>
+        </node>
+        <node name="make_point1" position="25.00,12.00" prototype="corevector.make_point"/>
+        <node name="make_strings1" position="0.00,1.00" prototype="string.make_strings">
+            <port name="string" type="string" value="DESENHANDO;COM;CÓDIGO"/>
+        </node>
+        <node name="make_strings2" position="10.00,0.00" prototype="string.make_strings">
+            <port name="string" type="string" value="DESENHANDO;COM;CÓDIGO"/>
+        </node>
+        <node name="make_strings3" position="21.00,1.00" prototype="string.make_strings">
+            <port name="string" type="string" value="DESENHANDO;COM;CÓDIGO"/>
+        </node>
+        <node name="pick1" position="13.00,8.00" prototype="list.pick"/>
+        <node name="pick2" position="24.00,8.00" prototype="list.pick">
+            <port name="seed" type="int" value="26"/>
+        </node>
+        <node name="random_numbers1" position="3.00,2.00" prototype="math.random_numbers">
+            <port name="start" type="float" value="20.0"/>
+            <port name="end" type="float" value="332.0"/>
+            <port name="seed" type="int" value="2"/>
+        </node>
+        <node name="random_numbers2" position="6.00,2.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="8"/>
+            <port name="start" type="float" value="20.0"/>
+            <port name="end" type="float" value="87.0"/>
+        </node>
+        <node name="random_numbers3" position="13.00,2.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="46"/>
+            <port name="start" type="float" value="50.0"/>
+            <port name="end" type="float" value="478.0"/>
+            <port name="seed" type="int" value="2"/>
+        </node>
+        <node name="random_numbers4" position="16.00,2.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="8"/>
+            <port name="start" type="float" value="20.0"/>
+            <port name="end" type="float" value="155.0"/>
+        </node>
+        <node name="random_numbers5" position="27.00,2.00" prototype="math.random_numbers">
+            <port name="start" type="float" value="20.0"/>
+            <port name="end" type="float" value="155.0"/>
+        </node>
+        <node name="random_numbers6" position="24.00,2.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="5"/>
+            <port name="start" type="float" value="50.0"/>
+            <port name="end" type="float" value="478.0"/>
+            <port name="seed" type="int" value="2"/>
+        </node>
+        <node name="rect1" position="3.00,4.00" prototype="corevector.rect"/>
+        <node name="stack1" position="0.00,7.00" prototype="corevector.stack">
+            <port name="direction" type="string" value="s"/>
+        </node>
+        <node name="textpath1" position="0.00,2.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="DESENHANDO"/>
+            <port name="font_name" type="string" value="Arial"/>
+            <port name="font_size" type="float" value="114.0"/>
+        </node>
+        <node name="translate1" position="10.00,10.00" prototype="corevector.translate"/>
+        <node name="translate2" position="21.00,15.00" prototype="corevector.translate"/>
+        <node name="wave1" position="25.00,11.00" prototype="math.wave">
+            <port name="min" type="float" value="-833.0"/>
+            <port name="max" type="float" value="200.0"/>
+            <port name="period" type="float" value="200.0"/>
+        </node>
+        <node name="wiggle1" position="24.00,13.00" prototype="corevector.wiggle">
+            <port name="offset" type="point" value="0.00,10.00"/>
+        </node>
+        <conn input="rect1.width" output="random_numbers1"/>
+        <conn input="rect1.height" output="random_numbers2"/>
+        <conn input="fit_to1.shape" output="textpath1"/>
+        <conn input="fit_to1.bounding" output="rect1"/>
+        <conn input="stack1.shapes" output="fit_to1"/>
+        <conn input="random_numbers1.seed" output="integer1"/>
+        <conn input="random_numbers2.seed" output="integer1"/>
+        <conn input="textpath1.text" output="make_strings1"/>
+        <conn input="random_numbers3.seed" output="integer2"/>
+        <conn input="random_numbers4.seed" output="integer2"/>
+        <conn input="pick1.list" output="grid1"/>
+        <conn input="pick1.amount" output="count1"/>
+        <conn input="translate1.translate" output="pick1"/>
+        <conn input="CaixaTexto.width" output="random_numbers3"/>
+        <conn input="CaixaTexto.height" output="random_numbers4"/>
+        <conn input="CaixaTexto.text" output="make_strings2"/>
+        <conn input="count1.list" output="CaixaTexto"/>
+        <conn input="translate1.shape" output="CaixaTexto"/>
+        <conn input="random_numbers6.seed" output="integer3"/>
+        <conn input="random_numbers5.seed" output="integer3"/>
+        <conn input="pick2.list" output="grid2"/>
+        <conn input="pick2.amount" output="count2"/>
+        <conn input="CaixaTexto1.width" output="random_numbers6"/>
+        <conn input="CaixaTexto1.height" output="random_numbers5"/>
+        <conn input="CaixaTexto1.text" output="make_strings3"/>
+        <conn input="count2.list" output="CaixaTexto1"/>
+        <conn input="translate2.shape" output="CaixaTexto1"/>
+        <conn input="pick1.seed" output="integer2"/>
+        <conn input="pick2.seed" output="integer3"/>
+        <conn input="wiggle1.shape" output="pick2"/>
+        <conn input="translate2.translate" output="wiggle1"/>
+        <conn input="wiggle1.offset" output="make_point1"/>
+        <conn input="make_point1.x" output="wave1"/>
+        <conn input="wave1.offset" output="frame1"/>
+    </node>
+</ndbx>

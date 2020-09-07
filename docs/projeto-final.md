@@ -30,16 +30,16 @@ Fique a vontade para utilizar os códigos apresentados como exercícios e demons
 
 Além do material apresentado no curso, dentro do repositório é possível acessar os arquivos originais do material de divulgação da oficina:
 
-[Arquivos utilizados para criar o cartaz de divulgação](https://guilhermesv.github.io/DownGit/#/home?url=https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/Divulga%C3%A7%C3%A3o/Produ%C3%A7%C3%A3o)
+<a target="_blank" rel="noopener noreferrer" class="btn" href="https://guilhermesv.github.io/DownGit/#/home?url=https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/Divulga%C3%A7%C3%A3o/Produ%C3%A7%C3%A3o">Arquivos utilizados para criar o cartaz de divulgação</a>
 
 ## Sugestões de estratégias
 
 Caso você ainda esteja perdido sobre o que fazer, aqui vai algumas sugestões de estratégias para orientar seu projeto.
 
-1. Escolha a príncipio qual será principal técnica a ser explorada no cartaz.
+1. Escolha a príncipio qual será a principal técnica a ser explorada no cartaz.
 2. Defina inicialmente se o foco vai ser a manipulação da tipografia ou a criação de grafismos ou fundo.
 3. Dependendo da complexidade da diagramação que você quiser fazer, lembre que é impossível importar arquivos vetoriais no formato SVG para o Nodebox.
-4. Construa uma ideia inicial simples, mas que você entenda o que está acontecendo
+4. Construa uma ideia inicial simples, mas que você entenda o que está acontecendo.
 5. Experimente, bagunce valores e adicione complexidade!
 6. Repita o passo 5 muitas vezes :)
 

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="6e4b5a5f-fb78-4a8f-94aa-aaeacd6d8458">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="translate1">
+        <node name="align1" position="-8.00,5.00" prototype="corevector.align"/>
+        <node name="align2" position="1.00,5.00" prototype="corevector.align"/>
+        <node name="align3" position="10.00,5.00" prototype="corevector.align"/>
+        <node name="align4" position="24.00,5.00" prototype="corevector.align"/>
+        <node name="centroid1" position="-5.00,5.00" prototype="corevector.centroid"/>
+        <node name="centroid2" position="4.00,5.00" prototype="corevector.centroid"/>
+        <node name="centroid3" position="13.00,5.00" prototype="corevector.centroid"/>
+        <node name="centroid4" position="27.00,5.00" prototype="corevector.centroid"/>
+        <node name="colorize1" position="18.00,9.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ffffffff"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="colorize2" position="32.00,9.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ffffffff"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="colorize3" position="32.00,15.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ffffffff"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="combine1" position="14.00,12.00" prototype="list.combine"/>
+        <node name="combine2" position="24.00,13.00" prototype="list.combine"/>
+        <node name="combine3" position="24.00,17.00" prototype="list.combine"/>
+        <node name="compound1" position="32.00,14.00" prototype="corevector.compound">
+            <port name="function" type="string" value="intersected"/>
+        </node>
+        <node name="ellipse1" position="18.00,8.00" prototype="corevector.ellipse"/>
+        <node name="ellipse2" position="32.00,8.00" prototype="corevector.ellipse"/>
+        <node name="frame1" position="5.00,6.00" prototype="core.frame"/>
+        <node name="group1" position="25.00,10.00" prototype="corevector.group"/>
+        <node name="group2" position="33.00,10.00" prototype="corevector.group"/>
+        <node name="import_svg1" position="-8.00,2.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="Tipografia.svg"/>
+        </node>
+        <node name="import_svg2" position="1.00,2.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="Tipografia.svg"/>
+        </node>
+        <node name="import_svg3" position="10.00,2.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="Tipografia.svg"/>
+        </node>
+        <node name="import_svg4" position="24.00,2.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="Tipografia.svg"/>
+        </node>
+        <node name="import_svg5" position="-12.00,2.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="Tipografia.svg"/>
+        </node>
+        <node comment="Mude aqui para alterar todos os seed" name="integer1" position="18.00,2.00" prototype="math.integer">
+            <port name="value" type="int" value="2"/>
+        </node>
+        <node comment="Mude aqui para alterar todos os seed" name="integer2" position="32.00,2.00" prototype="math.integer">
+            <port name="value" type="int" value="12"/>
+        </node>
+        <node name="make_point1" position="-4.00,6.00" prototype="corevector.make_point">
+            <port name="y" type="float" value="14.0"/>
+        </node>
+        <node name="make_point2" position="5.00,8.00" prototype="corevector.make_point">
+            <port name="y" type="float" value="14.0"/>
+        </node>
+        <node name="make_point3" position="14.00,6.00" prototype="corevector.make_point">
+            <port name="y" type="float" value="14.0"/>
+        </node>
+        <node name="make_point4" position="28.00,6.00" prototype="corevector.make_point">
+            <port name="y" type="float" value="14.0"/>
+        </node>
+        <node name="rect1" position="18.00,5.00" prototype="corevector.rect">
+            <port name="width" type="float" value="593.0"/>
+            <port name="height" type="float" value="238.0"/>
+        </node>
+        <node name="rect2" position="32.00,5.00" prototype="corevector.rect">
+            <port name="width" type="float" value="593.0"/>
+            <port name="height" type="float" value="238.0"/>
+        </node>
+        <node name="scatter1" position="18.00,7.00" prototype="corevector.scatter">
+            <port name="amount" type="int" value="10"/>
+        </node>
+        <node name="scatter2" position="32.00,7.00" prototype="corevector.scatter">
+            <port name="amount" type="int" value="10"/>
+        </node>
+        <node name="shuffle1" position="14.00,13.00" prototype="list.shuffle"/>
+        <node name="shuffle2" position="24.00,14.00" prototype="list.shuffle"/>
+        <node name="translate1" position="-8.00,9.00" prototype="corevector.translate"/>
+        <node name="translate2" position="1.00,10.00" prototype="corevector.translate"/>
+        <node name="translate3" position="10.00,9.00" prototype="corevector.translate"/>
+        <node name="translate4" position="24.00,9.00" prototype="corevector.translate"/>
+        <node name="ungroup1" position="-8.00,3.00" prototype="corevector.ungroup"/>
+        <node name="ungroup2" position="1.00,3.00" prototype="corevector.ungroup"/>
+        <node name="ungroup3" position="10.00,3.00" prototype="corevector.ungroup"/>
+        <node name="ungroup4" position="24.00,3.00" prototype="corevector.ungroup"/>
+        <node name="wave1" position="5.00,7.00" prototype="math.wave">
+            <port name="max" type="float" value="50.0"/>
+            <port name="period" type="float" value="100.0"/>
+        </node>
+        <node comment="Mude o seed" name="wiggle1" position="-5.00,7.00" prototype="corevector.wiggle">
+            <port name="offset" type="point" value="100.00,100.00"/>
+            <port name="seed" type="int" value="65"/>
+        </node>
+        <node comment="Mude o seed" name="wiggle2" position="4.00,9.00" prototype="corevector.wiggle">
+            <port name="offset" type="point" value="100.00,100.00"/>
+            <port name="seed" type="int" value="114"/>
+        </node>
+        <node name="wiggle3" position="13.00,7.00" prototype="corevector.wiggle">
+            <port name="offset" type="point" value="100.00,100.00"/>
+            <port name="seed" type="int" value="114"/>
+        </node>
+        <node name="wiggle4" position="27.00,7.00" prototype="corevector.wiggle">
+            <port name="offset" type="point" value="100.00,100.00"/>
+            <port name="seed" type="int" value="114"/>
+        </node>
+        <conn input="ungroup1.shape" output="import_svg1"/>
+        <conn input="centroid1.shape" output="ungroup1"/>
+        <conn input="wiggle1.shape" output="centroid1"/>
+        <conn input="wiggle1.offset" output="make_point1"/>
+        <conn input="align1.shape" output="ungroup1"/>
+        <conn input="translate1.shape" output="align1"/>
+        <conn input="translate1.translate" output="wiggle1"/>
+        <conn input="ungroup2.shape" output="import_svg2"/>
+        <conn input="centroid2.shape" output="ungroup2"/>
+        <conn input="wiggle2.shape" output="centroid2"/>
+        <conn input="wiggle2.offset" output="make_point2"/>
+        <conn input="align2.shape" output="ungroup2"/>
+        <conn input="translate2.shape" output="align2"/>
+        <conn input="translate2.translate" output="wiggle2"/>
+        <conn input="make_point2.y" output="wave1"/>
+        <conn input="wave1.offset" output="frame1"/>
+        <conn input="make_point2.x" output="wave1"/>
+        <conn input="ungroup3.shape" output="import_svg3"/>
+        <conn input="centroid3.shape" output="ungroup3"/>
+        <conn input="wiggle3.shape" output="centroid3"/>
+        <conn input="wiggle3.offset" output="make_point3"/>
+        <conn input="align3.shape" output="ungroup3"/>
+        <conn input="translate3.shape" output="align3"/>
+        <conn input="translate3.translate" output="wiggle3"/>
+        <conn input="scatter1.shape" output="rect1"/>
+        <conn input="ellipse1.position" output="scatter1"/>
+        <conn input="combine1.list1" output="translate3"/>
+        <conn input="colorize1.shape" output="ellipse1"/>
+        <conn input="combine1.list2" output="colorize1"/>
+        <conn input="shuffle1.list" output="combine1"/>
+        <conn input="wiggle3.seed" output="integer1"/>
+        <conn input="scatter1.seed" output="integer1"/>
+        <conn input="ungroup4.shape" output="import_svg4"/>
+        <conn input="centroid4.shape" output="ungroup4"/>
+        <conn input="wiggle4.shape" output="centroid4"/>
+        <conn input="wiggle4.offset" output="make_point4"/>
+        <conn input="align4.shape" output="ungroup4"/>
+        <conn input="translate4.shape" output="align4"/>
+        <conn input="translate4.translate" output="wiggle4"/>
+        <conn input="scatter2.shape" output="rect2"/>
+        <conn input="ellipse2.position" output="scatter2"/>
+        <conn input="combine2.list1" output="translate4"/>
+        <conn input="colorize2.shape" output="ellipse2"/>
+        <conn input="combine2.list2" output="colorize2"/>
+        <conn input="shuffle2.list" output="combine2"/>
+        <conn input="wiggle4.seed" output="integer2"/>
+        <conn input="scatter2.seed" output="integer2"/>
+        <conn input="group1.shapes" output="translate4"/>
+        <conn input="compound1.shape1" output="group1"/>
+        <conn input="group2.shapes" output="colorize2"/>
+        <conn input="compound1.shape2" output="group2"/>
+        <conn input="colorize3.shape" output="compound1"/>
+        <conn input="combine3.list1" output="shuffle2"/>
+        <conn input="combine3.list2" output="colorize3"/>
+        <conn input="shuffle2.seed" output="integer2"/>
+    </node>
+</ndbx>

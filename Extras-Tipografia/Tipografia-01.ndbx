@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="6e4b5a5f-fb78-4a8f-94aa-aaeacd6d8458">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="translate1">
+        <node name="colorize1" position="0.00,3.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ffffffff"/>
+            <port name="strokeWidth" type="float" value="2.0"/>
+        </node>
+        <node name="colorize2" position="7.00,3.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ffffffff"/>
+            <port name="strokeWidth" type="float" value="2.0"/>
+        </node>
+        <node name="colorize3" position="14.00,3.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ffffffff"/>
+            <port name="strokeWidth" type="float" value="2.0"/>
+        </node>
+        <node name="colorize4" position="16.00,9.00" prototype="corevector.colorize"/>
+        <node name="combine1" position="14.00,11.00" prototype="list.combine"/>
+        <node name="ellipse1" position="17.00,2.00" prototype="corevector.ellipse"/>
+        <node comment="Experimentar apertar clear e desenhar outras linhas" name="freehand1" position="3.00,2.00" prototype="corevector.freehand">
+            <port name="path" type="string" value="M-78.00,-251.50  -78.00,-250.50  -77.00,-249.50  -77.00,-247.50  -76.00,-245.50  -75.00,-242.50  -74.00,-240.50  -74.00,-237.50  -73.00,-235.50  -72.00,-232.50  -71.00,-230.50  -70.00,-228.50  -70.00,-226.50  -69.00,-223.50  -68.00,-221.50  -67.00,-219.50  -66.00,-216.50  -65.00,-213.50  -64.00,-210.50  -63.00,-207.50  -62.00,-204.50  -60.00,-201.50  -59.00,-198.50  -58.00,-195.50  -57.00,-192.50  -56.00,-189.50  -55.00,-186.50  -53.00,-180.50  -52.00,-177.50  -51.00,-174.50  -50.00,-171.50  -48.00,-165.50  -47.00,-162.50  -45.00,-156.50  -44.00,-153.50  -42.00,-147.50  -40.00,-141.50  -38.00,-135.50  -36.00,-132.50  -32.00,-122.50  -29.00,-115.50  -27.00,-109.50  -24.00,-100.50  -22.00,-95.50  -21.00,-92.50  -19.00,-87.50  -18.00,-84.50  -15.00,-78.50  -12.00,-69.50  -8.00,-58.50  -5.00,-51.50  -2.00,-44.50  2.00,-36.50  5.00,-31.50  9.00,-25.50  13.00,-19.50  19.00,-10.50  26.00,0.50  34.00,8.50  40.00,13.50  50.00,21.50  56.00,27.50  64.00,34.50  72.00,41.50  84.00,50.50  101.00,60.50  116.00,67.50  132.00,73.50  147.00,80.50  159.00,87.50  171.00,94.50  186.00,103.50  197.00,111.50  206.00,120.50  214.00,130.50  217.00,141.50  217.00,151.50  212.00,161.50  207.00,171.50  200.00,181.50  193.00,190.50  186.00,199.50  175.00,210.50  165.00,219.50  155.00,227.50  145.00,235.50  136.00,242.50  126.00,250.50  115.00,258.50  105.00,265.50  95.00,273.50  86.00,280.50  84.00,282.50  84.00,283.50 M-350.22,106.16  -356.31,119.88  -359.36,139.70  -362.41,156.46  -363.94,168.66  -363.94,183.90  -360.89,197.61  -353.27,212.86  -344.12,229.62  -330.40,244.86  -313.64,261.63  -298.40,275.35  -281.63,284.49  -269.44,295.16  -254.20,308.88  -237.43,325.64  -223.71,343.93  -210.00,362.22  -206.95,380.51  -210.00,398.80  -219.14,420.14  -226.76,439.96  -226.76,441.48  -226.76,443.00 M408.81,-390.71  399.67,-378.52  378.33,-355.66  356.99,-331.27  337.18,-311.45  318.89,-293.16  294.50,-274.87  273.16,-256.58  253.35,-242.87  230.49,-227.63  213.72,-215.43  201.53,-206.29  192.38,-197.14  183.24,-184.95  168.00,-166.66  149.71,-140.75  131.42,-113.31  120.75,-90.45  111.60,-69.11  110.08,-55.40  108.55,-41.68  107.03,-32.53  107.03,-31.01 M-373.08,-437.96  -353.27,-386.14  -327.36,-326.70  -306.02,-293.16  -284.68,-264.21  -274.01,-233.72  -269.44,-212.38  -266.39,-195.62  -266.39,-186.47  -266.39,-180.38  -266.39,-178.85  -267.91,-174.28  -272.49,-168.18  -277.06,-163.61 M309.74,119.88  289.93,119.88  277.73,121.41  262.49,129.03  239.63,144.27  215.24,168.66  195.43,186.95  186.29,202.19  183.24,211.33  180.19,228.10  180.19,252.48  196.95,273.82  224.39,290.59  248.78,298.21  262.49,302.78  273.16,304.31  280.78,305.83  285.36,307.35  285.36,308.88  300.60,333.26  315.84,365.27  324.98,394.23  329.56,412.52  331.08,426.24  332.60,438.43  332.60,447.58  332.60,449.10  332.60,450.62  332.60,452.15  314.31,487.20  303.65,513.11  302.12,516.16  302.12,517.69  300.60,517.69 "/>
+        </node>
+        <node name="last1" position="16.00,8.00" prototype="list.last"/>
+        <node name="point1" position="3.00,4.00" prototype="corevector.point"/>
+        <node name="point2" position="10.00,4.00" prototype="corevector.point"/>
+        <node name="point3" position="17.00,4.00" prototype="corevector.point"/>
+        <node comment="Experimente substituir essa forma por outra coisa" name="rect1" position="10.00,2.00" prototype="corevector.rect">
+            <port name="width" type="float" value="507.0"/>
+            <port name="height" type="float" value="324.0"/>
+        </node>
+        <node name="resample1" position="3.00,3.00" prototype="corevector.resample"/>
+        <node name="resample2" position="10.00,3.00" prototype="corevector.resample"/>
+        <node name="resample3" position="17.00,3.00" prototype="corevector.resample"/>
+        <node name="textpath1" position="0.00,2.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="CÓDIGO"/>
+            <port name="font_name" type="string" value="Arial"/>
+            <port name="font_size" type="float" value="114.0"/>
+        </node>
+        <node name="textpath2" position="7.00,2.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="CÓDIGO"/>
+            <port name="font_name" type="string" value="Arial"/>
+            <port name="font_size" type="float" value="114.0"/>
+        </node>
+        <node name="textpath3" position="14.00,2.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="CÓDIGO"/>
+            <port name="font_name" type="string" value="Arial"/>
+            <port name="font_size" type="float" value="114.0"/>
+        </node>
+        <node name="translate1" position="0.00,7.00" prototype="corevector.translate"/>
+        <node name="translate2" position="7.00,7.00" prototype="corevector.translate"/>
+        <node name="translate3" position="14.00,7.00" prototype="corevector.translate"/>
+        <conn input="colorize1.shape" output="textpath1"/>
+        <conn input="resample1.shape" output="freehand1"/>
+        <conn input="point1.value" output="resample1"/>
+        <conn input="translate1.translate" output="point1"/>
+        <conn input="translate1.shape" output="colorize1"/>
+        <conn input="colorize2.shape" output="textpath2"/>
+        <conn input="point2.value" output="resample2"/>
+        <conn input="translate2.translate" output="point2"/>
+        <conn input="translate2.shape" output="colorize2"/>
+        <conn input="resample2.shape" output="rect1"/>
+        <conn input="colorize3.shape" output="textpath3"/>
+        <conn input="point3.value" output="resample3"/>
+        <conn input="translate3.translate" output="point3"/>
+        <conn input="translate3.shape" output="colorize3"/>
+        <conn input="last1.list" output="translate3"/>
+        <conn input="combine1.list1" output="translate3"/>
+        <conn input="colorize4.shape" output="last1"/>
+        <conn input="combine1.list2" output="colorize4"/>
+        <conn input="resample3.shape" output="ellipse1"/>
+    </node>
+</ndbx>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="6e4b5a5f-fb78-4a8f-94aa-aaeacd6d8458">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="fit1">
+        <node name="fit1" position="0.00,5.00" prototype="corevector.fit">
+            <port name="keep_proportions" type="boolean" value="false"/>
+        </node>
+        <node name="fit2" position="11.00,5.00" prototype="corevector.fit">
+            <port name="keep_proportions" type="boolean" value="false"/>
+        </node>
+        <node name="fit3" position="5.00,8.00" prototype="corevector.fit">
+            <port name="keep_proportions" type="boolean" value="false"/>
+        </node>
+        <node name="fit4" position="16.00,7.00" prototype="corevector.fit">
+            <port name="keep_proportions" type="boolean" value="false"/>
+        </node>
+        <node name="frame1" position="6.00,4.00" prototype="core.frame"/>
+        <node name="frame2" position="17.00,3.00" prototype="core.frame"/>
+        <node comment="Experimente alternar os valores de start e end" name="sample1" position="1.00,3.00" prototype="math.sample">
+            <port name="amount" type="int" value="5"/>
+            <port name="start" type="float" value="200.0"/>
+            <port name="end" type="float" value="95.0"/>
+        </node>
+        <node name="sample2" position="12.00,3.00" prototype="math.sample">
+            <port name="amount" type="int" value="5"/>
+            <port name="start" type="float" value="101.0"/>
+            <port name="end" type="float" value="35.0"/>
+        </node>
+        <node name="sample3" position="6.00,6.00" prototype="math.sample">
+            <port name="amount" type="int" value="5"/>
+            <port name="start" type="float" value="150.0"/>
+            <port name="end" type="float" value="95.0"/>
+        </node>
+        <node name="sample4" position="17.00,5.00" prototype="math.sample">
+            <port name="amount" type="int" value="5"/>
+            <port name="start" type="float" value="101.0"/>
+            <port name="end" type="float" value="35.0"/>
+        </node>
+        <node name="stack1" position="11.00,6.00" prototype="corevector.stack">
+            <port name="direction" type="string" value="s"/>
+            <port name="margin" type="float" value="0.0"/>
+        </node>
+        <node name="stack2" position="16.00,8.00" prototype="corevector.stack">
+            <port name="direction" type="string" value="s"/>
+            <port name="margin" type="float" value="-4.0"/>
+        </node>
+        <node name="textpath1" position="0.00,2.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="DESENHANDO"/>
+            <port name="font_name" type="string" value="Arial"/>
+            <port name="font_size" type="float" value="114.0"/>
+        </node>
+        <node name="textpath2" position="11.00,2.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="DESENHANDO"/>
+            <port name="font_name" type="string" value="Arial"/>
+            <port name="font_size" type="float" value="114.0"/>
+        </node>
+        <node name="textpath3" position="5.00,2.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="DESENHANDO"/>
+            <port name="font_name" type="string" value="Arial"/>
+            <port name="font_size" type="float" value="114.0"/>
+        </node>
+        <node name="textpath4" position="16.00,2.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="DESENHANDO"/>
+            <port name="font_name" type="string" value="Arial"/>
+            <port name="font_size" type="float" value="114.0"/>
+        </node>
+        <node name="wave1" position="6.00,5.00" prototype="math.wave">
+            <port name="min" type="float" value="10.0"/>
+        </node>
+        <node name="wave2" position="17.00,4.00" prototype="math.wave">
+            <port name="min" type="float" value="-200.0"/>
+            <port name="max" type="float" value="0.0"/>
+            <port name="period" type="float" value="144.0"/>
+        </node>
+        <conn input="fit1.shape" output="textpath1"/>
+        <conn input="fit1.height" output="sample1"/>
+        <conn input="fit2.shape" output="textpath2"/>
+        <conn input="fit2.height" output="sample2"/>
+        <conn input="stack1.shapes" output="fit2"/>
+        <conn input="fit3.shape" output="textpath3"/>
+        <conn input="fit3.height" output="sample3"/>
+        <conn input="wave1.offset" output="frame1"/>
+        <conn input="sample3.end" output="wave1"/>
+        <conn input="fit4.shape" output="textpath4"/>
+        <conn input="fit4.height" output="sample4"/>
+        <conn input="stack2.shapes" output="fit4"/>
+        <conn input="wave2.offset" output="frame2"/>
+        <conn input="sample4.end" output="wave2"/>
+    </node>
+</ndbx>

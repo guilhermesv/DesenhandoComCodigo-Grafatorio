@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="6e4b5a5f-fb78-4a8f-94aa-aaeacd6d8458">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="translate1">
+        <node name="delete1" position="-8.00,7.00" prototype="corevector.delete">
+            <port name="operation" type="string" value="non-selected"/>
+        </node>
+        <node name="delete2" position="1.00,8.00" prototype="corevector.delete">
+            <port name="operation" type="string" value="non-selected"/>
+        </node>
+        <node name="delete3" position="11.00,8.00" prototype="corevector.delete">
+            <port name="operation" type="string" value="non-selected"/>
+        </node>
+        <node name="ellipse1" position="-12.00,7.00" prototype="corevector.ellipse">
+            <port name="width" type="float" value="25.0"/>
+            <port name="height" type="float" value="25.0"/>
+        </node>
+        <node name="ellipse2" position="-2.00,8.00" prototype="corevector.ellipse">
+            <port name="width" type="float" value="25.0"/>
+            <port name="height" type="float" value="25.0"/>
+        </node>
+        <node name="frame1" position="13.00,2.00" prototype="core.frame"/>
+        <node name="grid1" position="-10.00,3.00" prototype="corevector.grid">
+            <port name="columns" type="int" value="50"/>
+            <port name="rows" type="int" value="50"/>
+            <port name="width" type="float" value="980.0"/>
+            <port name="height" type="float" value="980.0"/>
+        </node>
+        <node name="grid2" position="-1.00,3.00" prototype="corevector.grid">
+            <port name="columns" type="int" value="50"/>
+            <port name="rows" type="int" value="50"/>
+            <port name="width" type="float" value="980.0"/>
+            <port name="height" type="float" value="980.0"/>
+        </node>
+        <node name="grid3" position="9.00,3.00" prototype="corevector.grid">
+            <port name="columns" type="int" value="50"/>
+            <port name="rows" type="int" value="50"/>
+            <port name="width" type="float" value="980.0"/>
+            <port name="height" type="float" value="980.0"/>
+        </node>
+        <node name="make_point1" position="13.00,4.00" prototype="corevector.make_point"/>
+        <node name="random_numbers1" position="-2.00,7.00" prototype="math.random_numbers">
+            <port name="start" type="float" value="5.0"/>
+            <port name="end" type="float" value="20.0"/>
+            <port name="seed" type="int" value="270"/>
+        </node>
+        <node name="rect1" position="8.00,6.00" prototype="corevector.rect">
+            <port name="width" type="float" value="22.0"/>
+            <port name="height" type="float" value="22.0"/>
+            <port name="roundness" type="point" value="2.00,2.00"/>
+        </node>
+        <node name="stack1" position="2.00,6.00" prototype="corevector.stack">
+            <port name="direction" type="string" value="s"/>
+        </node>
+        <node name="stack2" position="12.00,6.00" prototype="corevector.stack">
+            <port name="direction" type="string" value="s"/>
+        </node>
+        <node name="textpath1" position="-8.00,5.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="CODIGO"/>
+            <port name="font_name" type="string" value="Arial Black Normal"/>
+            <port name="font_size" type="float" value="229.0"/>
+        </node>
+        <node name="textpath2" position="2.00,5.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="CODIGO"/>
+            <port name="font_name" type="string" value="Arial Black Normal"/>
+            <port name="font_size" type="float" value="229.0"/>
+        </node>
+        <node name="textpath3" position="12.00,5.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="CÓDIGO/CÓDIGO/CÓDIGO"/>
+            <port name="font_name" type="string" value="Arial Black Normal"/>
+            <port name="font_size" type="float" value="229.0"/>
+        </node>
+        <node name="translate1" position="-10.00,9.00" prototype="corevector.translate"/>
+        <node name="translate2" position="-2.00,9.00" prototype="corevector.translate"/>
+        <node name="translate3" position="8.00,9.00" prototype="corevector.translate"/>
+        <node name="wave1" position="13.00,3.00" prototype="math.wave">
+            <port name="max" type="float" value="-1080.0"/>
+            <port name="period" type="float" value="500.0"/>
+            <port name="type" type="string" value="sawtooth"/>
+        </node>
+        <conn input="delete1.shape" output="grid1"/>
+        <conn input="delete1.bounding" output="textpath1"/>
+        <conn input="translate1.translate" output="delete1"/>
+        <conn input="translate1.shape" output="ellipse1"/>
+        <conn input="delete2.shape" output="grid2"/>
+        <conn input="translate2.translate" output="delete2"/>
+        <conn input="translate2.shape" output="ellipse2"/>
+        <conn input="stack1.shapes" output="textpath2"/>
+        <conn input="delete2.bounding" output="stack1"/>
+        <conn input="ellipse2.width" output="random_numbers1"/>
+        <conn input="ellipse2.height" output="random_numbers1"/>
+        <conn input="delete3.shape" output="grid3"/>
+        <conn input="translate3.translate" output="delete3"/>
+        <conn input="stack2.shapes" output="textpath3"/>
+        <conn input="delete3.bounding" output="stack2"/>
+        <conn input="make_point1.x" output="wave1"/>
+        <conn input="wave1.offset" output="frame1"/>
+        <conn input="textpath3.position" output="make_point1"/>
+        <conn input="translate3.shape" output="rect1"/>
+    </node>
+</ndbx>

@@ -37,6 +37,12 @@ A classificação é bem genérica e muitos links poderiam caber em mais de uma 
 - [Ambos](http://ambos.art.br/)
 - [CoziCoding](https://www.twitch.tv/cozycoding)
 - [Rodjun](https://www.twitch.tv/rodjunjun)
+- [Dmtr](http://dmtr.org/)
+- [Andreas Pihlström](https://www.instagram.com/suprb/)
+- [Schultzschultz](https://www.instagram.com/schultzschultzgrafik/)
+- [Rafa Diniz](https://www.instagram.com/rafaddiniz/)
+- [Zach Lieberman](https://www.instagram.com/zach.lieberman/)
+
 
 # Artistas ou projetos com foco em animação
 - [Motion Type Project](https://motiontypeproject.com/)
