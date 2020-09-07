@@ -4,8 +4,10 @@
     <property name="canvasWidth" value="1000"/>
     <property name="canvasX" value="0"/>
     <property name="canvasY" value="0"/>
-    <node name="root" prototype="core.network" renderedChild="rect2">
-        <node name="color3" position="52.00,1.00" prototype="color.color"/>
+    <node name="root" prototype="core.network" renderedChild="translate4">
+        <node name="color3" position="52.00,1.00" prototype="color.color">
+            <port name="color" type="color" value="#0000ffff"/>
+        </node>
         <node name="color4" position="55.00,1.00" prototype="color.color">
             <port name="color" type="color" value="#ff0000ff"/>
         </node>
@@ -51,6 +53,35 @@
         <node name="group1" position="22.00,4.00" prototype="corevector.group"/>
         <node name="group2" position="35.00,2.00" prototype="corevector.group"/>
         <node name="group3" position="47.00,2.00" prototype="corevector.group"/>
+        <node name="network1" position="3.00,-1.00" prototype="core.network" renderedChild="translate5">
+            <node name="colorize5" position="12.00,2.00" prototype="corevector.colorize">
+                <port name="fill" type="color" value="#ff0000ff"/>
+            </node>
+            <node name="combine3" position="12.00,0.00" prototype="list.combine"/>
+            <node name="grid5" position="14.00,3.00" prototype="corevector.grid">
+                <port name="columns" type="int" value="3"/>
+                <port name="rows" type="int" value="3"/>
+            </node>
+            <node name="group4" position="12.00,1.00" prototype="corevector.group"/>
+            <node name="rect5" position="12.00,-4.00" prototype="corevector.rect">
+                <port name="width" type="float" value="20.0"/>
+            </node>
+            <node name="rotate7" position="12.00,-2.00" prototype="corevector.rotate">
+                <port name="angle" type="float" value="-45.0"/>
+            </node>
+            <node name="rotate8" position="15.00,-2.00" prototype="corevector.rotate">
+                <port name="angle" type="float" value="45.0"/>
+            </node>
+            <node name="translate5" position="12.00,5.00" prototype="corevector.translate"/>
+            <conn input="rotate7.shape" output="rect5"/>
+            <conn input="translate5.translate" output="grid5"/>
+            <conn input="translate5.shape" output="colorize5"/>
+            <conn input="rotate8.shape" output="rect5"/>
+            <conn input="combine3.list1" output="rotate7"/>
+            <conn input="combine3.list2" output="rotate8"/>
+            <conn input="group4.shapes" output="combine3"/>
+            <conn input="colorize5.shape" output="group4"/>
+        </node>
         <node name="rect1" position="35.00,-1.00" prototype="corevector.rect">
             <port name="width" type="float" value="20.0"/>
         </node>

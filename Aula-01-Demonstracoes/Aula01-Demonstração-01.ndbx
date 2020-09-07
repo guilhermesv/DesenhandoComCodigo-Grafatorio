@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="d128c6f1-1ba1-4d79-a0be-777d5bf00299">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="grid1">
+        <node name="colorize1" position="-2.00,3.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff0000ff"/>
+        </node>
+        <node name="colorize2" position="2.00,3.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff4000ff"/>
+        </node>
+        <node name="ellipse1" position="2.00,1.00" prototype="corevector.ellipse">
+            <port name="width" type="float" value="140.0"/>
+        </node>
+        <node name="grid1" position="-2.00,-2.00" prototype="corevector.grid">
+            <port name="columns" type="int" value="4"/>
+            <port name="rows" type="int" value="5"/>
+            <port name="width" type="float" value="781.0"/>
+            <port name="height" type="float" value="922.0"/>
+        </node>
+        <node name="rect1" position="-2.00,1.00" prototype="corevector.rect"/>
+        <conn input="colorize1.shape" output="rect1"/>
+        <conn input="colorize2.shape" output="ellipse1"/>
+        <conn input="rect1.position" output="grid1"/>
+        <conn input="ellipse1.position" output="grid1"/>
+    </node>
+</ndbx>
