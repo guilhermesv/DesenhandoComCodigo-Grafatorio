@@ -120,9 +120,18 @@ Composições que acompanharam o lançamento da nova identidade visual da Vosso.
 
 <a target="_blank" rel="noopener noreferrer" class="btn small" href="http://www.estudiodao.com/trabalhos/vosso/">mais informações aqui</a>
 
+
+<div class="galeria">
+  <figure><img alt="Composições para os produtos promocionais da Vosso" src="{{ site.url }}/aula-01/Vosso-01.svg"></figure>
+  <figure><img alt="Composições para os produtos promocionais da Vosso" src="{{ site.url }}/aula-01/Vosso-02.svg"></figure>
+  <figure><img alt="Composições para os produtos promocionais da Vosso" src="{{ site.url }}/aula-01/Vosso-03.svg"></figure>
+  <figure><img alt="Composições para os produtos promocionais da Vosso" src="{{ site.url }}/aula-01/Vosso-04.svg"></figure>
+  <figcaption>Composições para os produtos promocionais da Vosso. Fonte: <a href="http://www.estudiodao.com/trabalhos/vosso/">Daó</a></figcaption>
+</div>
+
 <figure>
   <img alt="Composições para os produtos promocionais da Vosso" src="{{ site.url }}/aula-01/vosso.png">
-  <figcaption>Composições para os produtos promocionais da Vosso. Fonte: <a href="http://www.estudiodao.com/trabalhos/vosso/">Daó</a></figcaption>
+  
 </figure>
 
 ---
