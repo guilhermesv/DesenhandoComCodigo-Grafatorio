@@ -129,11 +129,6 @@ Composições que acompanharam o lançamento da nova identidade visual da Vosso.
   <figcaption>Composições para os produtos promocionais da Vosso. Fonte: <a href="http://www.estudiodao.com/trabalhos/vosso/">Daó</a></figcaption>
 </div>
 
-<figure>
-  <img alt="Composições para os produtos promocionais da Vosso" src="{{ site.url }}/aula-01/vosso.png">
-  
-</figure>
-
 ---
 
 # Nodebox 3
