@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="e4b26a0c-6423-4124-9c9a-bbea74c23748">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="scale1">
+        <node name="Detallhamento" position="5.00,-5.00" prototype="math.integer">
+            <port name="value" type="int" value="300"/>
+        </node>
+        <node name="add1" position="9.00,-1.00" prototype="math.add">
+            <port name="value2" type="float" value="3.0"/>
+        </node>
+        <node name="align1" position="0.00,17.00" prototype="corevector.align"/>
+        <node name="align2" position="9.00,17.00" prototype="corevector.align">
+            <port name="position" type="point" value="0.00,-198.00"/>
+        </node>
+        <node name="align3" position="0.00,23.00" prototype="corevector.align"/>
+        <node name="arc1" position="9.00,1.00" prototype="corevector.arc">
+            <port name="width" type="float" value="300.0"/>
+            <port name="height" type="float" value="300.0"/>
+        </node>
+        <node name="arc2" position="12.00,1.00" prototype="corevector.arc">
+            <port name="width" type="float" value="220.0"/>
+            <port name="height" type="float" value="220.0"/>
+        </node>
+        <node name="colorize1" position="0.00,4.00" prototype="corevector.colorize"/>
+        <node name="colorize2" position="-6.00,11.00" prototype="corevector.colorize"/>
+        <node name="colorize3" position="9.00,5.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#00000000"/>
+        </node>
+        <node name="colorize4" position="12.00,10.00" prototype="corevector.colorize"/>
+        <node name="combine1" position="0.00,20.00" prototype="list.combine"/>
+        <node name="combine2" position="-4.00,14.00" prototype="list.combine"/>
+        <node name="combine3" position="11.00,12.00" prototype="list.combine"/>
+        <node name="compound1" position="9.00,2.00" prototype="corevector.compound">
+            <port name="function" type="string" value="subtracted"/>
+        </node>
+        <node name="copy1" position="9.00,4.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="360"/>
+        </node>
+        <node name="divide1" position="9.00,-2.00" prototype="math.divide">
+            <port name="value1" type="float" value="360.0"/>
+        </node>
+        <node name="first2" position="-6.00,10.00" prototype="list.first"/>
+        <node name="first3" position="12.00,9.00" prototype="list.first"/>
+        <node name="frame1" position="-6.00,6.00" prototype="core.frame"/>
+        <node name="frame2" position="13.00,6.00" prototype="core.frame"/>
+        <node name="grid1" position="3.00,4.00" prototype="corevector.grid">
+            <port name="rows" type="int" value="1"/>
+            <port name="height" type="float" value="0.0"/>
+        </node>
+        <node name="group1" position="0.00,16.00" prototype="corevector.group"/>
+        <node name="group2" position="0.00,22.00" prototype="corevector.group"/>
+        <node name="group3" position="9.00,15.00" prototype="corevector.group"/>
+        <node name="hsb_color1" position="5.00,-2.00" prototype="color.hsb_color">
+            <port name="saturation" type="float" value="255.0"/>
+            <port name="brightness" type="float" value="255.0"/>
+        </node>
+        <node name="rect1" position="0.00,3.00" prototype="corevector.rect">
+            <port name="width" type="float" value="3.0"/>
+            <port name="height" type="float" value="30.0"/>
+        </node>
+        <node name="sample1" position="5.00,-3.00" prototype="math.sample">
+            <port name="end" type="float" value="255.0"/>
+        </node>
+        <node name="scale1" position="0.00,25.00" prototype="corevector.scale">
+            <port name="scale" type="point" value="200.00,200.00"/>
+        </node>
+        <node name="shift2" position="-6.00,9.00" prototype="list.shift"/>
+        <node name="shift3" position="12.00,8.00" prototype="list.shift"/>
+        <node name="translate1" position="0.00,7.00" prototype="corevector.translate"/>
+        <conn input="sample1.amount" output="Detallhamento"/>
+        <conn input="hsb_color1.hue" output="sample1"/>
+        <conn input="grid1.columns" output="Detallhamento"/>
+        <conn input="colorize1.fill" output="hsb_color1"/>
+        <conn input="colorize1.shape" output="rect1"/>
+        <conn input="translate1.shape" output="colorize1"/>
+        <conn input="translate1.translate" output="grid1"/>
+        <conn input="divide1.value2" output="Detallhamento"/>
+        <conn input="copy1.rotate" output="divide1"/>
+        <conn input="colorize3.shape" output="copy1"/>
+        <conn input="colorize3.fill" output="hsb_color1"/>
+        <conn input="compound1.shape1" output="arc1"/>
+        <conn input="copy1.shape" output="compound1"/>
+        <conn input="compound1.shape2" output="arc2"/>
+        <conn input="add1.value1" output="divide1"/>
+        <conn input="arc1.degrees" output="add1"/>
+        <conn input="arc2.degrees" output="add1"/>
+        <conn input="align1.shape" output="group1"/>
+        <conn input="align2.shape" output="group3"/>
+        <conn input="combine1.list1" output="align1"/>
+        <conn input="combine1.list2" output="align2"/>
+        <conn input="group2.shapes" output="combine1"/>
+        <conn input="align3.shape" output="group2"/>
+        <conn input="scale1.shape" output="align3"/>
+        <conn input="shift2.list" output="translate1"/>
+        <conn input="first2.list" output="shift2"/>
+        <conn input="colorize2.shape" output="first2"/>
+        <conn input="combine2.list2" output="colorize2"/>
+        <conn input="combine2.list1" output="translate1"/>
+        <conn input="group1.shapes" output="combine2"/>
+        <conn input="shift2.amount" output="frame1"/>
+        <conn input="first3.list" output="shift3"/>
+        <conn input="colorize4.shape" output="first3"/>
+        <conn input="combine3.list2" output="colorize4"/>
+        <conn input="shift3.amount" output="frame2"/>
+        <conn input="combine3.list1" output="colorize3"/>
+        <conn input="shift3.list" output="colorize3"/>
+        <conn input="group3.shapes" output="combine3"/>
+    </node>
+</ndbx>

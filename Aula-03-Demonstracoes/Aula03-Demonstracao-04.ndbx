@@ -4,7 +4,7 @@
     <property name="canvasWidth" value="1000"/>
     <property name="canvasX" value="0"/>
     <property name="canvasY" value="0"/>
-    <node name="root" prototype="core.network" renderedChild="combine1">
+    <node name="root" prototype="core.network" renderedChild="colorize1">
         <node name="add1" position="18.00,3.00" prototype="math.add">
             <port name="value2" type="float" value="50.0"/>
         </node>
@@ -82,7 +82,6 @@
         <conn input="ellipse1.position" output="make_point1"/>
         <conn input="make_point1.x" output="wave1"/>
         <conn input="ellipse2.position" output="make_point2"/>
-        <conn input="make_point2.y" output="wave2"/>
         <conn input="colorize1.shape" output="ellipse1"/>
         <conn input="colorize2.shape" output="ellipse2"/>
         <conn input="combine1.list1" output="colorize1"/>
@@ -99,5 +98,6 @@
         <conn input="add1.value1" output="frame4"/>
         <conn input="wave4.offset" output="add1"/>
         <conn input="wave2.offset" output="frame2"/>
+        <conn input="make_point2.y" output="wave2"/>
     </node>
 </ndbx>

@@ -4,7 +4,7 @@
     <property name="canvasWidth" value="1000"/>
     <property name="canvasX" value="0"/>
     <property name="canvasY" value="0"/>
-    <node name="root" prototype="core.network" renderedChild="translate2">
+    <node name="root" prototype="core.network" renderedChild="colorize2">
         <node name="GeradorLinha" position="61.00,5.00" prototype="core.network" renderedChild="colorize4">
             <node name="colorize4" position="54.00,7.00" prototype="corevector.colorize">
                 <port name="fill" type="color" value="#00000000"/>
@@ -128,7 +128,7 @@
         <node name="fit2" position="88.00,6.00" prototype="corevector.fit">
             <port name="width" type="float" value="210.0"/>
         </node>
-        <node name="grid1" position="63.00,2.00" prototype="corevector.grid">
+        <node name="grid1" position="64.00,2.00" prototype="corevector.grid">
             <port name="columns" type="int" value="3"/>
             <port name="rows" type="int" value="3"/>
             <port name="width" type="float" value="700.0"/>
@@ -188,7 +188,6 @@
         <conn input="group1.shapes" output="align1"/>
         <conn input="connect1.points" output="shuffle2"/>
         <conn input="pick1.seed" output="integer1"/>
-        <conn input="shuffle1.seed" output="integer1"/>
         <conn input="count1.list" output="grid1"/>
         <conn input="random_numbers1.amount" output="count1"/>
         <conn input="GeradorLinha.seed" output="random_numbers1"/>
@@ -201,5 +200,6 @@
         <conn input="translate2.shape" output="fit2"/>
         <conn input="GeradorSimbolo.Seed" output="random_numbers2"/>
         <conn input="fit2.shape" output="GeradorSimbolo"/>
+        <conn input="shuffle1.seed" output="integer1"/>
     </node>
 </ndbx>

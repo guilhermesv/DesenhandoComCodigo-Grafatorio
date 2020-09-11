@@ -4,7 +4,7 @@
     <property name="canvasWidth" value="1000"/>
     <property name="canvasX" value="0"/>
     <property name="canvasY" value="0"/>
-    <node name="root" prototype="core.network" renderedChild="rect1">
+    <node name="root" prototype="core.network" renderedChild="grid1">
         <node name="align1" position="59.00,10.00" prototype="corevector.align"/>
         <node name="color1" position="62.00,3.00" prototype="color.color"/>
         <node name="color2" position="62.00,4.00" prototype="color.color">
