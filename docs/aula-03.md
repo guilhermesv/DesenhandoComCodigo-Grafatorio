@@ -18,6 +18,10 @@ Agora a baixo temos o mesmo parâmetro tamanho controlado utilizando uma funçã
 
 <video width="600" height="600" autoplay loop><source src="{{ site.url }}/aula-03/Animacao-02-Comp.mp4" type="video/mp4"></video>
 
+Existem infinitas possibilidades e técnicas para controlar parâmetros através do tempo como utilizar [equações mais complexas para criar efeitos de aceleração](https://easings.net/) ou então utilizar algorítimos como [Ruído de Perlin](https://en.wikipedia.org/wiki/Perlin_noise).
+
+E por fim esses conceitos de parâmetros e tempo não precisam necessariamente ter uma relação direta com a ideia da tradicional linha do tempo de programas de animação e edição de vídeo onde muitas vezes pensamos mais em uma sequência de acontecimentos que tem um início e um fim muito claro determinado no tempo, no nossa caso muitas animações criadas não precisam ter essa ideia de finitude. 
+
 ## Estudos de caso
 
 ### Bees and Bombs
