@@ -1,0 +1,1787 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="25fa82f2-6f2a-4014-a8ea-50071bf0fa56">
+    <property name="canvasHeight" value="1350"/>
+    <property name="canvasWidth" value="1080"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="combine11">
+        <node name="FUNDO7" position="95.00,-4.00" prototype="corevector.rect">
+            <port name="width" type="float" value="1080.0"/>
+            <port name="height" type="float" value="1350.0"/>
+        </node>
+        <node name="PIXELS7" position="100.00,-3.00" prototype="corevector.rect">
+            <port name="width" type="float" value="540.0"/>
+            <port name="height" type="float" value="540.0"/>
+        </node>
+        <node name="SVG_fundo9" position="100.00,-7.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="cartaz-codigo-henrique_fundo.svg"/>
+        </node>
+        <node name="SVG_tipo7" position="105.00,1.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="cartaz-codigo-henrique_tipo.svg"/>
+            <port name="centered" type="boolean" value="false"/>
+            <port name="position" type="point" value="-540.00,-675.00"/>
+        </node>
+        <node name="centroid8" position="100.00,-5.00" prototype="corevector.centroid"/>
+        <node name="colorize28" position="95.00,3.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#34be1bff"/>
+        </node>
+        <node name="colorize29" position="105.00,3.00" prototype="corevector.colorize"/>
+        <node name="colorize30" position="100.00,-2.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#41da18ff"/>
+        </node>
+        <node name="combine11" position="100.00,6.00" prototype="list.combine"/>
+        <node comment="Applies selected easing function to produce changing values over time" name="easing3" position="101.00,1.00" prototype="core.network" renderedChild="precision">
+            <node comment="Forumas from easings.net" name="Credits" outputType="credits" position="45.00,22.00" prototype="corevector.null"/>
+            <node name="T" position="21.00,22.00" prototype="math.number">
+                <port name="value" type="float" value="226.0"/>
+            </node>
+            <node name="add1" position="33.00,25.00" prototype="math.add"/>
+            <node name="back" position="43.00,32.00" prototype="core.network" renderedChild="add1">
+                <node name="T" position="-26.00,26.00" prototype="math.number"/>
+                <node name="add1" position="15.00,51.00" prototype="math.add"/>
+                <node name="add2" position="-13.00,38.00" prototype="math.add"/>
+                <node name="add3" position="-13.00,39.00" prototype="math.add">
+                    <port name="value2" type="float" value="1.0"/>
+                </node>
+                <node name="add4" position="-2.00,33.00" prototype="math.add">
+                    <port name="value2" type="float" value="1.0"/>
+                </node>
+                <node name="add5" position="1.00,38.00" prototype="math.add"/>
+                <node name="add6" position="1.00,41.00" prototype="math.add">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="c1" position="-17.00,26.00" prototype="math.number">
+                    <port name="value" type="float" value="1.70158"/>
+                </node>
+                <node name="c2" position="-3.00,31.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="1.525"/>
+                </node>
+                <node name="c3" position="-16.00,33.00" prototype="math.add">
+                    <port name="value2" type="float" value="1.0"/>
+                </node>
+                <node name="compare1" position="-26.00,42.00" prototype="math.compare">
+                    <port name="value2" type="float" value="0.5"/>
+                    <port name="comparator" type="string" value="&gt;="/>
+                </node>
+                <node name="divide1" position="-6.00,40.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="divide2" position="1.00,42.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="multiply1" position="12.00,49.00" prototype="math.multiply"/>
+                <node name="multiply10" position="1.00,36.00" prototype="math.multiply"/>
+                <node name="multiply11" position="1.00,40.00" prototype="math.multiply"/>
+                <node name="multiply2" position="-20.00,36.00" prototype="math.multiply"/>
+                <node name="multiply3" position="-17.00,36.00" prototype="math.multiply"/>
+                <node name="multiply4" position="-10.00,36.00" prototype="math.multiply"/>
+                <node name="multiply5" position="-13.00,36.00" prototype="math.multiply"/>
+                <node name="multiply6" position="-6.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="multiply7" position="-3.00,35.00" prototype="math.multiply"/>
+                <node name="multiply8" position="-6.00,39.00" prototype="math.multiply"/>
+                <node name="multiply9" position="4.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="option" position="9.00,33.00" prototype="math.integer"/>
+                <node name="pow1" position="-23.00,33.00" prototype="math.pow">
+                    <port name="value2" type="float" value="3.0"/>
+                </node>
+                <node name="pow2" position="-20.00,33.00" prototype="math.pow">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="pow3" position="-10.00,33.00" prototype="math.pow">
+                    <port name="value2" type="float" value="3.0"/>
+                </node>
+                <node name="pow4" position="-13.00,33.00" prototype="math.pow">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="pow5" position="-6.00,35.00" prototype="math.pow">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="pow6" position="4.00,38.00" prototype="math.pow">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="scale" position="12.00,33.00" prototype="math.number"/>
+                <node name="start" position="15.00,33.00" prototype="math.number"/>
+                <node name="subtract1" position="-17.00,38.00" prototype="math.subtract"/>
+                <node name="subtract2" position="-10.00,31.00" prototype="math.subtract">
+                    <port name="value2" type="float" value="1.0"/>
+                </node>
+                <node name="subtract3" position="-3.00,37.00" prototype="math.subtract"/>
+                <node name="subtract4" position="4.00,34.00" prototype="math.subtract">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="switch1" position="-17.00,47.00" prototype="list.switch"/>
+                <node name="switch2" position="-6.00,45.00" prototype="list.switch"/>
+                <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="start.value" description="" label="" name="start" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="scale.value" description="" label="" name="scale" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="option.value" description="" label="" name="option" range="value" type="int" value="0" widget="int"/>
+                <conn input="pow1.value1" output="T"/>
+                <conn input="multiply1.value1" output="scale"/>
+                <conn input="add1.value1" output="start"/>
+                <conn input="add1.value2" output="multiply1"/>
+                <conn input="switch1.index" output="option"/>
+                <conn input="switch1.input1" output="T"/>
+                <conn input="multiply1.value2" output="switch1"/>
+                <conn input="compare1.value1" output="T"/>
+                <conn input="switch2.index" output="compare1"/>
+                <conn input="switch1.input4" output="switch2"/>
+                <conn input="pow2.value1" output="T"/>
+                <conn input="c3.value1" output="c1"/>
+                <conn input="multiply2.value1" output="pow1"/>
+                <conn input="multiply2.value2" output="c3"/>
+                <conn input="multiply3.value1" output="c1"/>
+                <conn input="multiply3.value2" output="pow2"/>
+                <conn input="subtract1.value1" output="multiply2"/>
+                <conn input="subtract1.value2" output="multiply3"/>
+                <conn input="switch1.input2" output="subtract1"/>
+                <conn input="subtract2.value1" output="T"/>
+                <conn input="pow3.value1" output="subtract2"/>
+                <conn input="multiply4.value1" output="c3"/>
+                <conn input="multiply4.value2" output="pow3"/>
+                <conn input="pow4.value1" output="subtract2"/>
+                <conn input="multiply5.value2" output="pow4"/>
+                <conn input="multiply5.value1" output="c1"/>
+                <conn input="add3.value1" output="add2"/>
+                <conn input="switch1.input3" output="add3"/>
+                <conn input="add2.value1" output="multiply5"/>
+                <conn input="add2.value2" output="multiply4"/>
+                <conn input="c2.value1" output="c1"/>
+                <conn input="multiply6.value1" output="T"/>
+                <conn input="pow5.value1" output="multiply6"/>
+                <conn input="add4.value1" output="c2"/>
+                <conn input="multiply7.value1" output="multiply6"/>
+                <conn input="multiply7.value2" output="add4"/>
+                <conn input="subtract3.value1" output="multiply7"/>
+                <conn input="subtract3.value2" output="c2"/>
+                <conn input="multiply8.value1" output="pow5"/>
+                <conn input="multiply8.value2" output="subtract3"/>
+                <conn input="divide1.value1" output="multiply8"/>
+                <conn input="switch2.input1" output="divide1"/>
+                <conn input="multiply9.value1" output="T"/>
+                <conn input="subtract4.value1" output="multiply9"/>
+                <conn input="pow6.value1" output="subtract4"/>
+                <conn input="multiply10.value1" output="add4"/>
+                <conn input="multiply10.value2" output="subtract4"/>
+                <conn input="add5.value1" output="multiply10"/>
+                <conn input="add5.value2" output="c2"/>
+                <conn input="multiply11.value1" output="add5"/>
+                <conn input="multiply11.value2" output="pow6"/>
+                <conn input="add6.value1" output="multiply11"/>
+                <conn input="divide2.value1" output="add6"/>
+                <conn input="switch2.input2" output="divide2"/>
+            </node>
+            <node name="bounce" position="49.00,32.00" prototype="core.network" renderedChild="add1">
+                <node name="T" position="-26.00,26.00" prototype="math.number"/>
+                <node name="add1" position="-5.00,47.00" prototype="math.add"/>
+                <node name="add2" position="-15.00,35.00" prototype="math.add">
+                    <port name="value2" type="float" value="1.0"/>
+                </node>
+                <node name="compare1" position="-12.00,30.00" prototype="math.compare">
+                    <port name="value2" type="float" value="0.5"/>
+                    <port name="comparator" type="string" value="&gt;="/>
+                </node>
+                <node name="divide1" position="-18.00,36.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="divide2" position="-15.00,36.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="easeOut" position="-21.00,30.00" prototype="core.network" renderedChild="switch5">
+                    <node name="T" position="-31.00,25.00" prototype="math.number"/>
+                    <node name="add1" position="-33.00,40.00" prototype="math.add">
+                        <port name="value2" type="float" value="0.75"/>
+                    </node>
+                    <node name="add2" position="-30.00,40.00" prototype="math.add">
+                        <port name="value2" type="float" value="0.9375"/>
+                    </node>
+                    <node name="add3" position="-22.00,40.00" prototype="math.add"/>
+                    <node name="add4" position="-19.00,37.00" prototype="math.add"/>
+                    <node name="add5" position="-27.00,40.00" prototype="math.add">
+                        <port name="value2" type="float" value="0.984375"/>
+                    </node>
+                    <node name="compare4" position="-22.00,35.00" prototype="math.compare">
+                        <port name="comparator" type="string" value="&gt;="/>
+                    </node>
+                    <node name="compare7" position="-19.00,35.00" prototype="math.compare">
+                        <port name="comparator" type="string" value="&gt;="/>
+                    </node>
+                    <node name="compare8" position="-16.00,35.00" prototype="math.compare">
+                        <port name="comparator" type="string" value="&gt;="/>
+                    </node>
+                    <node name="d1" position="-19.00,25.00" prototype="math.number">
+                        <port name="value" type="float" value="2.75"/>
+                    </node>
+                    <node name="divide1" position="-22.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="1.0"/>
+                    </node>
+                    <node name="divide2" position="-19.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.0"/>
+                    </node>
+                    <node name="divide3" position="-16.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.5"/>
+                    </node>
+                    <node name="divide4" position="-32.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="1.5"/>
+                    </node>
+                    <node name="divide5" position="-29.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.25"/>
+                    </node>
+                    <node name="divide6" position="-26.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.625"/>
+                    </node>
+                    <node name="multiply1" position="-36.00,39.00" prototype="math.multiply"/>
+                    <node name="multiply2" position="-33.00,39.00" prototype="math.multiply"/>
+                    <node name="multiply4" position="-30.00,39.00" prototype="math.multiply"/>
+                    <node name="multiply6" position="-27.00,39.00" prototype="math.multiply"/>
+                    <node name="n1" position="-39.00,35.00" prototype="math.number">
+                        <port name="value" type="float" value="7.5625"/>
+                    </node>
+                    <node name="pow1" position="-36.00,32.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="pow2" position="-33.00,35.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="pow3" position="-30.00,35.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="pow4" position="-27.00,35.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="subtract1" position="-33.00,34.00" prototype="math.subtract"/>
+                    <node name="subtract2" position="-30.00,34.00" prototype="math.subtract">
+                        <port name="value2" type="float" value="1.5"/>
+                    </node>
+                    <node name="subtract3" position="-27.00,34.00" prototype="math.subtract">
+                        <port name="value2" type="float" value="1.5"/>
+                    </node>
+                    <node name="switch5" position="-32.00,44.00" prototype="list.switch"/>
+                    <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                    <conn input="switch5.index" output="add3"/>
+                    <conn input="divide1.value2" output="d1"/>
+                    <conn input="compare4.value1" output="T"/>
+                    <conn input="compare4.value2" output="divide1"/>
+                    <conn input="divide2.value2" output="d1"/>
+                    <conn input="compare7.value1" output="T"/>
+                    <conn input="compare7.value2" output="divide2"/>
+                    <conn input="divide3.value2" output="d1"/>
+                    <conn input="compare8.value1" output="T"/>
+                    <conn input="compare8.value2" output="divide3"/>
+                    <conn input="add4.value1" output="compare7"/>
+                    <conn input="add4.value2" output="compare8"/>
+                    <conn input="add3.value1" output="compare4"/>
+                    <conn input="add3.value2" output="add4"/>
+                    <conn input="pow1.value1" output="T"/>
+                    <conn input="multiply1.value1" output="pow1"/>
+                    <conn input="multiply1.value2" output="n1"/>
+                    <conn input="switch5.input1" output="multiply1"/>
+                    <conn input="divide4.value2" output="d1"/>
+                    <conn input="multiply2.value2" output="n1"/>
+                    <conn input="switch5.input2" output="add1"/>
+                    <conn input="multiply4.value2" output="n1"/>
+                    <conn input="switch5.input3" output="add2"/>
+                    <conn input="multiply6.value2" output="n1"/>
+                    <conn input="switch5.input4" output="add5"/>
+                    <conn input="divide5.value2" output="d1"/>
+                    <conn input="subtract2.value2" output="divide5"/>
+                    <conn input="subtract2.value1" output="T"/>
+                    <conn input="divide6.value2" output="d1"/>
+                    <conn input="subtract3.value2" output="divide6"/>
+                    <conn input="subtract3.value1" output="T"/>
+                    <conn input="subtract1.value1" output="T"/>
+                    <conn input="subtract1.value2" output="divide4"/>
+                    <conn input="pow2.value1" output="subtract1"/>
+                    <conn input="multiply2.value1" output="pow2"/>
+                    <conn input="add1.value1" output="multiply2"/>
+                    <conn input="pow3.value1" output="subtract2"/>
+                    <conn input="pow4.value1" output="subtract3"/>
+                    <conn input="multiply4.value1" output="pow3"/>
+                    <conn input="multiply6.value1" output="pow4"/>
+                    <conn input="add2.value1" output="multiply4"/>
+                    <conn input="add5.value1" output="multiply6"/>
+                </node>
+                <node name="easeOut1" position="-24.00,31.00" prototype="core.network" renderedChild="switch5">
+                    <node name="T" position="-31.00,25.00" prototype="math.number"/>
+                    <node name="add1" position="-33.00,40.00" prototype="math.add">
+                        <port name="value2" type="float" value="0.75"/>
+                    </node>
+                    <node name="add2" position="-30.00,40.00" prototype="math.add">
+                        <port name="value2" type="float" value="0.9375"/>
+                    </node>
+                    <node name="add3" position="-22.00,40.00" prototype="math.add"/>
+                    <node name="add4" position="-19.00,37.00" prototype="math.add"/>
+                    <node name="add5" position="-27.00,40.00" prototype="math.add">
+                        <port name="value2" type="float" value="0.984375"/>
+                    </node>
+                    <node name="compare4" position="-22.00,35.00" prototype="math.compare">
+                        <port name="comparator" type="string" value="&gt;="/>
+                    </node>
+                    <node name="compare7" position="-19.00,35.00" prototype="math.compare">
+                        <port name="comparator" type="string" value="&gt;="/>
+                    </node>
+                    <node name="compare8" position="-16.00,35.00" prototype="math.compare">
+                        <port name="comparator" type="string" value="&gt;="/>
+                    </node>
+                    <node name="d1" position="-19.00,25.00" prototype="math.number">
+                        <port name="value" type="float" value="2.75"/>
+                    </node>
+                    <node name="divide1" position="-22.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="1.0"/>
+                    </node>
+                    <node name="divide2" position="-19.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.0"/>
+                    </node>
+                    <node name="divide3" position="-16.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.5"/>
+                    </node>
+                    <node name="divide4" position="-32.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="1.5"/>
+                    </node>
+                    <node name="divide5" position="-29.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.25"/>
+                    </node>
+                    <node name="divide6" position="-26.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.625"/>
+                    </node>
+                    <node name="multiply1" position="-36.00,39.00" prototype="math.multiply"/>
+                    <node name="multiply2" position="-33.00,39.00" prototype="math.multiply"/>
+                    <node name="multiply4" position="-30.00,39.00" prototype="math.multiply"/>
+                    <node name="multiply6" position="-27.00,39.00" prototype="math.multiply"/>
+                    <node name="n1" position="-39.00,35.00" prototype="math.number">
+                        <port name="value" type="float" value="7.5625"/>
+                    </node>
+                    <node name="pow1" position="-36.00,32.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="pow2" position="-33.00,35.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="pow3" position="-30.00,35.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="pow4" position="-27.00,35.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="subtract1" position="-33.00,34.00" prototype="math.subtract"/>
+                    <node name="subtract2" position="-30.00,34.00" prototype="math.subtract">
+                        <port name="value2" type="float" value="1.5"/>
+                    </node>
+                    <node name="subtract3" position="-27.00,34.00" prototype="math.subtract">
+                        <port name="value2" type="float" value="1.5"/>
+                    </node>
+                    <node name="switch5" position="-32.00,44.00" prototype="list.switch"/>
+                    <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                    <conn input="switch5.index" output="add3"/>
+                    <conn input="divide1.value2" output="d1"/>
+                    <conn input="compare4.value1" output="T"/>
+                    <conn input="compare4.value2" output="divide1"/>
+                    <conn input="divide2.value2" output="d1"/>
+                    <conn input="compare7.value1" output="T"/>
+                    <conn input="compare7.value2" output="divide2"/>
+                    <conn input="divide3.value2" output="d1"/>
+                    <conn input="compare8.value1" output="T"/>
+                    <conn input="compare8.value2" output="divide3"/>
+                    <conn input="add4.value1" output="compare7"/>
+                    <conn input="add4.value2" output="compare8"/>
+                    <conn input="add3.value1" output="compare4"/>
+                    <conn input="add3.value2" output="add4"/>
+                    <conn input="pow1.value1" output="T"/>
+                    <conn input="multiply1.value1" output="pow1"/>
+                    <conn input="multiply1.value2" output="n1"/>
+                    <conn input="switch5.input1" output="multiply1"/>
+                    <conn input="divide4.value2" output="d1"/>
+                    <conn input="multiply2.value2" output="n1"/>
+                    <conn input="switch5.input2" output="add1"/>
+                    <conn input="multiply4.value2" output="n1"/>
+                    <conn input="switch5.input3" output="add2"/>
+                    <conn input="multiply6.value2" output="n1"/>
+                    <conn input="switch5.input4" output="add5"/>
+                    <conn input="divide5.value2" output="d1"/>
+                    <conn input="subtract2.value2" output="divide5"/>
+                    <conn input="subtract2.value1" output="T"/>
+                    <conn input="divide6.value2" output="d1"/>
+                    <conn input="subtract3.value2" output="divide6"/>
+                    <conn input="subtract3.value1" output="T"/>
+                    <conn input="subtract1.value1" output="T"/>
+                    <conn input="subtract1.value2" output="divide4"/>
+                    <conn input="pow2.value1" output="subtract1"/>
+                    <conn input="multiply2.value1" output="pow2"/>
+                    <conn input="add1.value1" output="multiply2"/>
+                    <conn input="pow3.value1" output="subtract2"/>
+                    <conn input="pow4.value1" output="subtract3"/>
+                    <conn input="multiply4.value1" output="pow3"/>
+                    <conn input="multiply6.value1" output="pow4"/>
+                    <conn input="add2.value1" output="multiply4"/>
+                    <conn input="add5.value1" output="multiply6"/>
+                </node>
+                <node name="easeOut2" position="-18.00,33.00" prototype="core.network" renderedChild="switch5">
+                    <node name="T" position="-31.00,25.00" prototype="math.number"/>
+                    <node name="add1" position="-33.00,40.00" prototype="math.add">
+                        <port name="value2" type="float" value="0.75"/>
+                    </node>
+                    <node name="add2" position="-30.00,40.00" prototype="math.add">
+                        <port name="value2" type="float" value="0.9375"/>
+                    </node>
+                    <node name="add3" position="-22.00,40.00" prototype="math.add"/>
+                    <node name="add4" position="-19.00,37.00" prototype="math.add"/>
+                    <node name="add5" position="-27.00,40.00" prototype="math.add">
+                        <port name="value2" type="float" value="0.984375"/>
+                    </node>
+                    <node name="compare4" position="-22.00,35.00" prototype="math.compare">
+                        <port name="comparator" type="string" value="&gt;="/>
+                    </node>
+                    <node name="compare7" position="-19.00,35.00" prototype="math.compare">
+                        <port name="comparator" type="string" value="&gt;="/>
+                    </node>
+                    <node name="compare8" position="-16.00,35.00" prototype="math.compare">
+                        <port name="comparator" type="string" value="&gt;="/>
+                    </node>
+                    <node name="d1" position="-19.00,25.00" prototype="math.number">
+                        <port name="value" type="float" value="2.75"/>
+                    </node>
+                    <node name="divide1" position="-22.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="1.0"/>
+                    </node>
+                    <node name="divide2" position="-19.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.0"/>
+                    </node>
+                    <node name="divide3" position="-16.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.5"/>
+                    </node>
+                    <node name="divide4" position="-32.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="1.5"/>
+                    </node>
+                    <node name="divide5" position="-29.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.25"/>
+                    </node>
+                    <node name="divide6" position="-26.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.625"/>
+                    </node>
+                    <node name="multiply1" position="-36.00,39.00" prototype="math.multiply"/>
+                    <node name="multiply2" position="-33.00,39.00" prototype="math.multiply"/>
+                    <node name="multiply4" position="-30.00,39.00" prototype="math.multiply"/>
+                    <node name="multiply6" position="-27.00,39.00" prototype="math.multiply"/>
+                    <node name="n1" position="-39.00,35.00" prototype="math.number">
+                        <port name="value" type="float" value="7.5625"/>
+                    </node>
+                    <node name="pow1" position="-36.00,32.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="pow2" position="-33.00,35.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="pow3" position="-30.00,35.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="pow4" position="-27.00,35.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="subtract1" position="-33.00,34.00" prototype="math.subtract"/>
+                    <node name="subtract2" position="-30.00,34.00" prototype="math.subtract">
+                        <port name="value2" type="float" value="1.5"/>
+                    </node>
+                    <node name="subtract3" position="-27.00,34.00" prototype="math.subtract">
+                        <port name="value2" type="float" value="1.5"/>
+                    </node>
+                    <node name="switch5" position="-32.00,44.00" prototype="list.switch"/>
+                    <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                    <conn input="switch5.index" output="add3"/>
+                    <conn input="divide1.value2" output="d1"/>
+                    <conn input="compare4.value1" output="T"/>
+                    <conn input="compare4.value2" output="divide1"/>
+                    <conn input="divide2.value2" output="d1"/>
+                    <conn input="compare7.value1" output="T"/>
+                    <conn input="compare7.value2" output="divide2"/>
+                    <conn input="divide3.value2" output="d1"/>
+                    <conn input="compare8.value1" output="T"/>
+                    <conn input="compare8.value2" output="divide3"/>
+                    <conn input="add4.value1" output="compare7"/>
+                    <conn input="add4.value2" output="compare8"/>
+                    <conn input="add3.value1" output="compare4"/>
+                    <conn input="add3.value2" output="add4"/>
+                    <conn input="pow1.value1" output="T"/>
+                    <conn input="multiply1.value1" output="pow1"/>
+                    <conn input="multiply1.value2" output="n1"/>
+                    <conn input="switch5.input1" output="multiply1"/>
+                    <conn input="divide4.value2" output="d1"/>
+                    <conn input="multiply2.value2" output="n1"/>
+                    <conn input="switch5.input2" output="add1"/>
+                    <conn input="multiply4.value2" output="n1"/>
+                    <conn input="switch5.input3" output="add2"/>
+                    <conn input="multiply6.value2" output="n1"/>
+                    <conn input="switch5.input4" output="add5"/>
+                    <conn input="divide5.value2" output="d1"/>
+                    <conn input="subtract2.value2" output="divide5"/>
+                    <conn input="subtract2.value1" output="T"/>
+                    <conn input="divide6.value2" output="d1"/>
+                    <conn input="subtract3.value2" output="divide6"/>
+                    <conn input="subtract3.value1" output="T"/>
+                    <conn input="subtract1.value1" output="T"/>
+                    <conn input="subtract1.value2" output="divide4"/>
+                    <conn input="pow2.value1" output="subtract1"/>
+                    <conn input="multiply2.value1" output="pow2"/>
+                    <conn input="add1.value1" output="multiply2"/>
+                    <conn input="pow3.value1" output="subtract2"/>
+                    <conn input="pow4.value1" output="subtract3"/>
+                    <conn input="multiply4.value1" output="pow3"/>
+                    <conn input="multiply6.value1" output="pow4"/>
+                    <conn input="add2.value1" output="multiply4"/>
+                    <conn input="add5.value1" output="multiply6"/>
+                </node>
+                <node name="easeOut3" position="-15.00,33.00" prototype="core.network" renderedChild="switch5">
+                    <node name="T" position="-31.00,25.00" prototype="math.number"/>
+                    <node name="add1" position="-33.00,40.00" prototype="math.add">
+                        <port name="value2" type="float" value="0.75"/>
+                    </node>
+                    <node name="add2" position="-30.00,40.00" prototype="math.add">
+                        <port name="value2" type="float" value="0.9375"/>
+                    </node>
+                    <node name="add3" position="-22.00,40.00" prototype="math.add"/>
+                    <node name="add4" position="-19.00,37.00" prototype="math.add"/>
+                    <node name="add5" position="-27.00,40.00" prototype="math.add">
+                        <port name="value2" type="float" value="0.984375"/>
+                    </node>
+                    <node name="compare4" position="-22.00,35.00" prototype="math.compare">
+                        <port name="comparator" type="string" value="&gt;="/>
+                    </node>
+                    <node name="compare7" position="-19.00,35.00" prototype="math.compare">
+                        <port name="comparator" type="string" value="&gt;="/>
+                    </node>
+                    <node name="compare8" position="-16.00,35.00" prototype="math.compare">
+                        <port name="comparator" type="string" value="&gt;="/>
+                    </node>
+                    <node name="d1" position="-19.00,25.00" prototype="math.number">
+                        <port name="value" type="float" value="2.75"/>
+                    </node>
+                    <node name="divide1" position="-22.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="1.0"/>
+                    </node>
+                    <node name="divide2" position="-19.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.0"/>
+                    </node>
+                    <node name="divide3" position="-16.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.5"/>
+                    </node>
+                    <node name="divide4" position="-32.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="1.5"/>
+                    </node>
+                    <node name="divide5" position="-29.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.25"/>
+                    </node>
+                    <node name="divide6" position="-26.00,32.00" prototype="math.divide">
+                        <port name="value1" type="float" value="2.625"/>
+                    </node>
+                    <node name="multiply1" position="-36.00,39.00" prototype="math.multiply"/>
+                    <node name="multiply2" position="-33.00,39.00" prototype="math.multiply"/>
+                    <node name="multiply4" position="-30.00,39.00" prototype="math.multiply"/>
+                    <node name="multiply6" position="-27.00,39.00" prototype="math.multiply"/>
+                    <node name="n1" position="-39.00,35.00" prototype="math.number">
+                        <port name="value" type="float" value="7.5625"/>
+                    </node>
+                    <node name="pow1" position="-36.00,32.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="pow2" position="-33.00,35.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="pow3" position="-30.00,35.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="pow4" position="-27.00,35.00" prototype="math.pow">
+                        <port name="value2" type="float" value="2.0"/>
+                    </node>
+                    <node name="subtract1" position="-33.00,34.00" prototype="math.subtract"/>
+                    <node name="subtract2" position="-30.00,34.00" prototype="math.subtract">
+                        <port name="value2" type="float" value="1.5"/>
+                    </node>
+                    <node name="subtract3" position="-27.00,34.00" prototype="math.subtract">
+                        <port name="value2" type="float" value="1.5"/>
+                    </node>
+                    <node name="switch5" position="-32.00,44.00" prototype="list.switch"/>
+                    <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                    <conn input="switch5.index" output="add3"/>
+                    <conn input="divide1.value2" output="d1"/>
+                    <conn input="compare4.value1" output="T"/>
+                    <conn input="compare4.value2" output="divide1"/>
+                    <conn input="divide2.value2" output="d1"/>
+                    <conn input="compare7.value1" output="T"/>
+                    <conn input="compare7.value2" output="divide2"/>
+                    <conn input="divide3.value2" output="d1"/>
+                    <conn input="compare8.value1" output="T"/>
+                    <conn input="compare8.value2" output="divide3"/>
+                    <conn input="add4.value1" output="compare7"/>
+                    <conn input="add4.value2" output="compare8"/>
+                    <conn input="add3.value1" output="compare4"/>
+                    <conn input="add3.value2" output="add4"/>
+                    <conn input="pow1.value1" output="T"/>
+                    <conn input="multiply1.value1" output="pow1"/>
+                    <conn input="multiply1.value2" output="n1"/>
+                    <conn input="switch5.input1" output="multiply1"/>
+                    <conn input="divide4.value2" output="d1"/>
+                    <conn input="multiply2.value2" output="n1"/>
+                    <conn input="switch5.input2" output="add1"/>
+                    <conn input="multiply4.value2" output="n1"/>
+                    <conn input="switch5.input3" output="add2"/>
+                    <conn input="multiply6.value2" output="n1"/>
+                    <conn input="switch5.input4" output="add5"/>
+                    <conn input="divide5.value2" output="d1"/>
+                    <conn input="subtract2.value2" output="divide5"/>
+                    <conn input="subtract2.value1" output="T"/>
+                    <conn input="divide6.value2" output="d1"/>
+                    <conn input="subtract3.value2" output="divide6"/>
+                    <conn input="subtract3.value1" output="T"/>
+                    <conn input="subtract1.value1" output="T"/>
+                    <conn input="subtract1.value2" output="divide4"/>
+                    <conn input="pow2.value1" output="subtract1"/>
+                    <conn input="multiply2.value1" output="pow2"/>
+                    <conn input="add1.value1" output="multiply2"/>
+                    <conn input="pow3.value1" output="subtract2"/>
+                    <conn input="pow4.value1" output="subtract3"/>
+                    <conn input="multiply4.value1" output="pow3"/>
+                    <conn input="multiply6.value1" output="pow4"/>
+                    <conn input="add2.value1" output="multiply4"/>
+                    <conn input="add5.value1" output="multiply6"/>
+                </node>
+                <node name="multiply1" position="-8.00,45.00" prototype="math.multiply"/>
+                <node name="multiply2" position="-18.00,30.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="multiply3" position="-15.00,30.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="option" position="-28.00,40.00" prototype="math.integer"/>
+                <node name="scale" position="-8.00,30.00" prototype="math.number"/>
+                <node name="start" position="-5.00,30.00" prototype="math.number"/>
+                <node name="subtract1" position="-24.00,30.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract2" position="-24.00,33.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract3" position="-18.00,32.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract4" position="-18.00,35.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract5" position="-15.00,32.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                    <port name="value2" type="float" value="1.0"/>
+                </node>
+                <node name="switch1" position="-24.00,42.00" prototype="list.switch"/>
+                <node name="switch2" position="-14.00,39.00" prototype="list.switch"/>
+                <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="start.value" description="" label="" name="start" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="scale.value" description="" label="" name="scale" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="option.value" description="" label="" name="option" range="value" type="int" value="0" widget="int"/>
+                <conn input="multiply1.value1" output="scale"/>
+                <conn input="add1.value1" output="start"/>
+                <conn input="add1.value2" output="multiply1"/>
+                <conn input="switch1.index" output="option"/>
+                <conn input="switch1.input1" output="T"/>
+                <conn input="multiply1.value2" output="switch1"/>
+                <conn input="easeOut.T" output="T"/>
+                <conn input="switch1.input3" output="easeOut"/>
+                <conn input="subtract1.value2" output="T"/>
+                <conn input="easeOut1.T" output="subtract1"/>
+                <conn input="subtract2.value2" output="easeOut1"/>
+                <conn input="switch1.input2" output="subtract2"/>
+                <conn input="compare1.value1" output="T"/>
+                <conn input="switch2.index" output="compare1"/>
+                <conn input="multiply2.value1" output="T"/>
+                <conn input="subtract3.value2" output="multiply2"/>
+                <conn input="easeOut2.T" output="subtract3"/>
+                <conn input="subtract4.value2" output="easeOut2"/>
+                <conn input="divide1.value1" output="subtract4"/>
+                <conn input="switch2.input1" output="divide1"/>
+                <conn input="switch1.input4" output="switch2"/>
+                <conn input="multiply3.value1" output="T"/>
+                <conn input="easeOut3.T" output="subtract5"/>
+                <conn input="subtract5.value1" output="multiply3"/>
+                <conn input="add2.value1" output="easeOut3"/>
+                <conn input="divide2.value1" output="add2"/>
+                <conn input="switch2.input2" output="divide2"/>
+            </node>
+            <node comment="constrain values within upper and/or lower bounds" name="bounds" position="21.00,25.00" prototype="core.network" renderedChild="switch3">
+                <node name="compare1" position="-6.00,7.00" prototype="math.compare"/>
+                <node name="compare2" position="7.00,7.00" prototype="math.compare">
+                    <port name="comparator" type="string" value="&gt;"/>
+                </node>
+                <node name="high" position="7.00,4.00" prototype="math.number">
+                    <port name="value" type="float" value="1.0"/>
+                </node>
+                <node name="low" position="-4.00,4.00" prototype="math.number"/>
+                <node name="option" position="7.00,12.00" prototype="string.string">
+                    <port name="value" type="string" value="2"/>
+                </node>
+                <node name="switch1" position="-3.00,9.00" prototype="list.switch"/>
+                <node name="switch2" position="1.00,9.00" prototype="list.switch"/>
+                <node name="switch3" position="-2.00,14.00" prototype="list.switch"/>
+                <node name="switch4" position="3.00,12.00" prototype="list.switch"/>
+                <node name="value" position="1.00,4.00" prototype="math.number"/>
+                <port childReference="value.value" description="" label="" name="value" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="low.value" description="" label="" name="lower bound" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="high.value" description="" label="" name="upper bound" range="value" type="float" value="1.0" widget="float"/>
+                <port childReference="option.value" description="" label="" name="option" range="value" type="string" value="2" widget="menu">
+                    <menu key="0" label="Lower Bound"/>
+                    <menu key="1" label="Upper Bound"/>
+                    <menu key="2" label="Both"/>
+                    <menu key="3" label="Neither"/>
+                </port>
+                <conn input="compare1.value1" output="value"/>
+                <conn input="compare1.value2" output="low"/>
+                <conn input="switch1.input1" output="value"/>
+                <conn input="switch1.input2" output="low"/>
+                <conn input="switch1.index" output="compare1"/>
+                <conn input="compare2.value1" output="value"/>
+                <conn input="compare2.value2" output="high"/>
+                <conn input="switch2.index" output="compare2"/>
+                <conn input="switch2.input2" output="high"/>
+                <conn input="switch2.input1" output="value"/>
+                <conn input="switch3.input1" output="switch1"/>
+                <conn input="switch3.input2" output="switch2"/>
+                <conn input="switch4.index" output="compare2"/>
+                <conn input="switch4.input2" output="high"/>
+                <conn input="switch4.input1" output="switch1"/>
+                <conn input="switch3.input3" output="switch4"/>
+                <conn input="switch3.index" output="option"/>
+                <conn input="switch3.input4" output="value"/>
+            </node>
+            <node name="circ" position="40.00,32.00" prototype="core.network" renderedChild="add1">
+                <node name="T" position="-15.00,26.00" prototype="math.number"/>
+                <node name="add1" position="22.00,50.00" prototype="math.add"/>
+                <node name="add2" position="8.00,34.00" prototype="math.add">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="add3" position="8.00,39.00" prototype="math.add">
+                    <port name="value2" type="float" value="1.0"/>
+                </node>
+                <node name="compare1" position="12.00,33.00" prototype="math.compare">
+                    <port name="value2" type="float" value="0.5"/>
+                    <port name="comparator" type="string" value="&gt;="/>
+                </node>
+                <node name="divide2" position="5.00,40.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="divide3" position="8.00,40.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="multiply1" position="19.00,48.00" prototype="math.multiply"/>
+                <node name="multiply3" position="8.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="-2.0"/>
+                </node>
+                <node name="multiply4" position="5.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="option" position="16.00,33.00" prototype="math.integer"/>
+                <node name="pow1" position="-2.00,33.00" prototype="math.pow">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="pow2" position="2.00,34.00" prototype="math.pow">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="pow4" position="5.00,34.00" prototype="math.pow">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="pow5" position="8.00,35.00" prototype="math.pow">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="scale" position="19.00,33.00" prototype="math.number"/>
+                <node name="sqrt1" position="-2.00,36.00" prototype="math.sqrt"/>
+                <node name="sqrt2" position="2.00,37.00" prototype="math.sqrt"/>
+                <node name="sqrt3" position="5.00,37.00" prototype="math.sqrt"/>
+                <node name="sqrt4" position="8.00,38.00" prototype="math.sqrt"/>
+                <node name="start" position="22.00,33.00" prototype="math.number"/>
+                <node name="subtract1" position="2.00,33.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                    <port name="value2" type="float" value="1.0"/>
+                </node>
+                <node name="subtract2" position="2.00,36.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract4" position="-2.00,35.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract5" position="-1.00,38.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract6" position="5.00,36.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract7" position="5.00,39.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract8" position="8.00,37.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="switch1" position="3.00,46.00" prototype="list.switch"/>
+                <node name="switch2" position="8.00,44.00" prototype="list.switch"/>
+                <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="start.value" description="" label="" name="start" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="scale.value" description="" label="" name="scale" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="option.value" description="" label="" name="option" range="value" type="int" value="0" widget="int"/>
+                <conn input="pow1.value1" output="T"/>
+                <conn input="multiply1.value1" output="scale"/>
+                <conn input="add1.value1" output="start"/>
+                <conn input="add1.value2" output="multiply1"/>
+                <conn input="switch1.index" output="option"/>
+                <conn input="switch1.input1" output="T"/>
+                <conn input="multiply1.value2" output="switch1"/>
+                <conn input="pow2.value1" output="subtract1"/>
+                <conn input="subtract2.value2" output="pow2"/>
+                <conn input="compare1.value1" output="T"/>
+                <conn input="switch2.index" output="compare1"/>
+                <conn input="switch1.input4" output="switch2"/>
+                <conn input="multiply3.value1" output="T"/>
+                <conn input="subtract4.value2" output="pow1"/>
+                <conn input="sqrt1.value" output="subtract4"/>
+                <conn input="subtract5.value2" output="sqrt1"/>
+                <conn input="switch1.input2" output="subtract5"/>
+                <conn input="subtract1.value1" output="T"/>
+                <conn input="sqrt2.value" output="subtract2"/>
+                <conn input="switch1.input3" output="sqrt2"/>
+                <conn input="multiply4.value1" output="T"/>
+                <conn input="pow4.value1" output="multiply4"/>
+                <conn input="subtract6.value2" output="pow4"/>
+                <conn input="sqrt3.value" output="subtract6"/>
+                <conn input="subtract7.value2" output="sqrt3"/>
+                <conn input="divide2.value1" output="subtract7"/>
+                <conn input="switch2.input1" output="divide2"/>
+                <conn input="add2.value1" output="multiply3"/>
+                <conn input="pow5.value1" output="add2"/>
+                <conn input="subtract8.value2" output="pow5"/>
+                <conn input="sqrt4.value" output="subtract8"/>
+                <conn input="add3.value1" output="sqrt4"/>
+                <conn input="divide3.value1" output="add3"/>
+                <conn input="switch2.input2" output="divide3"/>
+            </node>
+            <node name="compare1" position="57.00,32.00" prototype="math.compare">
+                <port name="value2" type="float" value="5.0"/>
+                <port name="comparator" type="string" value="&gt;"/>
+            </node>
+            <node name="cubic" position="27.00,32.00" prototype="core.network" renderedChild="add1">
+                <node name="T" position="-7.00,28.00" prototype="math.number"/>
+                <node name="add1" position="22.00,50.00" prototype="math.add"/>
+                <node name="add2" position="7.00,34.00" prototype="math.add">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="compare1" position="12.00,33.00" prototype="math.compare">
+                    <port name="value2" type="float" value="0.5"/>
+                    <port name="comparator" type="string" value="&gt;="/>
+                </node>
+                <node name="divide1" position="7.00,36.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="multiply1" position="19.00,48.00" prototype="math.multiply"/>
+                <node name="multiply2" position="4.00,37.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="4.0"/>
+                </node>
+                <node name="multiply3" position="7.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="-2.0"/>
+                </node>
+                <node name="option" position="16.00,33.00" prototype="math.integer"/>
+                <node name="pow1" position="-2.00,33.00" prototype="math.pow">
+                    <port name="value2" type="float" value="3.0"/>
+                </node>
+                <node name="pow2" position="1.00,34.00" prototype="math.pow">
+                    <port name="value2" type="float" value="3.0"/>
+                </node>
+                <node name="pow3" position="7.00,35.00" prototype="math.pow">
+                    <port name="value2" type="float" value="3.0"/>
+                </node>
+                <node name="scale" position="19.00,33.00" prototype="math.number"/>
+                <node name="start" position="22.00,33.00" prototype="math.number"/>
+                <node name="subtract1" position="1.00,33.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract2" position="1.00,37.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract3" position="7.00,37.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="switch1" position="3.00,46.00" prototype="list.switch"/>
+                <node name="switch2" position="7.00,39.00" prototype="list.switch"/>
+                <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="start.value" description="" label="" name="start" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="scale.value" description="" label="" name="scale" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="option.value" description="" label="" name="option" range="value" type="int" value="0" widget="int"/>
+                <conn input="pow1.value1" output="T"/>
+                <conn input="multiply1.value1" output="scale"/>
+                <conn input="add1.value1" output="start"/>
+                <conn input="add1.value2" output="multiply1"/>
+                <conn input="switch1.index" output="option"/>
+                <conn input="switch1.input1" output="T"/>
+                <conn input="multiply1.value2" output="switch1"/>
+                <conn input="switch1.input2" output="pow1"/>
+                <conn input="subtract1.value2" output="T"/>
+                <conn input="pow2.value1" output="subtract1"/>
+                <conn input="subtract2.value2" output="pow2"/>
+                <conn input="switch1.input3" output="subtract2"/>
+                <conn input="compare1.value1" output="T"/>
+                <conn input="multiply2.value1" output="pow1"/>
+                <conn input="switch2.index" output="compare1"/>
+                <conn input="switch2.input1" output="multiply2"/>
+                <conn input="switch1.input4" output="switch2"/>
+                <conn input="multiply3.value1" output="T"/>
+                <conn input="add2.value1" output="multiply3"/>
+                <conn input="pow3.value1" output="add2"/>
+                <conn input="divide1.value1" output="pow3"/>
+                <conn input="subtract3.value2" output="divide1"/>
+                <conn input="switch2.input2" output="subtract3"/>
+            </node>
+            <node name="divide1" position="21.00,24.00" prototype="math.divide"/>
+            <node name="duration" position="24.00,22.00" prototype="math.number">
+                <port name="value" type="float" value="250.0"/>
+            </node>
+            <node name="ease_in" position="33.00,22.00" prototype="math.boolean">
+                <port name="value" type="boolean" value="true"/>
+            </node>
+            <node name="ease_out" position="36.00,22.00" prototype="math.boolean"/>
+            <node name="elastic" position="46.00,32.00" prototype="core.network" renderedChild="add1">
+                <node name="T" position="-26.00,26.00" prototype="math.number"/>
+                <node name="add1" position="22.00,50.00" prototype="math.add"/>
+                <node name="add2" position="-5.00,34.00" prototype="math.add">
+                    <port name="value2" type="float" value="10.0"/>
+                </node>
+                <node name="add3" position="2.00,44.00" prototype="math.add"/>
+                <node name="add4" position="2.00,35.00" prototype="math.add"/>
+                <node name="add5" position="-33.00,35.00" prototype="math.add"/>
+                <node name="add6" position="-19.00,35.00" prototype="math.add"/>
+                <node name="add7" position="-22.00,40.00" prototype="math.add">
+                    <port name="value2" type="float" value="1.0"/>
+                </node>
+                <node name="add8" position="-5.00,41.00" prototype="math.add">
+                    <port name="value2" type="float" value="1.0"/>
+                </node>
+                <node name="c4" position="-19.00,24.00" prototype="math.divide">
+                    <port name="value2" type="float" value="3.0"/>
+                </node>
+                <node name="c5" position="-15.00,24.00" prototype="math.divide">
+                    <port name="value2" type="float" value="4.5"/>
+                </node>
+                <node name="compare2" position="-33.00,33.00" prototype="math.compare">
+                    <port name="comparator" type="string" value="&gt;"/>
+                </node>
+                <node name="compare3" position="-19.00,33.00" prototype="math.compare">
+                    <port name="comparator" type="string" value="&gt;"/>
+                </node>
+                <node name="compare4" position="2.00,33.00" prototype="math.compare">
+                    <port name="comparator" type="string" value="!="/>
+                </node>
+                <node name="compare5" position="5.00,33.00" prototype="math.compare">
+                    <port name="value2" type="float" value="0.5"/>
+                    <port name="comparator" type="string" value="&gt;="/>
+                </node>
+                <node name="compare6" position="8.00,33.00" prototype="math.compare">
+                    <port name="value2" type="float" value="1.0"/>
+                    <port name="comparator" type="string" value="=="/>
+                </node>
+                <node name="compare7" position="-30.00,33.00" prototype="math.compare">
+                    <port name="value2" type="float" value="1.0"/>
+                    <port name="comparator" type="string" value="=="/>
+                </node>
+                <node name="compare8" position="-16.00,33.00" prototype="math.compare">
+                    <port name="value2" type="float" value="1.0"/>
+                    <port name="comparator" type="string" value="=="/>
+                </node>
+                <node name="divide1" position="-8.00,40.00" prototype="math.divide">
+                    <port name="value2" type="float" value="-2.0"/>
+                </node>
+                <node name="divide2" position="-5.00,40.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="multiply1" position="19.00,48.00" prototype="math.multiply"/>
+                <node name="multiply10" position="-22.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="10.0"/>
+                </node>
+                <node name="multiply11" position="-22.00,39.00" prototype="math.multiply"/>
+                <node name="multiply12" position="-22.00,36.00" prototype="math.multiply"/>
+                <node name="multiply13" position="-8.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="20.0"/>
+                </node>
+                <node name="multiply14" position="-8.00,39.00" prototype="math.multiply"/>
+                <node name="multiply15" position="-5.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="-20.0"/>
+                </node>
+                <node name="multiply16" position="-2.00,36.00" prototype="math.multiply"/>
+                <node name="multiply17" position="-5.00,39.00" prototype="math.multiply"/>
+                <node name="multiply18" position="-2.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="20.0"/>
+                </node>
+                <node name="multiply2" position="-19.00,22.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="multiply3" position="-36.00,36.00" prototype="math.multiply"/>
+                <node name="multiply4" position="-39.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="10.0"/>
+                </node>
+                <node name="multiply5" position="-25.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="-10.0"/>
+                </node>
+                <node name="multiply6" position="-11.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="20.0"/>
+                </node>
+                <node name="multiply7" position="-8.00,36.00" prototype="math.multiply"/>
+                <node name="multiply8" position="-36.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="10.0"/>
+                </node>
+                <node name="multiply9" position="-36.00,40.00" prototype="math.multiply"/>
+                <node name="negate1" position="-39.00,37.00" prototype="math.negate"/>
+                <node name="number1" position="-39.00,40.00" prototype="math.number"/>
+                <node name="number2" position="-25.00,40.00" prototype="math.number"/>
+                <node name="number3" position="-32.00,40.00" prototype="math.number">
+                    <port name="value" type="float" value="1.0"/>
+                </node>
+                <node name="number4" position="-18.00,40.00" prototype="math.number">
+                    <port name="value" type="float" value="1.0"/>
+                </node>
+                <node name="one" position="-2.00,41.00" prototype="math.number">
+                    <port name="value" type="float" value="1.0"/>
+                </node>
+                <node name="option" position="14.00,26.00" prototype="math.integer"/>
+                <node name="pi1" position="-19.00,21.00" prototype="math.pi"/>
+                <node name="pow1" position="-39.00,36.00" prototype="math.pow">
+                    <port name="value1" type="float" value="2.0"/>
+                    <port name="value2" type="float" value="5.0"/>
+                </node>
+                <node name="pow2" position="-25.00,36.00" prototype="math.pow">
+                    <port name="value1" type="float" value="2.0"/>
+                    <port name="value2" type="float" value="5.0"/>
+                </node>
+                <node name="pow3" position="-11.00,36.00" prototype="math.pow">
+                    <port name="value1" type="float" value="2.0"/>
+                    <port name="value2" type="float" value="5.0"/>
+                </node>
+                <node name="pow4" position="-5.00,36.00" prototype="math.pow">
+                    <port name="value1" type="float" value="2.0"/>
+                    <port name="value2" type="float" value="5.0"/>
+                </node>
+                <node name="scale" position="19.00,33.00" prototype="math.number"/>
+                <node name="sin1" position="-36.00,37.00" prototype="math.sin"/>
+                <node name="sin2" position="-22.00,37.00" prototype="math.sin"/>
+                <node name="sin3" position="-8.00,37.00" prototype="math.sin"/>
+                <node name="sin4" position="-2.00,37.00" prototype="math.sin"/>
+                <node name="start" position="22.00,33.00" prototype="math.number"/>
+                <node name="subtract10" position="-2.00,34.00" prototype="math.subtract">
+                    <port name="value2" type="float" value="11.125"/>
+                </node>
+                <node name="subtract4" position="-39.00,34.00" prototype="math.subtract">
+                    <port name="value2" type="float" value="10.0"/>
+                </node>
+                <node name="subtract5" position="-11.00,34.00" prototype="math.subtract">
+                    <port name="value2" type="float" value="10.0"/>
+                </node>
+                <node name="subtract7" position="-36.00,34.00" prototype="math.subtract">
+                    <port name="value2" type="float" value="10.75"/>
+                </node>
+                <node name="subtract8" position="-22.00,34.00" prototype="math.subtract">
+                    <port name="value2" type="float" value="0.75"/>
+                </node>
+                <node name="subtract9" position="-8.00,34.00" prototype="math.subtract">
+                    <port name="value2" type="float" value="11.125"/>
+                </node>
+                <node name="switch1" position="-26.00,52.00" prototype="list.switch"/>
+                <node name="switch3" position="-35.00,43.00" prototype="list.switch"/>
+                <node name="switch4" position="-21.00,43.00" prototype="list.switch"/>
+                <node name="switch5" position="-11.00,46.00" prototype="list.switch"/>
+                <node name="zero" position="-11.00,40.00" prototype="math.number"/>
+                <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="start.value" description="" label="" name="start" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="scale.value" description="" label="" name="scale" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="option.value" description="" label="" name="option" range="value" type="int" value="0" widget="int"/>
+                <conn input="multiply1.value1" output="scale"/>
+                <conn input="add1.value1" output="start"/>
+                <conn input="add1.value2" output="multiply1"/>
+                <conn input="switch1.index" output="option"/>
+                <conn input="switch1.input1" output="T"/>
+                <conn input="multiply1.value2" output="switch1"/>
+                <conn input="multiply4.value1" output="T"/>
+                <conn input="subtract4.value1" output="multiply4"/>
+                <conn input="pow1.value2" output="subtract4"/>
+                <conn input="compare2.value1" output="T"/>
+                <conn input="switch1.input2" output="switch3"/>
+                <conn input="add4.value1" output="compare4"/>
+                <conn input="add4.value2" output="compare5"/>
+                <conn input="add3.value1" output="add4"/>
+                <conn input="add3.value2" output="compare6"/>
+                <conn input="compare4.value1" output="T"/>
+                <conn input="compare5.value1" output="T"/>
+                <conn input="compare6.value1" output="T"/>
+                <conn input="switch5.index" output="add3"/>
+                <conn input="switch5.input1" output="zero"/>
+                <conn input="switch5.input4" output="one"/>
+                <conn input="switch1.input4" output="switch5"/>
+                <conn input="switch3.input3" output="number3"/>
+                <conn input="compare7.value1" output="T"/>
+                <conn input="add5.value1" output="compare2"/>
+                <conn input="add5.value2" output="compare7"/>
+                <conn input="switch3.index" output="add5"/>
+                <conn input="switch3.input1" output="number1"/>
+                <conn input="negate1.value" output="pow1"/>
+                <conn input="multiply8.value1" output="T"/>
+                <conn input="subtract7.value1" output="multiply8"/>
+                <conn input="multiply2.value1" output="pi1"/>
+                <conn input="c4.value1" output="multiply2"/>
+                <conn input="multiply3.value1" output="subtract7"/>
+                <conn input="multiply3.value2" output="c4"/>
+                <conn input="sin1.value" output="multiply3"/>
+                <conn input="multiply9.value1" output="negate1"/>
+                <conn input="multiply9.value2" output="sin1"/>
+                <conn input="switch3.input2" output="multiply9"/>
+                <conn input="multiply5.value1" output="T"/>
+                <conn input="compare3.value1" output="T"/>
+                <conn input="switch4.input3" output="number4"/>
+                <conn input="compare8.value1" output="T"/>
+                <conn input="add6.value1" output="compare3"/>
+                <conn input="add6.value2" output="compare8"/>
+                <conn input="switch4.index" output="add6"/>
+                <conn input="switch4.input1" output="number2"/>
+                <conn input="multiply10.value1" output="T"/>
+                <conn input="subtract8.value1" output="multiply10"/>
+                <conn input="multiply12.value1" output="subtract8"/>
+                <conn input="multiply12.value2" output="c4"/>
+                <conn input="sin2.value" output="multiply12"/>
+                <conn input="multiply11.value2" output="sin2"/>
+                <conn input="pow2.value2" output="multiply5"/>
+                <conn input="multiply11.value1" output="pow2"/>
+                <conn input="add7.value1" output="multiply11"/>
+                <conn input="switch4.input2" output="add7"/>
+                <conn input="switch1.input3" output="switch4"/>
+                <conn input="multiply6.value1" output="T"/>
+                <conn input="subtract5.value1" output="multiply6"/>
+                <conn input="pow3.value2" output="subtract5"/>
+                <conn input="multiply13.value1" output="T"/>
+                <conn input="subtract9.value1" output="multiply13"/>
+                <conn input="multiply7.value1" output="subtract9"/>
+                <conn input="sin3.value" output="multiply7"/>
+                <conn input="multiply14.value2" output="sin3"/>
+                <conn input="c5.value1" output="multiply2"/>
+                <conn input="multiply7.value2" output="c5"/>
+                <conn input="multiply14.value1" output="pow3"/>
+                <conn input="divide1.value1" output="multiply14"/>
+                <conn input="switch5.input2" output="divide1"/>
+                <conn input="multiply15.value1" output="T"/>
+                <conn input="multiply18.value1" output="T"/>
+                <conn input="subtract10.value1" output="multiply18"/>
+                <conn input="multiply16.value1" output="subtract10"/>
+                <conn input="sin4.value" output="multiply16"/>
+                <conn input="multiply17.value2" output="sin4"/>
+                <conn input="multiply16.value2" output="c5"/>
+                <conn input="multiply17.value1" output="pow4"/>
+                <conn input="divide2.value1" output="multiply17"/>
+                <conn input="add2.value1" output="multiply15"/>
+                <conn input="pow4.value2" output="add2"/>
+                <conn input="add8.value1" output="divide2"/>
+                <conn input="switch5.input3" output="add8"/>
+            </node>
+            <node name="end" position="30.00,22.00" prototype="math.number">
+                <port name="value" type="float" value="10.0"/>
+            </node>
+            <node name="expo" position="36.00,32.00" prototype="core.network" renderedChild="add1">
+                <node name="T" position="-21.00,26.00" prototype="math.number"/>
+                <node name="add1" position="19.00,50.00" prototype="math.add"/>
+                <node name="add2" position="-3.00,34.00" prototype="math.add">
+                    <port name="value2" type="float" value="10.0"/>
+                </node>
+                <node name="add3" position="4.00,39.00" prototype="math.add"/>
+                <node name="add4" position="4.00,35.00" prototype="math.add"/>
+                <node name="compare2" position="-25.00,33.00" prototype="math.compare">
+                    <port name="comparator" type="string" value="=="/>
+                </node>
+                <node name="compare3" position="-14.00,33.00" prototype="math.compare">
+                    <port name="value2" type="float" value="1.0"/>
+                    <port name="comparator" type="string" value="=="/>
+                </node>
+                <node name="compare4" position="2.00,33.00" prototype="math.compare">
+                    <port name="comparator" type="string" value="!="/>
+                </node>
+                <node name="compare5" position="5.00,33.00" prototype="math.compare">
+                    <port name="value2" type="float" value="0.5"/>
+                    <port name="comparator" type="string" value="&gt;="/>
+                </node>
+                <node name="compare6" position="8.00,33.00" prototype="math.compare">
+                    <port name="value2" type="float" value="1.0"/>
+                    <port name="comparator" type="string" value="=="/>
+                </node>
+                <node name="divide1" position="-6.00,37.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="divide2" position="-3.00,39.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="multiply1" position="16.00,48.00" prototype="math.multiply"/>
+                <node name="multiply4" position="-31.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="10.0"/>
+                </node>
+                <node name="multiply5" position="-20.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="-10.0"/>
+                </node>
+                <node name="multiply6" position="-6.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="20.0"/>
+                </node>
+                <node name="multiply7" position="-3.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="-20.0"/>
+                </node>
+                <node name="number1" position="-28.00,33.00" prototype="math.number"/>
+                <node name="number2" position="-17.00,33.00" prototype="math.number">
+                    <port name="value" type="float" value="1.0"/>
+                </node>
+                <node name="one" position="0.00,39.00" prototype="math.number">
+                    <port name="value" type="float" value="1.0"/>
+                </node>
+                <node name="option" position="13.00,33.00" prototype="math.integer"/>
+                <node name="pow1" position="-31.00,36.00" prototype="math.pow">
+                    <port name="value1" type="float" value="2.0"/>
+                    <port name="value2" type="float" value="5.0"/>
+                </node>
+                <node name="pow2" position="-20.00,35.00" prototype="math.pow">
+                    <port name="value1" type="float" value="2.0"/>
+                    <port name="value2" type="float" value="5.0"/>
+                </node>
+                <node name="pow3" position="-6.00,36.00" prototype="math.pow">
+                    <port name="value1" type="float" value="2.0"/>
+                    <port name="value2" type="float" value="5.0"/>
+                </node>
+                <node name="pow4" position="-3.00,36.00" prototype="math.pow">
+                    <port name="value1" type="float" value="2.0"/>
+                    <port name="value2" type="float" value="5.0"/>
+                </node>
+                <node name="scale" position="16.00,33.00" prototype="math.number"/>
+                <node name="start" position="19.00,33.00" prototype="math.number"/>
+                <node name="subtract1" position="-3.00,38.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="2.0"/>
+                </node>
+                <node name="subtract4" position="-31.00,34.00" prototype="math.subtract">
+                    <port name="value2" type="float" value="10.0"/>
+                </node>
+                <node name="subtract5" position="-20.00,37.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                    <port name="value2" type="float" value="10.0"/>
+                </node>
+                <node name="subtract6" position="-6.00,34.00" prototype="math.subtract">
+                    <port name="value2" type="float" value="10.0"/>
+                </node>
+                <node name="switch1" position="-21.00,53.00" prototype="list.switch"/>
+                <node name="switch3" position="-25.00,39.00" prototype="list.switch"/>
+                <node name="switch4" position="-14.00,39.00" prototype="list.switch"/>
+                <node name="switch5" position="-9.00,42.00" prototype="list.switch"/>
+                <node name="zero" position="-9.00,33.00" prototype="math.number"/>
+                <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="start.value" description="" label="" name="start" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="scale.value" description="" label="" name="scale" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="option.value" description="" label="" name="option" range="value" type="int" value="0" widget="int"/>
+                <conn input="multiply1.value1" output="scale"/>
+                <conn input="add1.value1" output="start"/>
+                <conn input="add1.value2" output="multiply1"/>
+                <conn input="switch1.index" output="option"/>
+                <conn input="switch1.input1" output="T"/>
+                <conn input="multiply1.value2" output="switch1"/>
+                <conn input="multiply4.value1" output="T"/>
+                <conn input="subtract4.value1" output="multiply4"/>
+                <conn input="pow1.value2" output="subtract4"/>
+                <conn input="compare2.value1" output="T"/>
+                <conn input="switch3.index" output="compare2"/>
+                <conn input="switch3.input2" output="number1"/>
+                <conn input="switch3.input1" output="pow1"/>
+                <conn input="multiply5.value1" output="T"/>
+                <conn input="compare3.value1" output="T"/>
+                <conn input="switch4.index" output="compare3"/>
+                <conn input="switch4.input2" output="number2"/>
+                <conn input="pow2.value2" output="multiply5"/>
+                <conn input="subtract5.value2" output="pow2"/>
+                <conn input="switch4.input1" output="subtract5"/>
+                <conn input="switch1.input2" output="switch3"/>
+                <conn input="switch1.input3" output="switch4"/>
+                <conn input="add4.value1" output="compare4"/>
+                <conn input="add4.value2" output="compare5"/>
+                <conn input="add3.value1" output="add4"/>
+                <conn input="add3.value2" output="compare6"/>
+                <conn input="compare4.value1" output="T"/>
+                <conn input="compare5.value1" output="T"/>
+                <conn input="compare6.value1" output="T"/>
+                <conn input="switch5.index" output="add3"/>
+                <conn input="switch5.input1" output="zero"/>
+                <conn input="switch5.input4" output="one"/>
+                <conn input="switch1.input4" output="switch5"/>
+                <conn input="multiply6.value1" output="T"/>
+                <conn input="subtract6.value1" output="multiply6"/>
+                <conn input="pow3.value2" output="subtract6"/>
+                <conn input="divide1.value1" output="pow3"/>
+                <conn input="switch5.input2" output="divide1"/>
+                <conn input="multiply7.value1" output="T"/>
+                <conn input="add2.value1" output="multiply7"/>
+                <conn input="pow4.value2" output="add2"/>
+                <conn input="subtract1.value2" output="pow4"/>
+                <conn input="divide2.value1" output="subtract1"/>
+                <conn input="switch5.input3" output="divide2"/>
+            </node>
+            <node name="method" position="53.00,22.00" prototype="string.string">
+                <port name="value" type="string" value="0"/>
+            </node>
+            <node name="multiply1" position="36.00,23.00" prototype="math.multiply">
+                <port name="value2" type="float" value="2.0"/>
+            </node>
+            <node name="null1" position="21.00,26.00" prototype="corevector.null"/>
+            <node comment="rounds a floating point number to a given precision" name="precision" position="53.00,44.00" prototype="core.network" renderedChild="switch2">
+                <node name="compare1" position="-28.00,-4.00" prototype="math.compare">
+                    <port name="comparator" type="string" value="!="/>
+                </node>
+                <node name="compare2" position="-28.00,3.00" prototype="math.compare">
+                    <port name="value2" type="float" value="-0.0"/>
+                    <port name="comparator" type="string" value="=="/>
+                </node>
+                <node name="concatenate1" position="-31.00,-4.00" prototype="string.concatenate">
+                    <port name="string1" type="string" value="%."/>
+                    <port name="string3" type="string" value="f"/>
+                </node>
+                <node name="format_number1" position="-32.00,-2.00" prototype="string.format_number"/>
+                <node name="number1" position="-31.00,3.00" prototype="math.number"/>
+                <node name="number3" position="-32.00,-6.00" prototype="math.number">
+                    <port name="value" type="float" value="-0.0"/>
+                </node>
+                <node name="number4" position="-32.00,-1.00" prototype="math.number"/>
+                <node name="precision" position="-29.00,-6.00" prototype="math.integer">
+                    <port name="value" type="int" value="4"/>
+                </node>
+                <node name="round1" position="-35.00,-1.00" prototype="math.round"/>
+                <node name="switch1" position="-32.00,1.00" prototype="list.switch"/>
+                <node comment="replace minus zeroes with zeroes" name="switch2" position="-32.00,5.00" prototype="list.switch"/>
+                <port childReference="number3.value" description="" label="" name="value" range="value" type="float" value="-0.0" widget="float"/>
+                <port childReference="precision.value" description="" label="" min="0.0" name="precision" range="value" type="int" value="4" widget="int"/>
+                <conn input="format_number1.value" output="number3"/>
+                <conn input="concatenate1.string2" output="precision"/>
+                <conn input="format_number1.format" output="concatenate1"/>
+                <conn input="number4.value" output="format_number1"/>
+                <conn input="round1.value" output="number3"/>
+                <conn input="compare1.value1" output="precision"/>
+                <conn input="switch1.index" output="compare1"/>
+                <conn input="switch1.input1" output="round1"/>
+                <conn input="switch1.input2" output="number4"/>
+                <conn input="compare2.value1" output="switch1"/>
+                <conn input="switch2.input1" output="switch1"/>
+                <conn input="switch2.index" output="compare2"/>
+                <conn input="switch2.input2" output="number1"/>
+            </node>
+            <node name="quad" position="24.00,32.00" prototype="core.network" renderedChild="add1">
+                <node name="T" position="-7.00,28.00" prototype="math.number"/>
+                <node name="add1" position="22.00,50.00" prototype="math.add"/>
+                <node name="add2" position="7.00,34.00" prototype="math.add">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="compare1" position="12.00,33.00" prototype="math.compare">
+                    <port name="value2" type="float" value="0.5"/>
+                    <port name="comparator" type="string" value="&gt;="/>
+                </node>
+                <node name="divide1" position="7.00,36.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="multiply1" position="19.00,48.00" prototype="math.multiply"/>
+                <node name="multiply2" position="4.00,37.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="multiply3" position="7.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="-2.0"/>
+                </node>
+                <node name="option" position="16.00,33.00" prototype="math.integer"/>
+                <node name="pow1" position="-2.00,33.00" prototype="math.pow">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="pow2" position="1.00,34.00" prototype="math.pow">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="pow3" position="7.00,35.00" prototype="math.pow">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="scale" position="19.00,33.00" prototype="math.number"/>
+                <node name="start" position="22.00,33.00" prototype="math.number"/>
+                <node name="subtract1" position="1.00,33.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract2" position="1.00,37.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract3" position="7.00,37.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="switch1" position="3.00,46.00" prototype="list.switch"/>
+                <node name="switch2" position="7.00,39.00" prototype="list.switch"/>
+                <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="start.value" description="" label="" name="start" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="scale.value" description="" label="" name="scale" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="option.value" description="" label="" name="option" range="value" type="int" value="0" widget="int"/>
+                <conn input="pow1.value1" output="T"/>
+                <conn input="multiply1.value1" output="scale"/>
+                <conn input="add1.value1" output="start"/>
+                <conn input="add1.value2" output="multiply1"/>
+                <conn input="switch1.index" output="option"/>
+                <conn input="switch1.input1" output="T"/>
+                <conn input="multiply1.value2" output="switch1"/>
+                <conn input="switch1.input2" output="pow1"/>
+                <conn input="subtract1.value2" output="T"/>
+                <conn input="pow2.value1" output="subtract1"/>
+                <conn input="subtract2.value2" output="pow2"/>
+                <conn input="switch1.input3" output="subtract2"/>
+                <conn input="compare1.value1" output="T"/>
+                <conn input="multiply2.value1" output="pow1"/>
+                <conn input="switch2.index" output="compare1"/>
+                <conn input="switch2.input1" output="multiply2"/>
+                <conn input="switch1.input4" output="switch2"/>
+                <conn input="multiply3.value1" output="T"/>
+                <conn input="add2.value1" output="multiply3"/>
+                <conn input="pow3.value1" output="add2"/>
+                <conn input="divide1.value1" output="pow3"/>
+                <conn input="subtract3.value2" output="divide1"/>
+                <conn input="switch2.input2" output="subtract3"/>
+            </node>
+            <node name="quart" position="30.00,32.00" prototype="core.network" renderedChild="add1">
+                <node name="T" position="-7.00,28.00" prototype="math.number"/>
+                <node name="add1" position="22.00,50.00" prototype="math.add"/>
+                <node name="add2" position="7.00,34.00" prototype="math.add">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="compare1" position="12.00,33.00" prototype="math.compare">
+                    <port name="value2" type="float" value="0.5"/>
+                    <port name="comparator" type="string" value="&gt;="/>
+                </node>
+                <node name="divide1" position="7.00,36.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="multiply1" position="19.00,48.00" prototype="math.multiply"/>
+                <node name="multiply2" position="4.00,37.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="8.0"/>
+                </node>
+                <node name="multiply3" position="7.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="-2.0"/>
+                </node>
+                <node name="option" position="16.00,33.00" prototype="math.integer"/>
+                <node name="pow1" position="-2.00,33.00" prototype="math.pow">
+                    <port name="value2" type="float" value="4.0"/>
+                </node>
+                <node name="pow2" position="1.00,34.00" prototype="math.pow">
+                    <port name="value2" type="float" value="4.0"/>
+                </node>
+                <node name="pow3" position="7.00,35.00" prototype="math.pow">
+                    <port name="value2" type="float" value="4.0"/>
+                </node>
+                <node name="scale" position="19.00,33.00" prototype="math.number"/>
+                <node name="start" position="22.00,33.00" prototype="math.number"/>
+                <node name="subtract1" position="1.00,33.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract2" position="1.00,37.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract3" position="7.00,37.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="switch1" position="3.00,46.00" prototype="list.switch"/>
+                <node name="switch2" position="7.00,39.00" prototype="list.switch"/>
+                <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="start.value" description="" label="" name="start" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="scale.value" description="" label="" name="scale" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="option.value" description="" label="" name="option" range="value" type="int" value="0" widget="int"/>
+                <conn input="pow1.value1" output="T"/>
+                <conn input="multiply1.value1" output="scale"/>
+                <conn input="add1.value1" output="start"/>
+                <conn input="add1.value2" output="multiply1"/>
+                <conn input="switch1.index" output="option"/>
+                <conn input="switch1.input1" output="T"/>
+                <conn input="multiply1.value2" output="switch1"/>
+                <conn input="switch1.input2" output="pow1"/>
+                <conn input="subtract1.value2" output="T"/>
+                <conn input="pow2.value1" output="subtract1"/>
+                <conn input="subtract2.value2" output="pow2"/>
+                <conn input="switch1.input3" output="subtract2"/>
+                <conn input="compare1.value1" output="T"/>
+                <conn input="multiply2.value1" output="pow1"/>
+                <conn input="switch2.index" output="compare1"/>
+                <conn input="switch2.input1" output="multiply2"/>
+                <conn input="switch1.input4" output="switch2"/>
+                <conn input="multiply3.value1" output="T"/>
+                <conn input="add2.value1" output="multiply3"/>
+                <conn input="pow3.value1" output="add2"/>
+                <conn input="divide1.value1" output="pow3"/>
+                <conn input="subtract3.value2" output="divide1"/>
+                <conn input="switch2.input2" output="subtract3"/>
+            </node>
+            <node name="quint" position="33.00,32.00" prototype="core.network" renderedChild="add1">
+                <node name="T" position="-7.00,28.00" prototype="math.number"/>
+                <node name="add1" position="22.00,50.00" prototype="math.add"/>
+                <node name="add2" position="7.00,34.00" prototype="math.add">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="compare1" position="12.00,33.00" prototype="math.compare">
+                    <port name="value2" type="float" value="0.5"/>
+                    <port name="comparator" type="string" value="&gt;="/>
+                </node>
+                <node name="divide1" position="7.00,36.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="multiply1" position="19.00,48.00" prototype="math.multiply"/>
+                <node name="multiply2" position="4.00,37.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="16.0"/>
+                </node>
+                <node name="multiply3" position="7.00,33.00" prototype="math.multiply">
+                    <port name="value2" type="float" value="-2.0"/>
+                </node>
+                <node name="option" position="16.00,33.00" prototype="math.integer"/>
+                <node name="pow1" position="-2.00,33.00" prototype="math.pow">
+                    <port name="value2" type="float" value="5.0"/>
+                </node>
+                <node name="pow2" position="1.00,34.00" prototype="math.pow">
+                    <port name="value2" type="float" value="5.0"/>
+                </node>
+                <node name="pow3" position="7.00,35.00" prototype="math.pow">
+                    <port name="value2" type="float" value="5.0"/>
+                </node>
+                <node name="scale" position="19.00,33.00" prototype="math.number"/>
+                <node name="start" position="22.00,33.00" prototype="math.number"/>
+                <node name="subtract1" position="1.00,33.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract2" position="1.00,37.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract3" position="7.00,37.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="switch1" position="3.00,46.00" prototype="list.switch"/>
+                <node name="switch2" position="7.00,39.00" prototype="list.switch"/>
+                <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="start.value" description="" label="" name="start" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="scale.value" description="" label="" name="scale" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="option.value" description="" label="" name="option" range="value" type="int" value="0" widget="int"/>
+                <conn input="pow1.value1" output="T"/>
+                <conn input="multiply1.value1" output="scale"/>
+                <conn input="add1.value1" output="start"/>
+                <conn input="add1.value2" output="multiply1"/>
+                <conn input="switch1.index" output="option"/>
+                <conn input="switch1.input1" output="T"/>
+                <conn input="multiply1.value2" output="switch1"/>
+                <conn input="switch1.input2" output="pow1"/>
+                <conn input="subtract1.value2" output="T"/>
+                <conn input="pow2.value1" output="subtract1"/>
+                <conn input="subtract2.value2" output="pow2"/>
+                <conn input="switch1.input3" output="subtract2"/>
+                <conn input="compare1.value1" output="T"/>
+                <conn input="multiply2.value1" output="pow1"/>
+                <conn input="switch2.index" output="compare1"/>
+                <conn input="switch2.input1" output="multiply2"/>
+                <conn input="switch1.input4" output="switch2"/>
+                <conn input="multiply3.value1" output="T"/>
+                <conn input="add2.value1" output="multiply3"/>
+                <conn input="pow3.value1" output="add2"/>
+                <conn input="divide1.value1" output="pow3"/>
+                <conn input="subtract3.value2" output="divide1"/>
+                <conn input="switch2.input2" output="subtract3"/>
+            </node>
+            <node name="sine" position="21.00,32.00" prototype="core.network" renderedChild="add1">
+                <node name="T" position="0.00,29.00" prototype="math.number"/>
+                <node name="add1" position="22.00,50.00" prototype="math.add"/>
+                <node name="cos1" position="4.00,35.00" prototype="math.cos"/>
+                <node name="cos2" position="10.00,34.00" prototype="math.cos"/>
+                <node name="divide1" position="4.00,34.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="divide2" position="7.00,34.00" prototype="math.divide">
+                    <port name="value2" type="float" value="2.0"/>
+                </node>
+                <node name="divide3" position="10.00,36.00" prototype="math.divide">
+                    <port name="value2" type="float" value="-2.0"/>
+                </node>
+                <node name="multiply1" position="19.00,48.00" prototype="math.multiply"/>
+                <node name="multiply2" position="4.00,33.00" prototype="math.multiply"/>
+                <node name="multiply3" position="7.00,33.00" prototype="math.multiply"/>
+                <node name="multiply4" position="10.00,33.00" prototype="math.multiply"/>
+                <node name="option" position="16.00,33.00" prototype="math.integer"/>
+                <node name="pi1" position="11.00,31.00" prototype="math.pi"/>
+                <node name="scale" position="19.00,33.00" prototype="math.number"/>
+                <node name="sin1" position="7.00,35.00" prototype="math.sin"/>
+                <node name="start" position="22.00,33.00" prototype="math.number"/>
+                <node name="subtract1" position="4.00,37.00" prototype="math.subtract">
+                    <port name="value1" type="float" value="1.0"/>
+                </node>
+                <node name="subtract2" position="10.00,35.00" prototype="math.subtract">
+                    <port name="value2" type="float" value="1.0"/>
+                </node>
+                <node name="switch1" position="3.00,46.00" prototype="list.switch"/>
+                <port childReference="T.value" description="" label="" name="T" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="start.value" description="" label="" name="start" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="scale.value" description="" label="" name="scale" range="value" type="float" value="0.0" widget="float"/>
+                <port childReference="option.value" description="" label="" name="option" range="value" type="int" value="0" widget="int"/>
+                <conn input="multiply1.value1" output="scale"/>
+                <conn input="add1.value1" output="start"/>
+                <conn input="add1.value2" output="multiply1"/>
+                <conn input="switch1.index" output="option"/>
+                <conn input="switch1.input1" output="T"/>
+                <conn input="multiply1.value2" output="switch1"/>
+                <conn input="multiply2.value1" output="T"/>
+                <conn input="multiply2.value2" output="pi1"/>
+                <conn input="divide1.value1" output="multiply2"/>
+                <conn input="cos1.value" output="divide1"/>
+                <conn input="subtract1.value2" output="cos1"/>
+                <conn input="switch1.input2" output="subtract1"/>
+                <conn input="multiply3.value1" output="T"/>
+                <conn input="multiply3.value2" output="pi1"/>
+                <conn input="divide2.value1" output="multiply3"/>
+                <conn input="sin1.value" output="divide2"/>
+                <conn input="switch1.input3" output="sin1"/>
+                <conn input="multiply4.value1" output="T"/>
+                <conn input="multiply4.value2" output="pi1"/>
+                <conn input="cos2.value" output="multiply4"/>
+                <conn input="subtract2.value1" output="cos2"/>
+                <conn input="divide3.value1" output="subtract2"/>
+                <conn input="switch1.input4" output="divide3"/>
+            </node>
+            <node name="start" position="27.00,22.00" prototype="math.number">
+                <port name="value" type="float" value="42.0"/>
+            </node>
+            <node name="subtract1" position="30.00,24.00" prototype="math.subtract"/>
+            <node name="subtract2" position="54.00,32.00" prototype="math.subtract">
+                <port name="value2" type="float" value="6.0"/>
+            </node>
+            <node name="switch1" position="28.00,37.00" prototype="list.switch"/>
+            <node name="switch2" position="53.00,34.00" prototype="list.switch"/>
+            <node name="switch3" position="40.00,37.00" prototype="list.switch"/>
+            <node name="switch4" position="53.00,43.00" prototype="list.switch"/>
+            <port childReference="T.value" description="" label="" min="0.0" name="T" range="value" type="float" value="226.0" widget="float"/>
+            <port childReference="duration.value" description="" label="" min="1.0" name="duration" range="value" type="float" value="250.0" widget="float"/>
+            <port childReference="start.value" description="" label="" name="start" range="value" type="float" value="42.0" widget="float"/>
+            <port childReference="end.value" description="" label="" name="end" range="value" type="float" value="10.0" widget="float"/>
+            <port childReference="method.value" description="" label="" name="method" range="value" type="string" value="0" widget="menu">
+                <menu key="0" label="Sine"/>
+                <menu key="1" label="Quad"/>
+                <menu key="2" label="Cubic"/>
+                <menu key="3" label="Quart"/>
+                <menu key="4" label="Quint"/>
+                <menu key="5" label="Expo"/>
+                <menu key="6" label="Circ"/>
+                <menu key="7" label="Back"/>
+                <menu key="8" label="Elastic"/>
+                <menu key="9" label="Bounce"/>
+            </port>
+            <port childReference="ease_in.value" description="" label="" name="Ease In" range="value" type="boolean" value="true" widget="toggle"/>
+            <port childReference="ease_out.value" description="" label="" name="Ease out" range="value" type="boolean" value="false" widget="toggle"/>
+            <conn input="subtract1.value1" output="end"/>
+            <conn input="subtract1.value2" output="start"/>
+            <conn input="add1.value1" output="ease_in"/>
+            <conn input="multiply1.value1" output="ease_out"/>
+            <conn input="add1.value2" output="multiply1"/>
+            <conn input="quad.start" output="start"/>
+            <conn input="quad.scale" output="subtract1"/>
+            <conn input="divide1.value1" output="T"/>
+            <conn input="divide1.value2" output="duration"/>
+            <conn input="quad.option" output="add1"/>
+            <conn input="compare1.value1" output="method"/>
+            <conn input="subtract2.value1" output="method"/>
+            <conn input="switch2.input1" output="method"/>
+            <conn input="switch2.index" output="compare1"/>
+            <conn input="switch2.input2" output="subtract2"/>
+            <conn input="switch1.index" output="switch2"/>
+            <conn input="cubic.start" output="start"/>
+            <conn input="cubic.scale" output="subtract1"/>
+            <conn input="cubic.option" output="add1"/>
+            <conn input="quart.start" output="start"/>
+            <conn input="quart.scale" output="subtract1"/>
+            <conn input="quart.option" output="add1"/>
+            <conn input="quint.start" output="start"/>
+            <conn input="quint.scale" output="subtract1"/>
+            <conn input="quint.option" output="add1"/>
+            <conn input="expo.start" output="start"/>
+            <conn input="expo.scale" output="subtract1"/>
+            <conn input="expo.option" output="add1"/>
+            <conn input="sine.start" output="start"/>
+            <conn input="sine.scale" output="subtract1"/>
+            <conn input="sine.option" output="add1"/>
+            <conn input="switch3.index" output="switch2"/>
+            <conn input="switch4.index" output="compare1"/>
+            <conn input="switch4.input1" output="switch1"/>
+            <conn input="switch4.input2" output="switch3"/>
+            <conn input="precision.value" output="switch4"/>
+            <conn input="circ.start" output="start"/>
+            <conn input="circ.scale" output="subtract1"/>
+            <conn input="circ.option" output="add1"/>
+            <conn input="switch3.input1" output="circ"/>
+            <conn input="switch1.input1" output="sine"/>
+            <conn input="switch1.input2" output="quad"/>
+            <conn input="switch1.input3" output="cubic"/>
+            <conn input="switch1.input4" output="quart"/>
+            <conn input="switch1.input5" output="quint"/>
+            <conn input="switch1.input6" output="expo"/>
+            <conn input="back.start" output="start"/>
+            <conn input="back.scale" output="subtract1"/>
+            <conn input="back.option" output="add1"/>
+            <conn input="switch3.input2" output="back"/>
+            <conn input="elastic.start" output="start"/>
+            <conn input="elastic.scale" output="subtract1"/>
+            <conn input="elastic.option" output="add1"/>
+            <conn input="switch3.input3" output="elastic"/>
+            <conn input="bounce.start" output="start"/>
+            <conn input="bounce.scale" output="subtract1"/>
+            <conn input="bounce.option" output="add1"/>
+            <conn input="switch3.input4" output="bounce"/>
+            <conn input="bounds.value" output="divide1"/>
+            <conn input="null1.shape" output="bounds"/>
+            <conn input="sine.T" output="null1"/>
+            <conn input="quad.T" output="null1"/>
+            <conn input="cubic.T" output="null1"/>
+            <conn input="quart.T" output="null1"/>
+            <conn input="quint.T" output="null1"/>
+            <conn input="expo.T" output="null1"/>
+            <conn input="circ.T" output="null1"/>
+            <conn input="back.T" output="null1"/>
+            <conn input="elastic.T" output="null1"/>
+            <conn input="bounce.T" output="null1"/>
+        </node>
+        <node name="frame10" position="96.00,-3.00" prototype="core.frame"/>
+        <node name="frame9" position="101.00,0.00" prototype="core.frame"/>
+        <node name="hsb_color12" position="106.00,2.00" prototype="color.hsb_color">
+            <port name="saturation" type="float" value="1.0"/>
+            <port name="brightness" type="float" value="470.0"/>
+            <port name="alpha" type="float" value="200.0"/>
+        </node>
+        <node name="hsb_color14" position="96.00,2.00" prototype="color.hsb_color">
+            <port name="hue" type="float" value="96.0"/>
+            <port name="saturation" type="float" value="279.0"/>
+            <port name="brightness" type="float" value="160.0"/>
+            <port name="alpha" type="float" value="200.0"/>
+        </node>
+        <node name="multiply2" position="96.00,-2.00" prototype="math.multiply">
+            <port name="value2" type="float" value="1.73"/>
+        </node>
+        <node name="scale9" position="100.00,3.00" prototype="corevector.scale"/>
+        <node name="ungroup10" position="100.00,-6.00" prototype="corevector.ungroup"/>
+        <node name="wave5" position="96.00,-1.00" prototype="math.wave">
+            <port name="min" type="float" value="180.0"/>
+            <port name="max" type="float" value="255.0"/>
+        </node>
+        <node name="wave6" position="97.00,0.00" prototype="math.wave">
+            <port name="min" type="float" value="50.0"/>
+        </node>
+        <conn input="colorize29.fill" output="hsb_color12"/>
+        <conn input="combine11.list3" output="colorize29"/>
+        <conn input="combine11.list1" output="colorize28"/>
+        <conn input="centroid8.shape" output="ungroup10"/>
+        <conn input="colorize28.shape" output="FUNDO7"/>
+        <conn input="colorize29.shape" output="SVG_tipo7"/>
+        <conn input="ungroup10.shape" output="SVG_fundo9"/>
+        <conn input="scale9.shape" output="colorize30"/>
+        <conn input="combine11.list2" output="scale9"/>
+        <conn input="scale9.origin" output="centroid8"/>
+        <conn input="PIXELS7.position" output="centroid8"/>
+        <conn input="colorize30.shape" output="PIXELS7"/>
+        <conn input="easing3.T" output="frame9"/>
+        <conn input="scale9.scale" output="easing3"/>
+        <conn input="colorize28.fill" output="hsb_color14"/>
+        <conn input="hsb_color14.brightness" output="wave5"/>
+        <conn input="wave6.offset" output="frame10"/>
+        <conn input="hsb_color14.hue" output="wave6"/>
+        <conn input="multiply2.value1" output="frame10"/>
+        <conn input="wave5.offset" output="multiply2"/>
+    </node>
+</ndbx>

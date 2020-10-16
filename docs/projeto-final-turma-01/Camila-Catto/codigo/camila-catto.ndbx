@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="44f192d6-ecf2-4a6a-a68c-35ff13bf279e">
+    <property name="canvasHeight" value="1350"/>
+    <property name="canvasWidth" value="1080"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network" renderedChild="combine17">
+        <node name="ano" position="18.00,2.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="2020.svg"/>
+            <port name="position" type="point" value="-120.00,-137.00"/>
+        </node>
+        <node name="colorize45" position="-3.00,9.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#471d6cff"/>
+        </node>
+        <node name="colorize48" position="11.00,0.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff5e5eff"/>
+            <port name="stroke" type="color" value="#ff5e5eff"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="colorize49" position="18.00,4.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff9c92ff"/>
+        </node>
+        <node name="colorize50" position="22.00,4.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff9c92ff"/>
+        </node>
+        <node name="colorize51" position="14.00,4.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff9c92ff"/>
+        </node>
+        <node name="colorize52" position="26.00,4.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff9c92ff"/>
+        </node>
+        <node name="combine17" position="11.00,11.00" prototype="list.combine"/>
+        <node name="combine18" position="8.00,4.00" prototype="list.combine"/>
+        <node name="desenhando" position="11.00,-3.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="desenhando-2.svg"/>
+            <port name="position" type="point" value="0.00,-5.00"/>
+        </node>
+        <node name="divide1" position="16.00,-2.00" prototype="math.divide">
+            <port name="value2" type="float" value="15.0"/>
+        </node>
+        <node name="frame10" position="3.00,6.00" prototype="core.frame"/>
+        <node name="frame9" position="16.00,-4.00" prototype="core.frame"/>
+        <node name="fundo" position="-3.00,5.00" prototype="corevector.rect">
+            <port name="width" type="float" value="1080.0"/>
+            <port name="height" type="float" value="1350.0"/>
+        </node>
+        <node name="hsb_color4" position="1.00,9.00" prototype="color.hsb_color">
+            <port name="hue" type="float" value="255.0"/>
+            <port name="saturation" type="float" value="243.0"/>
+            <port name="brightness" type="float" value="143.0"/>
+        </node>
+        <node name="linhas_cor1" position="5.00,2.00" prototype="core.network" renderedChild="shape_on_path4">
+            <node name="colorize15" position="5.00,1.00" prototype="corevector.colorize">
+                <port name="fill" type="color" value="#ff5f0000"/>
+                <port name="stroke" type="color" value="#ff6c6c76"/>
+                <port name="strokeWidth" type="float" value="2.0"/>
+            </node>
+            <node name="colorize16" position="1.00,1.00" prototype="corevector.colorize">
+                <port name="fill" type="color" value="#00000000"/>
+                <port name="stroke" type="color" value="#6d006c00"/>
+                <port name="strokeWidth" type="float" value="2.0"/>
+            </node>
+            <node name="frame5" position="9.00,0.00" prototype="core.frame"/>
+            <node name="line5" position="5.00,0.00" prototype="corevector.line">
+                <port name="point1" type="point" value="0.00,740.00"/>
+                <port name="point2" type="point" value="35.00,-740.00"/>
+                <port name="points" type="int" value="10"/>
+            </node>
+            <node name="line6" position="1.00,0.00" prototype="corevector.line">
+                <port name="point1" type="point" value="-765.00,0.00"/>
+                <port name="point2" type="point" value="765.00,0.00"/>
+                <port name="points" type="int" value="11"/>
+            </node>
+            <node name="shape_on_path4" position="5.00,4.00" prototype="corevector.shape_on_path">
+                <port name="amount" type="int" value="48"/>
+                <port name="spacing" type="float" value="60.0"/>
+            </node>
+            <node name="wave11" position="9.00,1.00" prototype="math.wave">
+                <port name="min" type="float" value="100.0"/>
+                <port name="max" type="float" value="1000.0"/>
+                <port name="period" type="float" value="50.0"/>
+                <port name="type" type="string" value="square"/>
+            </node>
+            <node name="wiggle5" position="1.00,2.00" prototype="corevector.wiggle">
+                <port name="offset" type="point" value="0.00,30.00"/>
+                <port name="seed" type="int" value="153"/>
+            </node>
+            <conn input="colorize16.shape" output="line6"/>
+            <conn input="shape_on_path4.path" output="wiggle5"/>
+            <conn input="shape_on_path4.shape" output="colorize15"/>
+            <conn input="wiggle5.shape" output="colorize16"/>
+            <conn input="colorize15.shape" output="line5"/>
+            <conn input="wave11.offset" output="frame5"/>
+            <conn input="shape_on_path4.spacing" output="wave11"/>
+        </node>
+        <node name="linhas_cor2" position="8.00,2.00" prototype="core.network" renderedChild="rotate1">
+            <node name="colorize15" position="-2.00,4.00" prototype="corevector.colorize">
+                <port name="fill" type="color" value="#ff5f0000"/>
+                <port name="stroke" type="color" value="#7dffd675"/>
+                <port name="strokeWidth" type="float" value="2.0"/>
+            </node>
+            <node name="colorize16" position="-6.00,4.00" prototype="corevector.colorize">
+                <port name="fill" type="color" value="#00000000"/>
+                <port name="stroke" type="color" value="#6d006c00"/>
+                <port name="strokeWidth" type="float" value="2.0"/>
+            </node>
+            <node name="frame5" position="2.00,3.00" prototype="core.frame"/>
+            <node name="line5" position="-2.00,3.00" prototype="corevector.line">
+                <port name="point1" type="point" value="-14.00,851.00"/>
+                <port name="point2" type="point" value="39.00,-800.00"/>
+                <port name="points" type="int" value="10"/>
+            </node>
+            <node name="line6" position="-6.00,3.00" prototype="corevector.line">
+                <port name="point1" type="point" value="-765.00,0.00"/>
+                <port name="point2" type="point" value="765.00,0.00"/>
+                <port name="points" type="int" value="11"/>
+            </node>
+            <node name="rotate1" position="-2.00,9.00" prototype="corevector.rotate">
+                <port name="angle" type="float" value="90.0"/>
+            </node>
+            <node name="shape_on_path4" position="-2.00,7.00" prototype="corevector.shape_on_path">
+                <port name="amount" type="int" value="47"/>
+                <port name="spacing" type="float" value="63.0"/>
+            </node>
+            <node name="wave11" position="2.00,4.00" prototype="math.wave">
+                <port name="min" type="float" value="100.0"/>
+                <port name="max" type="float" value="700.0"/>
+                <port name="period" type="float" value="10.0"/>
+                <port name="type" type="string" value="square"/>
+            </node>
+            <node name="wiggle5" position="-6.00,5.00" prototype="corevector.wiggle">
+                <port name="offset" type="point" value="0.00,30.00"/>
+                <port name="seed" type="int" value="153"/>
+            </node>
+            <conn input="colorize16.shape" output="line6"/>
+            <conn input="shape_on_path4.path" output="wiggle5"/>
+            <conn input="shape_on_path4.shape" output="colorize15"/>
+            <conn input="wiggle5.shape" output="colorize16"/>
+            <conn input="colorize15.shape" output="line5"/>
+            <conn input="wave11.offset" output="frame5"/>
+            <conn input="rotate1.shape" output="shape_on_path4"/>
+            <conn input="shape_on_path4.spacing" output="wave11"/>
+        </node>
+        <node name="mes" position="14.00,2.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="set.svg"/>
+            <port name="position" type="point" value="124.00,-176.00"/>
+        </node>
+        <node name="nome" position="26.00,2.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="camilacatto-2.svg"/>
+            <port name="position" type="point" value="101.00,196.00"/>
+        </node>
+        <node name="pick1" position="16.00,0.00" prototype="list.pick">
+            <port name="amount" type="int" value="200"/>
+            <port name="seed" type="int" value="110"/>
+        </node>
+        <node name="sample6" position="0.00,6.00" prototype="math.sample">
+            <port name="amount" type="int" value="100"/>
+            <port name="start" type="float" value="180.0"/>
+            <port name="end" type="float" value="255.0"/>
+        </node>
+        <node name="scale27" position="11.00,-2.00" prototype="corevector.scale">
+            <port name="scale" type="point" value="290.00,300.00"/>
+            <port name="origin" type="point" value="0.00,6.00"/>
+        </node>
+        <node name="scale29" position="26.00,3.00" prototype="corevector.scale">
+            <port name="scale" type="point" value="280.00,280.00"/>
+        </node>
+        <node name="scale30" position="18.00,3.00" prototype="corevector.scale">
+            <port name="scale" type="point" value="300.00,300.00"/>
+        </node>
+        <node name="scale31" position="22.00,3.00" prototype="corevector.scale">
+            <port name="scale" type="point" value="230.00,230.00"/>
+        </node>
+        <node name="scale32" position="14.00,3.00" prototype="corevector.scale">
+            <port name="scale" type="point" value="300.00,300.00"/>
+        </node>
+        <node name="shift4" position="3.00,7.00" prototype="list.shift"/>
+        <node name="slice4" position="3.00,8.00" prototype="list.slice"/>
+        <node name="turma" position="22.00,2.00" prototype="corevector.import_svg">
+            <port name="file" type="string" value="turma.svg"/>
+            <port name="position" type="point" value="-74.00,159.00"/>
+        </node>
+        <node name="wiggle9" position="11.00,-1.00" prototype="corevector.wiggle">
+            <port name="scope" type="string" value="contours"/>
+            <port name="offset" type="point" value="10.00,51.00"/>
+            <port name="seed" type="int" value="40"/>
+        </node>
+        <conn input="shift4.list" output="sample6"/>
+        <conn input="shift4.amount" output="frame10"/>
+        <conn input="slice4.list" output="shift4"/>
+        <conn input="hsb_color4.hue" output="slice4"/>
+        <conn input="colorize45.fill" output="hsb_color4"/>
+        <conn input="combine17.list2" output="combine18"/>
+        <conn input="combine17.list1" output="colorize45"/>
+        <conn input="combine17.list3" output="colorize48"/>
+        <conn input="colorize51.shape" output="scale32"/>
+        <conn input="colorize49.shape" output="scale30"/>
+        <conn input="colorize50.shape" output="scale31"/>
+        <conn input="colorize52.shape" output="scale29"/>
+        <conn input="combine17.list4" output="colorize51"/>
+        <conn input="combine17.list5" output="colorize49"/>
+        <conn input="combine17.list6" output="colorize50"/>
+        <conn input="combine17.list7" output="colorize52"/>
+        <conn input="scale30.shape" output="ano"/>
+        <conn input="scale32.shape" output="mes"/>
+        <conn input="scale27.shape" output="desenhando"/>
+        <conn input="scale31.shape" output="turma"/>
+        <conn input="scale29.shape" output="nome"/>
+        <conn input="combine18.list1" output="linhas_cor1"/>
+        <conn input="combine18.list2" output="linhas_cor2"/>
+        <conn input="colorize45.shape" output="fundo"/>
+        <conn input="colorize48.shape" output="wiggle9"/>
+        <conn input="wiggle9.shape" output="scale27"/>
+        <conn input="wiggle9.seed" output="pick1"/>
+        <conn input="divide1.value1" output="frame9"/>
+        <conn input="pick1.list" output="divide1"/>
+    </node>
+</ndbx>
