@@ -8,7 +8,7 @@ Projetos criados pelos participantes com os conteúdos vistos no curso.
 Para ver mais detalhes dos projetos como outras imagens e código, clique no botão "ver arquivos" de cada projeto. 
 
 
-## Turma 01 - Setembro / 2020
+## Turma 01 - Setembro / 2020 
 
 <div class="galeria-participantes">
 
