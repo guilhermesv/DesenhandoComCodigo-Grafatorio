@@ -198,9 +198,9 @@ a:focus {
 @media screen and (min-width: 1300px) {
 
   .sumario {
-    position: absolute;
+    position: sticky;
     left: 0;
-    top: 0;
+    top: 2rem;
   }
 }
 
@@ -265,11 +265,6 @@ figcaption {
   margin-right: auto;
 }
 
-video {
-  display: block;
-  margin: 6rem 0;
-}
-
 .wrapper-conteudo {
   display: flex;
   flex-wrap: wrap;
@@ -306,6 +301,12 @@ video {
   display: block;
 }
 
+.main-content video {
+  display: block;
+  margin: 6rem 0;
+  max-width: 100%;
+}
+
 .main-content hr {
   background-color: var(--cor-verde);
   width: 100%;
@@ -337,4 +338,45 @@ video {
   .wrapper-conteudo {
     position: relative;
   }
+}
+
+/* Galeria de participantes
+---------------------------------------*/
+
+.resultados h2 {
+  max-width: 100%;
+}
+
+.galeria-participantes video {
+  max-width: 100%;
+  width: 100%;
+}
+
+
+
+.galeria-participantes .participante .participante-info h3 {
+  margin-bottom: 1rem;
+}
+
+.galeria-participantes .participante .participante-info .link {
+  font-size: 1rem;
+  line-height: 1.2em;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+@media screen and (min-width: 600px) {
+  .galeria-participantes .participante {
+    display: flex;
+  }
+
+  .galeria-participantes .participante .participante-info {
+    width: 300px;
+    padding-right: 2rem;
+  }
+
+  .galeria-participantes .participante .participante-projeto {
+    width: calc(100% - 300px);
+  }
+
 }
