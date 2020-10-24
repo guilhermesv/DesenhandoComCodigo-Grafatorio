@@ -1,0 +1,18 @@
+<div class="participante">
+  <div class="participante-info">
+    <h3 class="nome">{{ include.nome }}</h3>
+    {% if include.link %}
+    <p class="link"><a href="{{ include.link }}">{{ include.link }}</a></p>
+    {% endif %}
+    <a target="_blank" rel="noopener noreferrer" class="btn small" href="{{ include.arquivos }}">ver arquivos</a>
+  </div>
+  <div class="participante-projeto">
+    {% if include.video %}
+      <video autoplay loop controls><source src="{{ site.url }}{{ include.video }}" type="video/mp4"></video>
+    {% else %}
+      <figure>
+        <img alt="Cartaz {{ include.nome }}" src="{{ site.url }}{{ include.imagem }}">
+      </figure>
+    {% endif %}
+  </div>
+</div>
