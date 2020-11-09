@@ -156,7 +156,7 @@ Experimente, e principalmente se divirta :)
 
 ## Exercício 01
 
-Criar padrão geométrico explorando as primitivas básicas e o nó grid. 
+Criar um padrão geométrico explorando as primitivas básicas e o nó grid. 
 
 ## Exercício 02
 
