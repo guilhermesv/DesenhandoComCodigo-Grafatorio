@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="21" type="file" uuid="31600524-6ee4-4aef-9d92-12024b6d25bb">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <property name="canvasX" value="0"/>
+    <property name="canvasY" value="0"/>
+    <node name="root" prototype="core.network">
+        <node name="color1" position="10.00,-1.00" prototype="color.color">
+            <port name="color" type="color" value="#ff0000ff"/>
+        </node>
+        <node name="color2" position="11.00,0.00" prototype="color.color">
+            <port name="color" type="color" value="#00ff00ff"/>
+        </node>
+        <node name="color3" position="12.00,1.00" prototype="color.color">
+            <port name="color" type="color" value="#0000ffff"/>
+        </node>
+        <node name="colorize1" position="6.00,10.00" prototype="corevector.colorize"/>
+        <node name="combine1" position="2.00,3.00" prototype="list.combine"/>
+        <node name="combine2" position="10.00,3.00" prototype="list.combine"/>
+        <node name="ellipse1" position="2.00,-1.00" prototype="corevector.ellipse">
+            <port name="width" type="float" value="30.0"/>
+            <port name="height" type="float" value="30.0"/>
+        </node>
+        <node name="grid1" position="3.00,5.00" prototype="corevector.grid">
+            <port name="width" type="float" value="500.0"/>
+            <port name="height" type="float" value="500.0"/>
+        </node>
+        <node name="polygon1" position="4.00,1.00" prototype="corevector.polygon">
+            <port name="radius" type="float" value="30.0"/>
+            <port name="align" type="boolean" value="true"/>
+        </node>
+        <node name="rect1" position="3.00,0.00" prototype="corevector.rect">
+            <port name="width" type="float" value="30.0"/>
+            <port name="height" type="float" value="30.0"/>
+        </node>
+        <node name="translate1" position="2.00,7.00" prototype="corevector.translate"/>
+        <conn input="combine1.list1" output="ellipse1"/>
+        <conn input="combine1.list2" output="rect1"/>
+        <conn input="combine1.list3" output="polygon1"/>
+        <conn input="combine2.list1" output="color1"/>
+        <conn input="combine2.list2" output="color2"/>
+        <conn input="combine2.list3" output="color3"/>
+        <conn input="translate1.shape" output="combine1"/>
+        <conn input="translate1.translate" output="grid1"/>
+        <conn input="colorize1.shape" output="translate1"/>
+        <conn input="colorize1.fill" output="combine2"/>
+    </node>
+</ndbx>
