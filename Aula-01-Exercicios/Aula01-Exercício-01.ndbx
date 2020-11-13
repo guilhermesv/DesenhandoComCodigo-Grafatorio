@@ -4,7 +4,7 @@
     <property name="canvasWidth" value="1000"/>
     <property name="canvasX" value="0"/>
     <property name="canvasY" value="0"/>
-    <node name="root" prototype="core.network" renderedChild="colorize5">
+    <node name="root" prototype="core.network" renderedChild="grid1">
         <node name="color1" position="20.00,12.00" prototype="color.color">
             <port name="color" type="color" value="#da6100ff"/>
         </node>
@@ -34,13 +34,13 @@
         <node name="combine5" position="17.00,15.00" prototype="list.combine"/>
         <node name="ellipse1" position="8.00,3.00" prototype="corevector.ellipse"/>
         <node name="ellipse2" position="24.00,3.00" prototype="corevector.ellipse"/>
-        <node name="grid1" position="1.00,7.00" prototype="corevector.grid">
+        <node name="grid1" position="2.00,7.00" prototype="corevector.grid">
             <port name="columns" type="int" value="6"/>
             <port name="rows" type="int" value="6"/>
             <port name="width" type="float" value="1000.0"/>
             <port name="height" type="float" value="1000.0"/>
         </node>
-        <node name="grid2" position="8.00,7.00" prototype="corevector.grid">
+        <node name="grid2" position="9.00,7.00" prototype="corevector.grid">
             <port name="columns" type="int" value="5"/>
             <port name="rows" type="int" value="5"/>
             <port name="width" type="float" value="800.0"/>
