@@ -8,7 +8,7 @@ Criar um cartaz inspiracional generativo e/ou animado de divulgação do términ
 
 ## Especificações:
 
-- Tamanho: 1080 x 1350 px
+- Tamanho: 1080px de largura x 1350px de altura
 - Formato de entrega: 
   - Animação: MP4 em torno de 15 a 30 segundos preferencialmente
   - Estático: PNG
