@@ -19,7 +19,7 @@ O cartaz deverá conter os seguintes textos:
 
 - Desenhando com Código
 - Turma Grafatório
-- Setembro de 2020
+- Novembro de 2020
 - Seu nome
 
 ## Orientações gerais

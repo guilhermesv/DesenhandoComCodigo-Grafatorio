@@ -54,3 +54,15 @@ Para ver mais detalhes dos projetos como outras imagens e código, clique no bot
   %}
 
 </div>
+
+## Turma 02 - Setembro / 2020 
+
+<div class="galeria-participantes">
+
+  {% include participante.html 
+   nome="Cristiano Ramos" 
+   arquivos="https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/docs/projeto-final-turma-02/Cristiano-Ramos"
+   video="/projeto-final-turma-02/Cristiano-Ramos/Cristiano-Ramos_Video.mp4"
+   %}
+
+</div>
