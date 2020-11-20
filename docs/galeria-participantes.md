@@ -55,12 +55,20 @@ Para ver mais detalhes dos projetos como outras imagens e código, clique no bot
 
 </div>
 
-## Turma 02 - Setembro / 2020 
+## Turma 02 - Novembro / 2020 
 
 <div class="galeria-participantes">
 
   {% include participante.html 
-   nome="Cristiano Ramos" 
+   nome="Cesar Ganimi"
+   link="https://www.instagram.com/cesarganimi" 
+   arquivos="https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/docs/projeto-final-turma-02/Cesar-Ganimi"
+   video="/projeto-final-turma-02/Cesar-Ganimi/Cesar-Ganimi_Video.mp4"
+   %}
+
+  {% include participante.html 
+   nome="Cristiano Ramos"
+   link="https://www.instagram.com/creestia/" 
    arquivos="https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/docs/projeto-final-turma-02/Cristiano-Ramos"
    video="/projeto-final-turma-02/Cristiano-Ramos/Cristiano-Ramos_Video.mp4"
    %}
