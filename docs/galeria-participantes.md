@@ -73,4 +73,18 @@ Para ver mais detalhes dos projetos como outras imagens e código, clique no bot
    video="/projeto-final-turma-02/Cristiano-Ramos/Cristiano-Ramos_Video.mp4"
    %}
 
+  {% include participante.html 
+  nome="Fátima Finizola"
+  link="https://www.instagram.com/fafilete/" 
+  arquivos="https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/docs/projeto-final-turma-02/Fatima-Finizola"
+  video="/projeto-final-turma-02/Fatima-Finizola/Fatima-Finizola_Video-01.mp4"
+  %}
+
+  {% include participante.html 
+  nome="Fátima Finizola"
+  link="https://www.instagram.com/fafilete/" 
+  arquivos="https://github.com/guilhermesv/DesenhandoComCodigo-Grafatorio/tree/master/docs/projeto-final-turma-02/Fatima-Finizola"
+  video="/projeto-final-turma-02/Fatima-Finizola/Fatima-Finizola_Video-02.mp4"
+  %}
+
 </div>
