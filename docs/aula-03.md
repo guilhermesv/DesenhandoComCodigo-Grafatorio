@@ -52,7 +52,7 @@ Trabalhos criados pelo designer [Just van Rossum](https://dailydrawbot.tumblr.co
 
 ### Experimentos Hyojung Seo
 
-Trabalhos criados pelo artista [Hyojung Seo](https://www.instagram.com/p/CCuiOHlpp9P/).
+Trabalhos criados pela artista [Seo Hyojung](https://www.instagram.com/seohyo/).
 
 <div class="galeria">
 <video autoplay loop><source src="{{ site.url }}/aula-03/HyojungSeo-00.mp4" type="video/mp4"></video>
